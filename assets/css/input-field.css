@@ -1,0 +1,25 @@
+.input-field {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.input-field.invalid {
+  border-color: #8D6E63;
+}
+
+.input {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 52px;
+  color: #F9F3F0;
+  background-color: transparent;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
