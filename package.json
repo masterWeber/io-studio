@@ -1,16 +1,25 @@
 {
   "name": "io-studio.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Сайт компании",
   "main": "index.js",
   "dependencies": {
     "gulp": "^4.0.2",
     "postcss": "^7.0.17"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "cssnext": "^1.8.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "install": "^0.12.2",
+    "npm": "^6.9.2",
+    "precss": "^4.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "masterWeber",
   "license": "ISC"
 }
