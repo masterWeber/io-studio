@@ -1,0 +1,22 @@
+.form__title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #F9F3F0;
+}
+
+@media (max-width: 1000px) {
+  .form__title  {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form__title  {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

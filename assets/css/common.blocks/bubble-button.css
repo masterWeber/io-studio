@@ -9,15 +9,35 @@
   border: none;
   box-sizing: border-box;
   transition: transform 400ms;
-  cursor: url('/assets/icon/cursor.png') 6 6,auto;
-  cursor: url('/assets/icon/cursor.svg') 6 6,auto;
-  cursor: -webkit-image-set(url('/assets/icon/cursor.png') 1x,url('/assets/icon/cursor@2x.png') 2x) 6 6,auto;
+  cursor: url('/assets/img/icons/cursors/cursor.png') 6 6,auto;
+  cursor: url('/assets/img/icons/cursors/cursor.svg') 6 6,auto;
+  cursor: -webkit-image-set(url('/assets/img/icons/cursors/cursor.png') 1x,url('/assets/img/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
 }
 
 .bubble-button_horizontal {
   margin-right: 70px;
   transform: rotate(90deg);
   transition: none;
+}
+
+.md .bubble-button_horizontal {
+  position: absolute;
+  top: 26px;
+  right: 36px;
+  transition: top 200ms, right 200ms;
+}
+
+@media (max-width: 1000px) {
+  .md .bubble-button_horizontal {
+    right: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .md .bubble-button_horizontal {
+    top: 6px;
+    right: 15px;
+  }
 }
 
 .bubble-button:hover {

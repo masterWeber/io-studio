@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  margin: 0 62px;
+  transition: margin 200ms;
+}
+
+@media (max-width: 1000px) {
+  .social  {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .social  {
+    margin: 0 40px;
+  }
+}
+
+.social__item {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #292929;
+  text-decoration: none;
+}
+
+.social__item::after {
+  content: '/';
+  margin: 0 7px;
+}
+
+.social__item:last-child::after {
+  display: none;
+}

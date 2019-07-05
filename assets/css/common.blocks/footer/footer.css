@@ -1,0 +1,33 @@
+@import 'copyright.css';
+@import 'support.css';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #F9F3F0;
+  background-color: #201D1E;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    height: 50px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    height: 42px;
+    padding: 0 30px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

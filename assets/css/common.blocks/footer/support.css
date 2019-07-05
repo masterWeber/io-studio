@@ -1,0 +1,19 @@
+.support__text {
+  margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+  .support__text {
+    margin-right: 15px;
+  }
+}
+
+.support__link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #F9F3F0;
+}
+
+.support__link:hover {
+  text-decoration: underline;
+}

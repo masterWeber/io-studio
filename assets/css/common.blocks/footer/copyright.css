@@ -1,0 +1,14 @@
+.copyright__company {
+  margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+  .copyright__company {
+    margin-right: 15px;
+  }
+}
+
+.copyright__date {
+  font-weight: bold;
+  color: #F9F3F0;
+}

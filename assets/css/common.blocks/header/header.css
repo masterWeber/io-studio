@@ -1,0 +1,27 @@
+@import "logo.css";
+@import "toolbar.css";
+@import "social.css";
+@import "menu.css";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 86px;
+  padding: 20px 70px;
+  background-color: #F9F3F0;
+  box-sizing: border-box;
+  transition: padding 200ms;
+}
+
+@media (max-width: 1000px) {
+  .header  {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header  {
+    padding: 15px 30px;
+  }
+}

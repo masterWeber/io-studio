@@ -1,0 +1,17 @@
+.logo:focus {
+  outline: none;
+}
+
+.logo__img {
+  height: 37px;
+  width: 37px;
+  transition: transform 200ms;
+}
+
+.logo__img:hover {
+  transform: scale(1.5);
+}
+
+.logo:focus .logo__img {
+  transform: scale(1.5);
+}
