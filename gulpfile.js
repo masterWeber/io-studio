@@ -9,7 +9,7 @@ const cssnano = require('cssnano');
 const processors = [autoprefixer, cssnext, precss, cssnano];
 
 gulp.task('default', () => {
-  return gulp.src('./assets/css/style.css')
+  return gulp.src('./assets/css/common.blocks/style.css')
     .pipe(postcss(processors))
     .pipe(rename({
       suffix: '.min'
