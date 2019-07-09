@@ -1,0 +1,21 @@
+.component-logo {
+  position: relative;
+  height: 40vw;
+  width: 50.5vw;
+}
+
+.component-logo__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  color: #F9F3F0;
+  object-fit: cover;
+}
+
+.component-logo__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 99%;
+}

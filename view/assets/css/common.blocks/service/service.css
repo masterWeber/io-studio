@@ -1,0 +1,22 @@
+.service {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__card {
+
+  background-color: #EEEEEE;
+}
+
+.service__card:nth-child(2n) {
+  margin-right: 0;
+  background-color: #E1FBFD;
+}
+
+.service__card:nth-child(3n) {
+  background-color: #E4F9E6;
+}
+
+.service__card:nth-child(4n) {
+  background-color: #F5E8FE;
+}

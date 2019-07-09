@@ -9,9 +9,9 @@
   border: none;
   box-sizing: border-box;
   transition: transform 400ms;
-  cursor: url('/assets/img/icons/cursors/cursor.png') 6 6,auto;
-  cursor: url('/assets/img/icons/cursors/cursor.svg') 6 6,auto;
-  cursor: -webkit-image-set(url('/assets/img/icons/cursors/cursor.png') 1x,url('/assets/img/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
+  cursor: url('/view/assetsssets/img/icons/cursors/cursor.png') 6 6,auto;
+  cursor: url('/view/assetsssets/img/icons/cursors/cursor.svg') 6 6,auto;
+  cursor: -webkit-image-set(url('/view/assetsssets/img/icons/cursors/cursor.png') 1x,url('/view/assetsssets/img/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
 }
 
 .bubble-button_horizontal {

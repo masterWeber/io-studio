@@ -17,9 +17,9 @@
   border-radius: 100px;
   transition: background-color 200ms;
   box-sizing: border-box;
-  cursor: url('/assets/img/icons/cursors/cursor.png') 6 6,auto;
-  cursor: url('/assets/img/icons/cursors/cursor.svg') 6 6,auto;
-  cursor: -webkit-image-set(url('/assets/img/icons/cursors/cursor.png') 1x,url('/assets/img/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
+  cursor: url('/view/assetsssets/img/icons/cursors/cursor.png') 6 6,auto;
+  cursor: url('/view/assetsssets/img/icons/cursors/cursor.svg') 6 6,auto;
+  cursor: -webkit-image-set(url('/view/assetsssets/img/icons/cursors/cursor.png') 1x,url('/view/assetsssets/img/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
 }
 
 @media (max-width: 700px) {
