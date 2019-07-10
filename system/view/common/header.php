@@ -6,29 +6,29 @@
   <title>io.</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/view/assets/css/common.blocks/style.css">
+  <link rel="stylesheet" href="/system/view/assets/css/common.blocks/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/view/assets/img/icons/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/view/assets/img/icons/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="/view/assets/img/icons/favicon/favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/view/assets/img/icons/favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/view/assets/img/icons/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/view/assets/img/icons/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/view/assets/img/icons/favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="apple-touch-icon" sizes="180x180" href="/system/view/assets/img/icons/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/system/view/assets/img/icons/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="/system/view/assets/img/icons/favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/system/view/assets/img/icons/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/system/view/assets/img/icons/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/system/view/assets/img/icons/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/system/view/assets/img/icons/favicon/safari-pinned-tab.svg" color="#000000">
   <meta name="apple-mobile-web-app-title" content="io-studio.io">
   <meta name="application-name" content="io-studio.io">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/assets/icon/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script src="/view/assets/js/common.js" defer></script>
+  <script src="/system/view/assets/js/common.js" defer></script>
 </head>
 <body class="page">
 <header class="header">
   <a class="logo" href="/" title="Главная">
     <picture class="logo__img-container">
-      <source srcset="/view/assets/img/logo/logo.svg" type="image/svg+xml">
-      <img class="logo__img" src="/view/assets/img/logo/logo.png" alt="Логотип io-studio">
+      <source srcset="/system/view/assets/img/logo/logo.svg" type="image/svg+xml">
+      <img class="logo__img" src="/system/view/assets/img/logo/logo.png" alt="Логотип io-studio">
     </picture>
   </a>
   <div class="toolbar">

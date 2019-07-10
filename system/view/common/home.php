@@ -1,14 +1,14 @@
-<? require_once $_SERVER['DOCUMENT_ROOT'] . '/components/header.php' ?>
+<? require_once 'header.php' ?>
 
   <main class="page__content">
     <section class="face">
       <div class="component-logo">
-        <video class="component-logo__video" poster="/view/assets/video/sea/poster.jpg" autoplay loop preload="auto" muted >
-          <source src="/view/assets/video/sea/sea_vp8.webm" type="video/webm"/>
-          <source src="/view/assets/video/sea/sea_hevc.mp4" type="video/mp4"/>
-          <source src="/view/assets/video/sea/sea_avc.mp4" type="video/mp4"/>
+        <video class="component-logo__video" poster="/system/view/assets/video/sea/poster.jpg" autoplay loop preload="auto" muted >
+          <source src="/system/view/assets/video/sea/sea_vp8.webm" type="video/webm"/>
+          <source src="/system/view/assets/video/sea/sea_hevc.mp4" type="video/mp4"/>
+          <source src="/system/view/assets/video/sea/sea_avc.mp4" type="video/mp4"/>
         </video>
-        <img class="component-logo__mask" src="/view/assets/img/mask.svg" alt="">
+        <img class="component-logo__mask" src="/system/view/assets/img/mask.svg" alt="">
       </div>
 
       <div class="face__title-container">
@@ -29,7 +29,7 @@
           <p class="card__subtitle">от 10 рабочих дней</p>
         </header>
         <picture class="card__background">
-          <img class="card__background-img" src="/view/assets/img/service/1.png" alt="background">
+          <img class="card__background-img" src="/system/view/assets/img/service/1.png" alt="background">
         </picture>
         <footer class="card__footer">
           <a class="button button_transparent" href="/">Заказать</a>
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <? require_once $_SERVER['DOCUMENT_ROOT'] . '/components/feedback.php' ?>
+    <? require_once 'feedback.php' ?>
   </main>
 
-<? require_once $_SERVER['DOCUMENT_ROOT'] . '/components/footer.php' ?>
+<? require_once 'footer.php' ?>

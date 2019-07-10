@@ -1,3 +1,10 @@
 <?php
+//Разрешение на вызов файлов только из одной точки входа.
+const ACCESS = true;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/home.php';
+const PATH = __DIR__;
+
+include_once PATH . "/system/bootstrap.php";
+
+$router = new Router();
+$router -> run();
