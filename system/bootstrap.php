@@ -1,23 +1,25 @@
 <?php
-//Проверяем был ли вызван файл системой или напрямую. Перенаправляем на главную
-defined("ACCESS") or die(header("location:/index.php"));
-
-//Создаем константы
+if (!defined("ACCESS")) {
+  header("location:/index.php");
+}
 
 //Системные файлы
-const SYSTEM = PATH . "/system";
-//Модели
-const MODEL = SYSTEM . "/model";
+const DIR_SYSTEM = PATH . "/system";
+//Движок
+const DIR_ENGINE = DIR_SYSTEM . "/engine";
+//Библиотека
+const DIR_LIBRARY = DIR_SYSTEM . "/library";
 //Контроллеры
-const CONTROLLER = SYSTEM . "/controller";
+const DIR_CONTROLLER = PATH . "/controller";
+//Локализации
+const DIR_LANGUAGE = PATH . "/language";
+//Модели
+const DIR_MODEL = PATH . "/model";
 //Виды
-const VIEW = SYSTEM . "/view";
+const DIR_VIEW = PATH . "/view";
 
-//Подгружаем все файлы
+require_once DIR_SYSTEM . '/import.php';
 
-//Файл данных
-include_once MODEL . "/Data.php";
-//Работа с видами
-include_once VIEW . "/View.php";
-//Контроллер
-include_once CONTROLLER . "/Router.php";
+import(DIR_ENGINE . "/*");
+import(DIR_LIBRARY . "/*");
+

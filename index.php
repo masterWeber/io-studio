@@ -4,7 +4,7 @@ const ACCESS = true;
 
 const PATH = __DIR__;
 
-include_once PATH . "/system/bootstrap.php";
+require_once PATH . "/system/bootstrap.php";
 
 $router = new Router();
 $router -> run();
