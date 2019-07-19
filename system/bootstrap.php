@@ -1,7 +1,4 @@
 <?php
-if (!defined("ACCESS")) {
-  header("location:/index.php");
-}
 
 //Системные файлы
 const DIR_SYSTEM = PATH . 'system/';

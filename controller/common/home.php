@@ -1,7 +1,4 @@
 <?php
-if (!defined("ACCESS")) {
-  header("location:/index.php");
-}
 
 class ControllerCommonHome extends Controller {
   public function index() {

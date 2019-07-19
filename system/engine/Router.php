@@ -1,7 +1,4 @@
 <?php
-if (!defined("ACCESS")) {
-  header("location:/index.php");
-}
 
 //https://io-studio.io/ru/portfolio/12/
 
