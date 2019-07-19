@@ -29,7 +29,7 @@
           <p class="card__subtitle">от 10 рабочих дней</p>
         </header>
         <picture class="card__background">
-          <img class="card__background-img" src="/image/service/1.png" alt="background">
+          <img class="card__background-img" src="/image/service/ice-cream.png" alt="background">
         </picture>
         <footer class="card__footer">
           <a class="button button_transparent" href="/">Заказать</a>
