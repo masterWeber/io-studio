@@ -1,37 +1,18 @@
 <?php
-function import($path = "") {
-  if ($path == "") {
-    $report = $_SESSION['imports'];
-    foreach ($report as &$item) {
-      $item = array_flip($item);
-    }
-    return $report;
+function import($path = '') {
+  if ($path === '') {
+    throw new Exception('path is\'t defined');
   }
 
-  if (substr($path, -1) != "*")
-    $path .= ".php";
-
-  $imports = &$_SESSION['imports'];
-  if (!is_array($imports)) {
-    $imports = [];
-  }
-
-  $control = &$imports[$_SERVER['SCRIPT_FILENAME']];
-  if (!is_array($control)) {
-    $control = [];
+  if (!preg_match('/(\.php$)|(\*$)/i', $path)) {
+    $path .= '.php';
   }
 
   foreach (glob($path) as $file) {
     if (is_dir($file)) {
-      import($file . "/*");
+      import($file . '/*');
       continue;
     }
-    if (array_key_exists($file,$control)) {
-      continue;
-    }
-    $control[$file] = count($control);
     require_once($file);
   }
-
-  return true;
 }

@@ -8,54 +8,71 @@ if (!defined("ACCESS")) {
 class Router {
 
   private $controller;
+  const ROUTES_MAP = [
+    'index' => 'common/home',
+    'service' => 'common/service',
+    'contacts' => 'information/contacts',
+    'portfolio' => 'information/portfolio',
+    '404' => 'error/404'
+  ];
   const PREFIX = 'Controller';
 
   public function run() {
-    $parser = new URIParser();
-    $uri = $parser -> parse();
+    $uriParser = new URIParser();
+    $uri = $uriParser -> parse();
 
-    $routeString = implode("/", $uri['route']);
+    $routeUri = implode("/", $uri['route']);
 
-    if (!$parser -> detectLang()) {
-      $this -> redirect($routeString);
+    if (!$uriParser -> detectLang()) {
+      $this -> redirect($routeUri);
     }
 
-    $path = DIR_CONTROLLER . '/common/home';
-    $controllerName = self::PREFIX . 'CommonHome';
+    $path = DIR_CONTROLLER . self::ROUTES_MAP['index'];
+    $currentClass = preg_replace('/\//i', '', self::ROUTES_MAP['index']);
+    $class = self::PREFIX . $currentClass;
 
     if (!empty($uri['route'])) {
-      $path = $this -> getPath($uri['route']);
-      $controllerName = $this -> getControllerName($path);
+      $detailedRoute = $this -> parseRoute($routeUri);
+
+      $path = $detailedRoute['path'];
+      $class = $detailedRoute['controller_name'];
     }
 
-    import($path);
+    try {
+      import($path);
+    } catch(Exception $e) {
+      $this -> redirect('404');
+    }
 
-    $this -> controller = new $controllerName();
+    $this -> controller = new $class();
     $this -> controller -> index();
   }
 
   public function redirect(string $route) {
 
-    $route = Language::DEFAULT . "/" . $route;
+    $fullRoute = Language::DEFAULT . "/" . $route;
 
-    if (empty($this -> route)) {
-      $route = Language::DEFAULT ;
+    if (empty($route)) {
+      $fullRoute = Language::DEFAULT;
     }
 
-    header("location:/{$route}/");
+    header("location:/{$fullRoute}/");
   }
 
-  private function getPath( array $route) {
-    $path = DIR_CONTROLLER . implode("/", $route) . "/";
+  private function parseRoute(string $route) {
 
-    return $path;
-  }
+    if (!key_exists($route,self::ROUTES_MAP)) {
+      $this -> redirect('404');
+    }
 
-  private function getControllerName(string $path ) {
-    $controllerName = $path;
+    $path = DIR_CONTROLLER . self::ROUTES_MAP[$route];
 
+    $output = [
+      'path' => $path,
+      'controller_name' => self::PREFIX . preg_replace('/\//i', '', self::ROUTES_MAP[$route])
+    ];
 
-    return $controllerName;
+    return $output;
   }
 
 }

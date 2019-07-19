@@ -34,9 +34,9 @@
   <div class="toolbar">
     <button class="button md-trigger" data-modal="order-dialog"><?=$hire_us?></button>
     <div class="header__social social">
-      <a class="social__item" href="https://www.facebook.com" title="Мы в Facebook">fb</a>
+      <a class="social__item" href="https://www.facebook.com/" title="Мы в Facebook">fb</a>
       <a class="social__item" href="https://www.behance.net/" title="Мы в Behance">be</a>
-      <a class="social__item" href="https://www.instagram.com" title="Мы в Instagram">ig</a>
+      <a class="social__item" href="https://www.instagram.com/" title="Мы в Instagram">ig</a>
     </div>
     <button class="bubble-button md-trigger" data-modal="navigation-dialog" title="Меню">
       <span class="bubble-button__element bubble-button__element_first"></span>
@@ -52,9 +52,9 @@
       <span class="bubble-button__text">закрыть</span>
     </button>
     <div class="menu">
-      <a class="menu__item" href="/portfolio">Портфолио</a>
-      <a class="menu__item" href="/service">Услуги</a>
-      <a class="menu__item" href="/contacts">Контакты</a>
+      <a class="menu__item" href="/portfolio/">Портфолио</a>
+      <a class="menu__item" href="/service/">Услуги</a>
+      <a class="menu__item" href="/contacts/">Контакты</a>
     </div>
   </div>
 </header>

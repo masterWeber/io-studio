@@ -29,6 +29,8 @@ class URIParser {
       $this -> route = $this -> uriParts;
     }
 
+    $this -> reindexRoute();
+
     return [
       'lang' => $this -> lang,
       'route' => $this -> route
@@ -43,6 +45,10 @@ class URIParser {
 
   private function reindexUriParts() {
     $this -> uriParts = array_values($this -> uriParts);
+  }
+
+  private function reindexRoute() {
+    $this -> route = array_values($this -> route);
   }
 
   public function detectLang() {
