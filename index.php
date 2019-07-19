@@ -1,8 +1,6 @@
 <?php
-//Разрешение на вызов файлов только из одной точки входа.
-const ACCESS = true;
 
-const PATH = __DIR__ . '/';
+const PATH = __DIR__ . '/app/';
 
 require_once(PATH . 'system/bootstrap.php');
 

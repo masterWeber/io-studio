@@ -6,7 +6,7 @@
   <title>io.</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/view/assets/css/common.blocks/style.css">
+  <link rel="stylesheet" href="/app/views/assets/css/common.blocks/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/image/icons/favicon/apple-touch-icon.png">
@@ -19,9 +19,9 @@
   <meta name="apple-mobile-web-app-title" content="io-studio.io">
   <meta name="application-name" content="io-studio.io">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/assets/icon/favicon/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="/image/icons/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script src="/view/assets/js/common.js" defer></script>
+  <script src="/app/views/assets/js/common.js" defer></script>
 </head>
 <body class="page">
 <header class="header">

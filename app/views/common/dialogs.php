@@ -1,14 +1,3 @@
-<footer class="footer">
-  <div class="copyright">
-    <span class="copyright__company">io studio</span>
-    <span class="copyright__date"><?=(new DateTime())->format('Y')?> ©</span>
-  </div>
-  <div class="support">
-    <span class="support__text">Поддержка</span>
-    <a class="support__link" href="https://wa.me/79234567890">WhatsApp</a>
-  </div>
-</footer>
-
 <div class="md" id="order-dialog">
   <button class="bubble-button bubble-button_horizontal md-close">
     <span class="bubble-button__element bubble-button__element_first"></span>
@@ -77,6 +66,3 @@
     </footer>
   </form>
 </div>
-
-</body>
-</html>
