@@ -1,7 +1,14 @@
 RewriteEngine On
+
+#Перенаправление на https://
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
+#Перенаправление всех запросов (кроме запросов на файлы) на index.php
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.php [L,QSA]
+
+#Перенаправляем все запросы оканчивающиеся на .php, кроме index.php
+RewriteCond %{REQUEST_FILENAME} \.php$
+RewriteCond %{REQUEST_FILENAME} !\index.php$
 RewriteRule ^.*$ /index.php [L,QSA]
