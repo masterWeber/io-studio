@@ -8,7 +8,7 @@ RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^.*$ /index.php [L,QSA]
 
-#Перенаправляем все запросы оканчивающиеся на .php, кроме index.php
-RewriteCond %{REQUEST_FILENAME} \.php$
+#Перенаправляем все запросы оканчивающиеся на .php или .html, кроме index.php
+RewriteCond %{REQUEST_FILENAME} (\.php$)|(\.html$)
 RewriteCond %{REQUEST_FILENAME} !\index.php$
 RewriteRule ^.*$ /index.php [L,QSA]
