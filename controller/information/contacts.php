@@ -5,6 +5,7 @@ if (!defined("ACCESS")) {
 
 class ControllerInformationContacts extends Controller {
   public function index() {
-    print_r('ControllerCommonService');
+    $data = $this -> load -> language("information/contacts");
+    $this -> load -> view("information/contacts", $data);
   }
 }
