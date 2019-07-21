@@ -3,10 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>io.</title>
-  <meta name="description" content="">
+  <title><?=$title?></title>
+  <meta name="description" content="<?=$description?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/app/views/assets/css/common.blocks/style.css">
+  <?php if (DEV) {?>
+    <link rel="stylesheet" href="/app/views/assets/css/common.blocks/style.css">
+  <?php } else {?>
+    <link rel="stylesheet" href="/app/views/assets/css/style.min.css">
+  <?php } ?>
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/image/icons/favicon/apple-touch-icon.png">
