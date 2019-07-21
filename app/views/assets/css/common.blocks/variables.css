@@ -1,0 +1,5 @@
+:root {
+  --scrollbar-width: 17px;
+  --window-width: calc(100vw - var(--scrollbar-width));
+  --main-text-color: #292929;
+}

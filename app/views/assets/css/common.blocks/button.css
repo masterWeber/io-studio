@@ -11,6 +11,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #FFFFFF;
   background-color: #292929;
   border: none;
@@ -38,10 +39,7 @@
 }
 
 .button:focus {
-  outline: auto;
-  outline-style: solid;
-  outline-color: black;
-  outline-width: thin;
+  outline: black solid thin;
   outline-offset: 2px;
 }
 
@@ -81,7 +79,7 @@
   height: auto;
   padding: 6px 15px;
   font-weight: bold;
-  color: #292929;
+  color: var(--main-text-color);
   border: 1px solid transparent;
   border-radius: 0;
   background-color: transparent;
