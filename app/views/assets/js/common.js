@@ -16,6 +16,42 @@ function getParent (element, parentClassName) {
   return parent;
 }
 
+//Обработка ширины Scrollbar
+{
+
+  function getScrollbarWidth() {
+    // создадим элемент с прокруткой
+    var div = document.createElement('div');
+
+    div.style.overflowY = 'scroll';
+    div.style.width = '50px';
+    div.style.height = '50px';
+
+    // при display:none размеры нельзя узнать
+    // нужно, чтобы элемент был видим,
+    // visibility:hidden - можно, т.к. сохраняет геометрию
+    div.style.visibility = 'hidden';
+
+    document.body.appendChild(div);
+    var scrollWidth = div.offsetWidth - div.clientWidth;
+    document.body.removeChild(div);
+
+    return scrollWidth;
+  }
+
+  function setScrollbarWidth() {
+    var scrollWidth = getScrollbarWidth();
+    var root = document.querySelector(':root');
+    root.style.setProperty('--scrollbar-width',scrollWidth + 'px');
+  }
+
+  window.addEventListener('resize', function () {
+    setScrollbarWidth();
+  });
+
+  setScrollbarWidth();
+}
+
 {
 
   function mdClose(event) {
