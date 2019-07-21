@@ -1,4 +1,6 @@
 <?php
+//Режим разработки
+const DEV = true;
 
 //База данных
 const DSN = 'mysql:host=localhost;dbname=ovro;charset=UTF8';
