@@ -5,6 +5,7 @@
       <p class="card__subtitle">от 10 рабочих дней</p>
     </header>
     <picture class="card__background">
+      <source srcset="/image/service/ice-cream.webp" type="image/webp">
       <img class="card__background-img" src="/image/service/ice-cream.png" alt="background">
     </picture>
     <footer class="card__footer">
@@ -18,6 +19,7 @@
       <p class="card__subtitle">от 40 рабочих дней</p>
     </header>
     <picture class="card__background">
+      <source srcset="/image/service/girl.webp" type="image/webp">
       <img class="card__background-img" src="/image/service/girl.png" alt="background">
     </picture>
     <footer class="card__footer">
@@ -31,6 +33,7 @@
       <p class="card__subtitle">от 20 рабочих дней</p>
     </header>
     <picture class="card__background">
+      <source srcset="/image/service/phone.webp" type="image/webp">
       <img class="card__background-img" src="/image/service/phone.png" alt="background">
     </picture>
     <footer class="card__footer">
@@ -44,6 +47,7 @@
       <p class="card__subtitle">от 7 рабочих дней</p>
     </header>
     <picture class="card__background">
+      <source srcset="/image/service/3d.webp" type="image/webp">
       <img class="card__background-img" src="/image/service/3d.png" alt="background">
     </picture>
     <footer class="card__footer">
