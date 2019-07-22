@@ -9,9 +9,9 @@
   border: none;
   box-sizing: border-box;
   transition: transform 400ms;
-  cursor: url('/image/icons/cursors/cursor.png') 6 6,auto;
-  cursor: url('/image/icons/cursors/cursor.svg') 6 6,auto;
-  cursor: -webkit-image-set(url('/image/icons/cursors/cursor.png') 1x,url('/image/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
+  cursor: url('/images/icons/cursors/cursor.png') 6 6,auto;
+  cursor: url('/images/icons/cursors/cursor.svg') 6 6,auto;
+  cursor: -webkit-image-set(url('/images/icons/cursors/cursor.png') 1x,url('/images/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
 }
 
 .bubble-button_horizontal {

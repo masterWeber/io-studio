@@ -13,9 +13,9 @@
 @import 'md.css';
 
 * {
-  cursor: url('/image/icons/cursors/cursor.png') 6 6,auto;
-  cursor: url('/image/icons/cursors/cursor.svg') 6 6,auto;
-  cursor: -webkit-image-set(url('/image/icons/cursors/cursor.png') 1x,url('/image/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
+  cursor: url('/images/icons/cursors/cursor.png') 6 6,auto;
+  cursor: url('/images/icons/cursors/cursor.svg') 6 6,auto;
+  cursor: -webkit-image-set(url('/images/icons/cursors/cursor.png') 1x,url('/images/icons/cursors/cursor@2x.png') 2x) 6 6,auto;
 }
 
 ::selection {
@@ -26,9 +26,9 @@
 a,
 button,
 input[type="submit"] {
-  cursor: url('/image/icons/cursors/cursor_active.png') 10 10,pointer;
-  cursor: url('/image/icons/cursors/cursor_active.svg') 10 10,pointer;
-  cursor: -webkit-image-set(url('/image/icons/cursors/cursor_active.png') 1x, url('/image/icons/cursors/cursor_active@2x.png') 2x) 10 10,pointer;
+  cursor: url('/images/icons/cursors/cursor_active.png') 10 10,pointer;
+  cursor: url('/images/icons/cursors/cursor_active.svg') 10 10,pointer;
+  cursor: -webkit-image-set(url('/images/icons/cursors/cursor_active.png') 1x, url('/images/icons/cursors/cursor_active@2x.png') 2x) 10 10,pointer;
 }
 
 .page {

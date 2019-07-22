@@ -6,7 +6,7 @@
       <source src="/app/views/assets/video/sea/sea_hevc.mp4" type="video/mp4"/>
       <source src="/app/views/assets/video/sea/sea_avc.mp4" type="video/mp4"/>
     </video>
-    <img class="component-logo__mask" src="/image/mask.svg" alt="">
+    <img class="component-logo__mask" src="/images/mask.svg" alt="">
   </div>
 
   <div class="face__title-container">
