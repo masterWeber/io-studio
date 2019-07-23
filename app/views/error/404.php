@@ -1,3 +1,4 @@
-<?php
 
-echo __DIR__;
+
+<h1>404</h1>
+<p><?=$error_message?></p>

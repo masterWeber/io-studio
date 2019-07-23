@@ -2,6 +2,7 @@
 
 class ControllerError404 extends Controller {
   public function index() {
-    echo '404';
+    $data = $this -> load -> language("error/404");
+    $this -> load -> view("error/404", $data);
   }
 }
