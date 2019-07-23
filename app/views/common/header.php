@@ -42,9 +42,9 @@
   <div class="toolbar">
     <button class="button md-trigger" data-modal="order-dialog"><?=$hire_us_btn?></button>
     <div class="header__social social">
-      <a class="social__item" href="https://www.facebook.com/" title="Мы в Facebook">fb</a>
-      <a class="social__item" href="https://www.behance.net/" title="Мы в Behance">be</a>
-      <a class="social__item" href="https://www.instagram.com/" title="Мы в Instagram">ig</a>
+      <a class="social__item" href="https://facebook.com/" title="Мы в Facebook" target="_blank">fb</a>
+      <a class="social__item" href="https://behance.net/" title="Мы в Behance" target="_blank">be</a>
+      <a class="social__item" href="https://instagram.com/" title="Мы в Instagram" target="_blank">ig</a>
     </div>
     <button class="bubble-button md-trigger" data-modal="navigation-dialog" title="Меню">
       <span class="bubble-button__element bubble-button__element_first"></span>
