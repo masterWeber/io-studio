@@ -1,10 +1,10 @@
 <section class="face">
   <div class="component-logo">
-    <video class="component-logo__video" poster="/app/views/assets/video/sea/poster.jpg" autoplay loop preload="auto"
+    <video class="component-logo__video" poster="/assets/video/sea/poster.jpg" autoplay loop preload="auto"
            muted>
-      <source src="/app/views/assets/video/sea/sea_vp8.webm" type="video/webm"/>
-      <source src="/app/views/assets/video/sea/sea_hevc.mp4" type="video/mp4"/>
-      <source src="/app/views/assets/video/sea/sea_avc.mp4" type="video/mp4"/>
+      <source src="/assets/video/sea/sea_vp8.webm" type="video/webm"/>
+      <source src="/assets/video/sea/sea_hevc.mp4" type="video/mp4"/>
+      <source src="/assets/video/sea/sea_avc.mp4" type="video/mp4"/>
     </video>
 
     <svg class="component-logo__mask" viewBox="0 0 910 645" xmlns:xlink="http://www.w3.org/1999/xlink">

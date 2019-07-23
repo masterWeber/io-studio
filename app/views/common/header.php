@@ -7,9 +7,9 @@
   <meta name="description" content="<?=$description?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php if (DEV) {?>
-    <link rel="stylesheet" href="/app/views/assets/css/common.blocks/style.css">
+    <link rel="stylesheet" href="/assets/css/common.blocks/style.css">
   <?php } else {?>
-    <link rel="stylesheet" href="/app/views/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
   <?php } ?>
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
@@ -26,9 +26,9 @@
   <meta name="msapplication-TileImage" content="/image/icons/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <?php if (DEV) {?>
-    <script src="/app/views/assets/js/common.js" defer></script>
+    <script src="/assets/js/common.js" defer></script>
   <?php } else {?>
-    <script src="/app/views/assets/js/common.min.js" defer></script>
+    <script src="/assets/js/common.min.js" defer></script>
   <?php } ?>
 </head>
 <body class="page">
