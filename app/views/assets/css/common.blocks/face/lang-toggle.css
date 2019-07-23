@@ -1,0 +1,35 @@
+.lang-toggle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (max-width: 700px) {
+  .lang-toggle {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.lang-toggle__text {
+  text-transform: uppercase;
+}
+
+.lang-toggle__text + .lang-toggle__text {
+  margin-left: 5px;
+}
+
+.lang-toggle__text:last-of-type {
+  margin-right: 40px;
+}
+
+@media (max-width: 700px) {
+  .lang-toggle__text:last-of-type {
+    margin-right: 30px;
+  }
+}
+
+.lang-toggle__text_active {
+  font-weight: bold;
+}

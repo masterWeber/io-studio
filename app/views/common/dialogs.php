@@ -3,7 +3,7 @@
     <span class="bubble-button__element bubble-button__element_first"></span>
     <span class="bubble-button__element bubble-button__element_second"></span>
     <span class="bubble-button__element bubble-button__element_third"></span>
-    <span class="bubble-button__text">закрыть</span>
+    <span class="bubble-button__text"><?=$close_btn?></span>
   </button>
   <form action="" class="form">
 

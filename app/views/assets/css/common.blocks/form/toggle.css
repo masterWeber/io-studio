@@ -31,6 +31,11 @@
   }
 }
 
+.toggle_narrow {
+  width: 40px;
+  height: 12px;
+}
+
 .native-checkbox {
   position: absolute;
   z-index: 1;
@@ -44,6 +49,11 @@
     width: 45px;
     height: 22px;
   }
+}
+
+.toggle_narrow .native-checkbox {
+  width: 40px;
+  height: 12px;
 }
 
 .toggle__back {
@@ -60,6 +70,11 @@
     width: 45px;
     height: 22px;
   }
+}
+
+.toggle_narrow .toggle__back {
+  width: 40px;
+  height: 12px;
 }
 
 .toggle__toggle {
@@ -81,6 +96,13 @@
   }
 }
 
+.toggle_narrow .toggle__toggle {
+  height: 12px;
+  width: 12px;
+  background-color: #292929;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+}
+
 .native-checkbox:active ~ .toggle__toggle  {
   width: 47px;
 }
@@ -89,6 +111,10 @@
   .native-checkbox:active ~ .toggle__toggle {
     width: 40px;
   }
+}
+
+.toggle_narrow .native-checkbox:active ~ .toggle__toggle {
+  width: 20px;
 }
 
 .native-checkbox:checked:active ~ .toggle__toggle  {
@@ -101,13 +127,26 @@
   }
 }
 
+.toggle_narrow .native-checkbox:checked:active ~ .toggle__toggle  {
+  margin-left: -8px;
+}
+
 .native-checkbox:checked ~ .toggle__toggle {
   left: 28px;
   background-color: #8D6E63;
+}
+
+.toggle_narrow .native-checkbox:checked ~ .toggle__toggle {
+  background-color: #292929;
 }
 
 @media (max-width: 1000px) {
   .native-checkbox:checked ~ .toggle__toggle {
     left: 24px;
   }
+}
+
+.native-checkbox.hide {
+  height: 0;
+  width: 0;
 }

@@ -1,0 +1,17 @@
+.version {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  transition: all 200ms;
+}
+
+.version__text {
+  text-transform: uppercase;
+  margin-right: 1em;
+}
+
+.version__number {
+  font-weight: bold;
+}
