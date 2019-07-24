@@ -1,6 +1,12 @@
 <?php
 
 class Loader {
+  protected $registry;
+
+  public function __construct(Registry $registry) {
+    $this -> registry = $registry;
+  }
+
   public function model(string $route) {
     $path = DIR_MODEL . "/$route.php";
 

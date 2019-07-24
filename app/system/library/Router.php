@@ -1,8 +1,6 @@
 <?php
 
-//https://io-studio.io/ru/portfolio/12/
-
-class Router {
+class Router extends Controller {
 
   private $controller;
   const ROUTES_MAP = [
@@ -37,11 +35,11 @@ class Router {
 
     try {
       import($path);
-    } catch(Exception $e) {
+    } catch (Exception $e) {
       $this -> redirect('404');
     }
 
-    $this -> controller = new $class();
+    $this -> controller = new $class($this -> registry);
     $this -> controller -> index();
   }
 
@@ -58,7 +56,7 @@ class Router {
 
   private function parseRoute(string $route) {
 
-    if (!key_exists($route,self::ROUTES_MAP)) {
+    if (!key_exists($route, self::ROUTES_MAP)) {
       $this -> redirect('404');
     }
 
