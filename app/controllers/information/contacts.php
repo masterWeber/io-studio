@@ -2,7 +2,11 @@
 
 class ControllerInformationContacts extends Controller {
   public function index() {
-    $data = $this -> load -> language("information/contacts");
-    $this -> load -> view("information/contacts", $data);
+    $data['header'] = $this -> load -> controller('common/header');
+    $data['feedback'] = $this -> load -> controller('common/feedback');
+    $data['footer'] = $this -> load -> controller('common/footer');
+
+    $output = $this -> load -> view("information/contacts", $data);
+    $this -> response -> setOutput($output);
   }
 }

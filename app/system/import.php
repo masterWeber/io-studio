@@ -1,7 +1,7 @@
 <?php
 function import($path = '') {
   if ($path === '') {
-    throw new Exception('path is\'t defined');
+    echo 'path is\'t defined';
   }
 
   if (!preg_match('/(\.php$)|(\*$)/i', $path)) {

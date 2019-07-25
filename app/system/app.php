@@ -2,6 +2,12 @@
 
 $registry = new Registry();
 
+$uri = new URI($registry);
+$registry->set('uri', $uri);
+
+$language = new Language($registry);
+$registry->set('language', $language);
+
 $loader = new Loader($registry);
 $registry->set('load', $loader);
 
@@ -10,3 +16,5 @@ $registry->set('response', $response);
 
 $router = new Router($registry);
 $router -> run();
+
+$response -> output();

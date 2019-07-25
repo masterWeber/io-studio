@@ -1,5 +1,8 @@
-<?php
+<?=$header?>
+
+<main class="page__content">
 
 
-echo __DIR__;
+</main>
 
+<?=$footer?>

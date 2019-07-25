@@ -9,8 +9,8 @@ class Response {
     $this -> headers[] = $header;
   }
 
-  public function redirect(string $url, int $status = 302) {
-    header('Location: ' . $url, true, $status);
+  public function redirect(string $url, int $status = 301) {
+    header("Location: /{$url}/", true, $status);
     exit();
   }
 

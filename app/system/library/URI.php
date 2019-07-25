@@ -1,28 +1,31 @@
 <?php
 
-class URIParser {
-  private $uriString;
+class URI extends Controller {
+  private $uri;
   private $uriParts;
   private $lang;
   private $route;
 
-  public function __construct() {
-    $this -> uriString = $_SERVER['REQUEST_URI'];
+  public function __construct(&$registry) {
+    parent::__construct($registry);
+    if (isset($_SERVER['REQUEST_URI'])) {
+      $this -> uri = mb_strtolower($_SERVER['REQUEST_URI']);
+    } else {
+      $this -> uri = '';
+    }
   }
 
   public function parse() {
 
-    $uri = mb_strtolower($this -> uriString);
-
-    $this -> uriParts = explode('/', $uri);
+    $this -> uriParts = explode('/', $this -> uri);
     $this -> cleanUriParts();
     $this -> reindexUriParts();
 
-    if ($this -> detectLang()) {
-      $this -> lang = $this -> detectLang();
-      $this -> route = $this -> detectRoute();
+    if ($this -> getLang()) {
+      $this -> lang = $this -> getLang();
+      $this -> route = $this -> getRoute();
     } else {
-      $this -> lang = Language::DEFAULT;
+      $this -> lang = $this -> language -> defaults;
       $this -> route = $this -> uriParts;
     }
 
@@ -48,10 +51,10 @@ class URIParser {
     $this -> route = array_values($this -> route);
   }
 
-  public function detectLang() {
+  public function getLang() {
 
     if (key_exists(0, $this -> uriParts)) {
-      foreach (Language::ALL_LANGUAGES as $lang) {
+      foreach ($this -> language -> data as $lang) {
         if ($this -> uriParts[0] === $lang) {
           return $lang;
         }
@@ -61,7 +64,7 @@ class URIParser {
     return false;
   }
 
-  private function detectRoute() {
+  private function getRoute() {
     return array_diff($this -> uriParts, [$this -> lang]);
   }
 }
