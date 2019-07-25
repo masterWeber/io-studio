@@ -5,6 +5,9 @@ $registry = new Registry();
 $uri = new URI($registry);
 $registry->set('uri', $uri);
 
+$url = new Url($registry);
+$registry->set('url', $url);
+
 $language = new Language($registry);
 $registry->set('language', $language);
 

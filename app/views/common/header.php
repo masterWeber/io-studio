@@ -28,7 +28,7 @@
 </head>
 <body class="page">
 <header class="header">
-  <a class="logo" href="/" title="Главная">
+  <a class="logo" href="<?=$link_home?>" title="Главная">
     <picture class="logo__img-container">
       <source srcset="/images/logo/logo.svg" type="image/svg+xml">
       <img class="logo__img" src="/images/logo/logo.png" alt="Логотип io-studio">

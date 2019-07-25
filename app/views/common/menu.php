@@ -6,8 +6,8 @@
     <span class="bubble-button__text"><?=$button_close?></span>
   </button>
   <div class="menu">
-    <a class="menu__item" href="/portfolio/"><?=$portfolio?></a>
-    <a class="menu__item" href="/service/"><?=$service?></a>
-    <a class="menu__item" href="/contacts/"><?=$contacts?></a>
+    <a class="menu__item" href="<?=$link_portfolio?>"><?=$portfolio?></a>
+    <a class="menu__item" href="<?=$link_service?>"><?=$service?></a>
+    <a class="menu__item" href="<?=$link_contacts?>"><?=$contacts?></a>
   </div>
 </div>

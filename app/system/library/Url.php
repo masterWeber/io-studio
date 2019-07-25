@@ -1,20 +1,28 @@
 <?php
 
 class Url {
-  private $url;
-  private $ssl;
+  protected $registry;
+  public $url;
 
-  public function __construct(string $url, string $ssl = '') {
-    $this -> url = $url;
-    $this -> ssl = $ssl;
+  public function __construct(Registry &$registry) {
+    $this -> registry = $registry;
+
+    if ($_SERVER['HTTPS'] === 'on') {
+      $this -> url = 'https://' . $_SERVER['HTTP_HOST'];
+    } else {
+      $this -> url = 'http://' . $_SERVER['HTTP_HOST'];
+    }
   }
 
   public function link(string $route) {
-    if (!empty($this -> ssl)) {
-      $url = $this -> ssl . $route;
+
+    $lang = $this -> registry -> get('language') -> getCurrentLang();
+    if ($route !== '/') {
+      $url = $this -> url . "/{$lang}/{$route}/";
     } else {
-      $url = $this -> url . $route;
+      $url = $this -> url . "/{$lang}/";
     }
+
 
     return $url;
   }
