@@ -1,0 +1,6 @@
+@import 'menu__item.css';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}

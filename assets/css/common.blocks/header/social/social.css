@@ -1,0 +1,19 @@
+@import 'social__item.css';
+
+.social {
+  display: flex;
+  margin: 0 62px;
+  transition: margin 200ms;
+}
+
+@media (max-width: 1000px) {
+  .social {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .social {
+    margin: 0 40px;
+  }
+}

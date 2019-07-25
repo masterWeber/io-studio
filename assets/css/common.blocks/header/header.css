@@ -1,7 +1,7 @@
-@import "logo.css";
-@import "toolbar.css";
-@import "social.css";
-@import "menu.css";
+@import 'logo/logo.css';
+@import 'toolbar.css';
+@import 'social/social.css';
+@import 'menu/menu.css';
 
 .header {
   display: flex;

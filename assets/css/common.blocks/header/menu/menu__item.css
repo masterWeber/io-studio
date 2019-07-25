@@ -1,15 +1,10 @@
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-
 .menu__item {
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 70px;
   line-height: 85px;
-  color: #F9F3F0;
+  color: #f9f3f0;
   text-decoration: none;
   transition: all 200ms;
 }
@@ -31,13 +26,13 @@
 }
 
 .menu__item:hover {
-  color: #98F8FF;
+  color: #98f8ff;
 }
 
 .menu__item:nth-child(2n):hover {
-  color: #ADF8B4;
+  color: #adf8b4;
 }
 
 .menu__item:nth-child(3n):hover {
-  color: #DDACFF;
+  color: #ddacff;
 }
