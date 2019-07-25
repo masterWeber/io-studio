@@ -1,3 +1,10 @@
+@import 'card__header.css';
+@import 'card__title.css';
+@import 'card__subtitle.css';
+@import 'card__background.css';
+@import 'card__background-img.css';
+@import 'card__footer.css';
+
 .card {
   position: relative;
   display: flex;
@@ -6,7 +13,7 @@
   justify-content: space-between;
   --card-width: calc(var(--window-width) / 2 - 30px);
   width: var(--card-width);
-  height: calc(var(--card-width)/1.5762);
+  height: calc(var(--card-width) / 1.5762);
   padding: 50px;
   margin: 0 20px 20px 20px;
   transition: margin 200ms, font-size 200ms, line-height 200ms, padding 200ms;
@@ -27,8 +34,8 @@
 }
 
 @media (max-width: 700px) {
-  .card  {
-    height: calc(var(--card-width)/1.28);
+  .card {
+    height: calc(var(--card-width) / 1.28);
     padding: 20px 30px;
     margin: 0 0 15px 0;
   }
@@ -36,99 +43,4 @@
 
 .card:nth-child(2n) {
   margin-left: 0;
-}
-
-.card__header {
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  color: var(--main-text-color);
-}
-
-.card__title {
-  margin: 0 0 20px 0;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-}
-
-@media (max-width: 1200px) {
-  .card__title {
-    margin: 0 0 15px 0;
-    font-size: 28px;
-    line-height: 34px;
-  }
-}
-
-@media (max-width: 700px) {
-  .card__title  {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-
-.card__subtitle {
-  margin: 0 0 20px 0;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 35px;
-}
-
-@media (max-width: 1200px) {
-  .card__subtitle {
-    margin: 0 0 15px 0;
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-@media (max-width: 700px) {
-  .card__subtitle  {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-
-.card__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.card__background:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: block;
-  background-image: linear-gradient(0deg, #F0F8F9 0%, transparent 70%);
-}
-
-.card__background-img {
-  position: absolute;
-  top: 39%;
-  height: 79%;
-  transition: transform 200ms;
-}
-
-.card:hover .card__background-img {
-  transform: scale(1.1);
-}
-
-.card__footer {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
 }

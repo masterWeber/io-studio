@@ -1,0 +1,10 @@
+.card__header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: var(--main-text-color);
+}

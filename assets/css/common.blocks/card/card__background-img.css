@@ -1,0 +1,10 @@
+.card__background-img {
+  position: absolute;
+  top: 39%;
+  height: 79%;
+  transition: transform 200ms;
+}
+
+.card:hover .card__background-img {
+  transform: scale(1.1);
+}
