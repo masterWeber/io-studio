@@ -1,0 +1,26 @@
+.button_large {
+  width: 200px;
+  height: 80px;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 52px;
+  text-transform: none;
+}
+
+@media (max-width: 1000px) {
+  .button_large {
+    width: 155px;
+    height: 55px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 700px) {
+  .button_large {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

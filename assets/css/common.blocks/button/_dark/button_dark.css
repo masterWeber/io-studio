@@ -1,0 +1,7 @@
+.button_dark {
+  background-color: #201D1E;
+}
+
+.button_dark:focus {
+  outline-color: #f9f3f0;
+}
