@@ -1,0 +1,18 @@
+.face__version {
+  position: absolute;
+  left: 70px;
+  bottom: 40px;
+}
+
+@media (max-width: 1260px) {
+  .face__version {
+    left: 40px;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .face__version {
+    display: none;
+  }
+}

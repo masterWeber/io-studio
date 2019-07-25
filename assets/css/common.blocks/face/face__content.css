@@ -1,0 +1,29 @@
+.face__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@media (max-width: 1260px) {
+  .face__content {
+    transform: translateX(-50%) translateY(-25%);
+  }
+}
+
+@media (max-width: 700px) {
+  .face__content {
+    left: 30px;
+    top: 75px;
+    transform: translate(0);
+  }
+}
+
+.face__content .button {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .face__content .button {
+    display: block;
+  }
+}

@@ -1,0 +1,47 @@
+.face__hint {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  display: block;
+  height: 35px;
+  width: 1px;
+  background-color: #292929;
+}
+
+@media (max-width: 1260px) {
+  .face__hint {
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .face__hint {
+    display: none;
+  }
+}
+
+.face__hint::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 4px;
+  display: block;
+  height: 7px;
+  width: 7px;
+  background-color: #292929;
+  border-radius: 50%;
+  animation: face-hint 2000ms;
+  animation-delay: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes face-hint {
+  from {
+    top: 4px;
+  }
+
+  to {
+    top: 24px;
+  }
+}

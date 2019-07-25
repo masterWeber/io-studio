@@ -1,0 +1,29 @@
+.face__count {
+  position: absolute;
+  left: 70px;
+  bottom: 150px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  transition: all 200ms;
+}
+
+@media (max-width: 1260px) {
+  .face__count {
+    left: 40px;
+    bottom: 120px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 700px) {
+  .face__count {
+    left: 30px;
+    bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

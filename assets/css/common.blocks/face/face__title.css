@@ -1,0 +1,23 @@
+.face__title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 85px;
+  text-transform: uppercase;
+  transition: all 200ms;
+}
+
+@media (max-width: 1260px) {
+  .face__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 700px) {
+  .face__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
