@@ -1,3 +1,5 @@
+@import 'service__card.css';
+
 .service {
   display: flex;
   flex-wrap: wrap;
@@ -7,20 +9,4 @@
   .service {
     flex-direction: column;
   }
-}
-
-.service__card {
-  background-color: #EEEEEE;
-}
-
-.service__card:nth-child(2n) {
-  background-color: #E1FBFD;
-}
-
-.service__card:nth-child(3n) {
-  background-color: #E4F9E6;
-}
-
-.service__card:nth-child(4n) {
-  background-color: #F5E8FE;
 }

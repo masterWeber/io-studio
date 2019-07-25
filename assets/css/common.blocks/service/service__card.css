@@ -1,0 +1,15 @@
+.service__card {
+  background-color: #eeeeee;
+}
+
+.service__card:nth-child(2n) {
+  background-color: #e1fbfd;
+}
+
+.service__card:nth-child(3n) {
+  background-color: #e4f9e6;
+}
+
+.service__card:nth-child(4n) {
+  background-color: #f5e8fe;
+}
