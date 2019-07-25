@@ -1,0 +1,10 @@
+.component-logo__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--componet-logo-width);
+  height: calc(var(--componet-logo-width) / 1.41);
+  color: #f9f3f0;
+  transform: scaleY(1.01);
+  object-fit: cover;
+}
