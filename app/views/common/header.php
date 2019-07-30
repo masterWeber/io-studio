@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="<?=$lang?>">
+<html lang="<?= $lang ?>">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?=$title?></title>
-  <meta name="description" content="<?=$description?>">
+  <title><?= $title ?></title>
+  <meta name="description" content="<?= $description ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <?php if (DEV) {?>
-    <link rel="stylesheet" href="/assets/css/common.blocks/style.css">
-  <?php } else {?>
-    <link rel="stylesheet" href="/assets/css/style.min.css">
-  <?php } ?>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic" rel="stylesheet">
+    <?php if (DEV) { ?>
+      <link rel="stylesheet" href="/assets/css/common.blocks/style.css">
+    <?php } else { ?>
+      <link rel="stylesheet" href="/assets/css/style.min.css">
+    <?php } ?>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic"
+        rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon/favicon-32x32.png">
@@ -28,14 +29,14 @@
 </head>
 <body class="page">
 <header class="header">
-  <a class="logo" href="<?=$link_home?>" title="Главная">
+  <a class="logo" href="<?= $link_home ?>" title="Главная">
     <picture class="logo__img-container">
       <source srcset="/images/logo/logo.svg" type="image/svg+xml">
       <img class="logo__img" src="/images/logo/logo.png" alt="Логотип io-studio">
     </picture>
   </a>
   <div class="toolbar">
-    <button class="button md-trigger" data-modal="order-dialog"><?=$hire_us_btn?></button>
+    <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_btn ?></button>
     <div class="header__social social">
       <a class="social__item" href="https://facebook.com/" title="Мы в Facebook" target="_blank">fb</a>
       <a class="social__item" href="https://behance.net/" title="Мы в Behance" target="_blank">be</a>
@@ -47,5 +48,5 @@
       <span class="bubble-button__element bubble-button__element_third"></span>
     </button>
   </div>
-  <?=$menu?>
+    <?= $menu ?>
 </header>

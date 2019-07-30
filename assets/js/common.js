@@ -1,4 +1,4 @@
-function getParent (element, parentClassName) {
+function getParent(element, parentClassName) {
   'use strict';
   let parent = element.parentElement;
 
@@ -37,10 +37,10 @@ function getParent (element, parentClassName) {
   function setScrollbarWidth() {
     var scrollWidth = getScrollbarWidth();
     var root = document.querySelector(':root');
-    root.style.setProperty('--scrollbar-width',scrollWidth + 'px');
+    root.style.setProperty('--scrollbar-width', scrollWidth + 'px');
   }
 
-  window.addEventListener('resize', function () {
+  window.addEventListener('resize', function() {
     setScrollbarWidth();
   });
 
@@ -75,13 +75,12 @@ function getParent (element, parentClassName) {
     triggers[i].addEventListener('click', mdOpen);
   }
 
-  window.addEventListener('keyup', function (event) {
+  window.addEventListener('keyup', function(event) {
     var ESC = 27;
     var openDialog = document.querySelector('.md.open');
     if (event.keyCode === ESC && openDialog) {
       openDialog.classList.remove('open');
     }
   });
-
 
 }

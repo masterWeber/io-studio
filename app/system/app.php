@@ -18,6 +18,6 @@ $response = new Response();
 $registry->set('response', $response);
 
 $router = new Router($registry);
-$router -> run();
+$router->run();
 
-$response -> output();
+$response->output();

@@ -1,8 +1,8 @@
-<?=$header?>
+<?= $header ?>
 
 <main class="page__content">
 
-  <?=$feedback?>
+    <?= $feedback ?>
 </main>
 
-<?=$footer?>
+<?= $footer ?>

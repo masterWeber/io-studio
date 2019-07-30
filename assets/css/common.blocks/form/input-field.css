@@ -6,7 +6,7 @@
   padding-bottom: 32px;
   margin-bottom: 30px;
   width: 100%;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #fff;
   transition: all 200ms;
   white-space: nowrap;
 }
@@ -62,7 +62,7 @@
 }
 
 .input-field.invalid {
-  border-color: #8D6E63;
+  border-color: #8d6e63;
 }
 
 .input {
@@ -71,7 +71,7 @@
   font-weight: 200;
   font-size: 35px;
   line-height: 52px;
-  color: #F9F3F0;
+  color: #f9f3f0;
   background-color: transparent;
   border: none;
 }

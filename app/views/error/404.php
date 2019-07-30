@@ -1,4 +1,2 @@
-
-
 <h1>404</h1>
-<p><?=$error_message?></p>
+<p><?= $error_message ?></p>

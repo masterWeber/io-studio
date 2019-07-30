@@ -3,7 +3,7 @@
     <span class="bubble-button__element bubble-button__element_first"></span>
     <span class="bubble-button__element bubble-button__element_second"></span>
     <span class="bubble-button__element bubble-button__element_third"></span>
-    <span class="bubble-button__text"><?=$button_close?></span>
+    <span class="bubble-button__text"><?= $button_close ?></span>
   </button>
   <form action="" class="form">
 
@@ -62,7 +62,8 @@
 
     </div>
     <footer class="form__footer">
-      <input class="button button_large button_dark md-trigger" data-modal="order-dialog" type="submit" value="Отправить">
+      <input class="button button_large button_dark md-trigger" data-modal="order-dialog" type="submit"
+             value="Отправить">
     </footer>
   </form>
 </div>

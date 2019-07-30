@@ -24,7 +24,7 @@
 }
 
 .label_light {
-  color: #F9F3F0;
+  color: #f9f3f0;
 }
 
 .label_placeholder {
@@ -53,7 +53,7 @@
 
 .invalid .label_placeholder {
   font-weight: 300;
-  color: #8D6E63;
+  color: #8d6e63;
 }
 
 :focus ~ .label_placeholder {
