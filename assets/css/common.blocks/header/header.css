@@ -1,8 +1,3 @@
-@import 'logo/logo.css';
-@import 'toolbar.css';
-@import 'social/social.css';
-@import 'menu/menu.css';
-
 .header {
   display: flex;
   align-items: center;

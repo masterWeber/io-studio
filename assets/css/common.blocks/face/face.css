@@ -1,13 +1,3 @@
-@import 'face__content.css';
-@import 'face__title.css';
-@import 'face__subtitle.css';
-@import 'face__count.css';
-@import 'face__version.css';
-@import 'version.css';
-@import 'face__hint.css';
-@import 'face__lang.css';
-@import 'lang-toggle.css';
-
 .face {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,3 @@
-@import '_dark/button_dark.css';
-@import '_large/button_large.css';
-@import '_transparent/button_transparent.css';
-
 .button {
   position: relative;
   display: block;

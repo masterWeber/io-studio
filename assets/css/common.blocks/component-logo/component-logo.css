@@ -1,6 +1,3 @@
-@import 'component-logo__mask.css';
-@import 'component-logo__video.css';
-
 .component-logo {
   position: relative;
   --componet-logo-width: calc(var(--window-width) - 52.6042vw);

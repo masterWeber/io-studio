@@ -1,5 +1,3 @@
-@import 'service__card.css';
-
 .service {
   display: flex;
   flex-wrap: wrap;

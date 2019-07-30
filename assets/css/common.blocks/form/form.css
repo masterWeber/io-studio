@@ -1,11 +1,4 @@
-@import 'form__header.css';
-@import 'form__title.css';
-@import 'form__group.css';
-@import 'form__toggle-group.css';
-@import 'input-field.css';
-@import 'label.css';
-@import 'toggle.css';
-@import 'form__footer.css';
+
 
 .form {
   display: flex;

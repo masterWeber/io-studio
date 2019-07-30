@@ -1,15 +1,59 @@
 @import 'normalize.css';
 @import 'variables.css';
+/** header **/
 @import 'header/header.css';
+@import 'header/logo/logo.css';
+@import 'header/logo/logo__img.css';
+@import 'header/toolbar.css';
+@import 'header/social/social.css';
+@import 'header/social/social__item.css';
+@import 'header/menu/menu.css';
+@import 'header/menu/menu__item.css';
+/** button **/
 @import 'button/button.css';
+@import 'button/_dark/button_dark.css';
+@import 'button/_large/button_large.css';
+@import 'button/_transparent/button_transparent.css';
+/** bubble button **/
 @import 'bubble-button.css';
+/** face **/
 @import 'face/face.css';
+@import 'face/face__content.css';
+@import 'face/face__title.css';
+@import 'face/face__subtitle.css';
+@import 'face/face__count.css';
+@import 'face/face__hint.css';
+@import 'face/face__lang.css';
+@import 'face/lang-toggle.css';
+@import 'face/version.css';
+@import 'face/face__version.css';
+/** component logo **/
 @import 'component-logo/component-logo.css';
-@import 'service/service.css';
+@import 'component-logo/component-logo__mask.css';
+@import 'component-logo/component-logo__video.css';
+/** card **/
 @import "card/card.css";
+/** service **/
+@import 'service/service.css';
+@import 'service/service__card.css';
+/** feedback **/
 @import 'feedback/feedback.css';
+@import 'feedback/feedback__title.css';
+/** form **/
 @import 'form/form.css';
+@import 'form/form__header.css';
+@import 'form/form__title.css';
+@import 'form/form__group.css';
+@import 'form/form__toggle-group.css';
+@import 'form/input-field.css';
+@import 'form/label.css';
+@import 'form/toggle.css';
+@import 'form/form__footer.css';
+/** footer **/
 @import 'footer/footer.css';
+@import 'footer/copyright.css';
+@import 'footer/support.css';
+/** modal dialogs **/
 @import 'md.css';
 
 * {
