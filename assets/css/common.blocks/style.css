@@ -1,5 +1,26 @@
 @import 'normalize.css';
 @import 'variables.css';
+/** link **/
+@import 'link.css';
+/** List **/
+@import 'list/list.css';
+@import 'list/list__item.css';
+/** Title **/
+@import 'title/title.css';
+@import 'title/title_high.css';
+@import 'title/title_small.css';
+@import 'title/title_large.css';
+/** Text **/
+@import 'text/text.css';
+@import 'text/text_wide.css';
+@import 'text/text_small.css';
+@import 'text/text_medium.css';
+@import 'text/text_large.css';
+@import 'text/text_huge.css';
+/** Container **/
+@import 'container/container.css';
+/** column **/
+@import 'column/column.css';
 /** header **/
 @import 'header/header.css';
 @import 'header/logo/logo.css';
@@ -55,6 +76,8 @@
 @import 'footer/support.css';
 /** modal dialogs **/
 @import 'md.css';
+/** Contacts **/
+@import 'contacts/contacts.css';
 
 * {
   cursor: url('/images/icons/cursors/cursor.png') 6 6, auto;
@@ -78,4 +101,14 @@ input[type="submit"] {
 .page {
   margin: 0;
   background-color: #f9f3f0;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - var(--header-height));
+  max-width: 1736px;
+  margin: 0 auto;
 }

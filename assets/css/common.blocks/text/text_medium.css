@@ -1,0 +1,18 @@
+.text_medium {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+@media (max-width: 1000px) {
+  .text_medium {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text_medium {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

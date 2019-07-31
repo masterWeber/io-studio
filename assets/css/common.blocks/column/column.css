@@ -1,0 +1,9 @@
+.column {
+  margin-right: 40px;
+}
+
+@media (max-width: 1260px) {
+  .column {
+    margin-right: 0;
+  }
+}

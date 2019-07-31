@@ -1,0 +1,18 @@
+.text_huge {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@media (max-width: 1000px) {
+  .text_huge {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text_huge {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

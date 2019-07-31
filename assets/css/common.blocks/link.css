@@ -1,0 +1,9 @@
+.link {
+  font-weight: 600;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

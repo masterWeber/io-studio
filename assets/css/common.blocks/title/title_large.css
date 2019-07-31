@@ -1,0 +1,18 @@
+.title_large {
+  font-size: 70px;
+  line-height: 85px;
+}
+
+@media (max-width: 1000px) {
+  .title_large {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title_large {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

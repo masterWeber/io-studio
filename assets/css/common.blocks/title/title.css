@@ -1,0 +1,25 @@
+.title {
+  margin: 0 0 80px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: var(--main-text-color);
+}
+
+@media (max-width: 1000px) {
+  .title {
+    margin: 0 0 40px 0;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
