@@ -1,4 +1,4 @@
-function getParent(element, parentClassName) {
+const getParent = (element, parentClassName) => {
   'use strict';
   let parent = element.parentElement;
 
@@ -14,13 +14,13 @@ function getParent(element, parentClassName) {
   }
 
   return parent;
-}
+};
 
-//Обработка ширины Scrollbar
+//Process width Scrollbar
 {
 
-  function getScrollbarWidth() {
-    var div = document.createElement('div');
+  const getScrollbarWidth = () => {
+    const div = document.createElement('div');
 
     div.style.overflowY = 'scroll';
     div.style.width = '50px';
@@ -28,17 +28,17 @@ function getParent(element, parentClassName) {
     div.style.visibility = 'hidden';
 
     document.body.appendChild(div);
-    var scrollWidth = div.offsetWidth - div.clientWidth;
+    const scrollWidth = div.offsetWidth - div.clientWidth;
     document.body.removeChild(div);
 
     return scrollWidth;
-  }
+  };
 
-  function setScrollbarWidth() {
-    var scrollWidth = getScrollbarWidth();
-    var root = document.querySelector(':root');
+  const setScrollbarWidth = () => {
+    const scrollWidth = getScrollbarWidth();
+    const root = document.querySelector(':root');
     root.style.setProperty('--scrollbar-width', scrollWidth + 'px');
-  }
+  };
 
   window.addEventListener('resize', function() {
     setScrollbarWidth();
@@ -47,37 +47,38 @@ function getParent(element, parentClassName) {
   setScrollbarWidth();
 }
 
+//Dialogs
 {
 
-  function mdClose(event) {
-    var target = event.target;
-    var modalDialog = getParent(target, 'md');
+  const mdClose = event => {
+    const target = event.target;
+    const modalDialog = getParent(target, 'md');
     modalDialog.classList.remove('open');
-  }
+  };
 
-  function mdOpen(event) {
-    var target = event.target;
+  const mdOpen = event => {
+    let target = event.target;
     if (!target.classList.contains('md-trigger')) {
       target = getParent(target, 'md-trigger');
     }
-    var modalDialogId = target.getAttribute('data-modal');
-    var modalDialog = document.querySelector('#' + modalDialogId);
+    const modalDialogId = target.getAttribute('data-modal');
+    const modalDialog = document.querySelector('#' + modalDialogId);
     modalDialog.classList.add('open');
-  }
+  };
 
-  var closeButtons = document.querySelectorAll('.md-close');
-  for (var i = 0; i < closeButtons.length; i++) {
+  const closeButtons = document.querySelectorAll('.md-close');
+  for (let i = 0; i < closeButtons.length; i++) {
     closeButtons[i].addEventListener('click', mdClose);
   }
 
-  var triggers = document.querySelectorAll('.md-trigger');
-  for (var i = 0; i < triggers.length; i++) {
+  const triggers = document.querySelectorAll('.md-trigger');
+  for (let i = 0; i < triggers.length; i++) {
     triggers[i].addEventListener('click', mdOpen);
   }
 
   window.addEventListener('keyup', function(event) {
-    var ESC = 27;
-    var openDialog = document.querySelector('.md.open');
+    const ESC = 27;
+    const openDialog = document.querySelector('.md.open');
     if (event.keyCode === ESC && openDialog) {
       openDialog.classList.remove('open');
     }
