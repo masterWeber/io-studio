@@ -6,14 +6,6 @@
     <title><?= $title ?></title>
     <meta name="description" content="<?= $description ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php if (DEV) { ?>
-        <link rel="stylesheet" href="/assets/css/common.blocks/style.css">
-    <?php } else { ?>
-        <link rel="stylesheet" href="/assets/css/style.min.css">
-    <?php } ?>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap&subset=cyrillic"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="194x194" href="/images/icons/favicon/favicon-194x194.png">
@@ -38,9 +30,18 @@
     <div class="toolbar">
         <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_btn ?></button>
         <div class="header__social social">
-            <a class="social__item" href="https://facebook.com/" title="Мы в Facebook" target="_blank">fb</a>
-            <a class="social__item" href="https://behance.net/" title="Мы в Behance" target="_blank">be</a>
-            <a class="social__item" href="https://instagram.com/" title="Мы в Instagram" target="_blank">ig</a>
+            <a class="social__item" href="https://facebook.com/" title="Мы в Facebook" target="_blank"
+               rel="noreferrer">
+                fb
+            </a>
+            <a class="social__item" href="https://behance.net/" title="Мы в Behance" target="_blank"
+               rel="noreferrer">
+                be
+            </a>
+            <a class="social__item" href="https://instagram.com/" title="Мы в Instagram" target="_blank"
+               rel="noreferrer">
+                ig
+            </a>
         </div>
         <button class="bubble-button md-trigger" data-modal="navigation-dialog" title="Меню">
             <span class="bubble-button__element bubble-button__element_first"></span>

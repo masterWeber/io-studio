@@ -1,18 +1,42 @@
 const gulp = require('gulp');
+const series = gulp.series;
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const cssnext = require('cssnext');
-const precss = require('precss');
-const cssnano = require('cssnano');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
 
-const processors = [autoprefixer, cssnext, precss, cssnano];
-
-gulp.task('default', () => {
+const css = () => {
   return gulp.src('./assets/css/common.blocks/style.css').
-      pipe(postcss(processors)).
+      pipe(sourcemaps.init()).
+      pipe(postcss()).
       pipe(rename({
         suffix: '.min',
       })).
+      pipe(sourcemaps.write('.')).
       pipe(gulp.dest('./assets/css/'));
+};
+
+const javaScript = () => {
+  return gulp.src('./assets/js/common/*.js').
+      pipe(sourcemaps.init()).
+      pipe(babel({
+        presets: ['@babel/preset-env'],
+      })).
+      pipe(uglify()).
+      pipe(rename({
+        suffix: '.min',
+      })).
+      pipe(sourcemaps.write('.')).
+      pipe(gulp.dest('./assets/js/'));
+};
+
+gulp.task('default', series(css, javaScript));
+
+gulp.task('watch', function () {
+  // При изменение файлов *.css в папке "assets/css" и подпапках запускаем задачу css
+  gulp.watch('./assets/css/common.blocks/**/*.css', css);
+  // При изменение файлов *.js папке "assets/js" и подпапках запускаем задачу javaScript
+  gulp.watch('./assets/js/common/**/*.js', javaScript);
 });
+

@@ -12,9 +12,15 @@
 <?php require_once('dialogs.php') ?>
 
 <?php if (DEV) { ?>
-    <script src="/assets/js/common.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/common.blocks/style.css">
 <?php } else { ?>
-    <script src="/assets/js/common.min.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/style.min.css?v=1.0.0">
+<?php } ?>
+
+<?php if (DEV) { ?>
+    <script src="/assets/js/common/common.js" defer></script>
+<?php } else { ?>
+    <script src="/assets/js/common.min.js?v=1.0.0" defer></script>
 <?php } ?>
 </body>
 </html>

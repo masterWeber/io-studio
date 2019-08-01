@@ -4,17 +4,24 @@
   "description": "Сайт компании",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "bs-broken-links-checker": "^0.2.0",
     "gulp": "^4.0.2",
-    "postcss": "^7.0.17"
+    "gulp-babel": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss": "^7.0.17",
+    "postcss-loader": "^3.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "cssnano": "^4.1.10",
     "cssnext": "^1.8.4",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
     "install": "^0.12.2",
-    "npm": "^6.9.2",
+    "npm": "^6.10.2",
     "postcss-load-config": "^2.1.0",
     "precss": "^4.0.0"
   },
