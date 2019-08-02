@@ -32,9 +32,9 @@ RewriteRule ^.*$ /index.php [L,QSA]
 	<FilesMatch "\.(html|htm)$">
 		Header set Cache-Control "max-age=43200"
 	</FilesMatch>
-	#кэшировать css, javascript и текстовые файлы на одну неделю
+	#кэшировать css, javascript и текстовые файлы на год
 	<FilesMatch "\.(js|css|txt)$">
-		Header set Cache-Control "max-age=604800"
+		Header set Cache-Control "max-age=31557600"
 	</FilesMatch>
 	#кэшировать флэш и изображения на месяц
 	<FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
