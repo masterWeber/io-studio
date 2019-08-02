@@ -33,10 +33,12 @@ const javaScript = () => {
 
 gulp.task('default', series(css, javaScript));
 
-gulp.task('watch', function () {
-  // При изменение файлов *.css в папке "assets/css" и подпапках запускаем задачу css
+gulp.task('watch', function() {
+  // При изменение файлов *.css в папке "assets/css" и подпапках запускаем
+  // задачу css
   gulp.watch('./assets/css/common.blocks/**/*.css', css);
-  // При изменение файлов *.js папке "assets/js" и подпапках запускаем задачу javaScript
+  // При изменение файлов *.js папке "assets/js" и подпапках запускаем задачу
+  // javaScript
   gulp.watch('./assets/js/common/**/*.js', javaScript);
 });
 

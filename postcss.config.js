@@ -3,6 +3,7 @@ module.exports = {
     require('autoprefixer'),
     require('cssnext'),
     require('precss'),
+    require('css-mqpacker'),
     require('cssnano'),
   ],
 };

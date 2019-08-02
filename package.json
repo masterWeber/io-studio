@@ -11,10 +11,12 @@
     "gulp-babel": "^8.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "postcss": "^7.0.17",
+    "postcss-discard-comments": "^4.0.2",
     "postcss-loader": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
+    "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "cssnext": "^1.8.4",
     "gulp-postcss": "^8.0.0",
