@@ -17,10 +17,5 @@ const DIR_VIEW = PATH . 'views/';
 
 require_once(DIR_SYSTEM . 'import.php');
 
-try {
-    import(DIR_SYSTEM . 'config');
-    import(DIR_ENGINE . '*');
-    import(DIR_LIBRARY . '*');
-} catch (Exception $e) {
-    echo $e;
-}
+import(DIR_ENGINE . '*');
+import(DIR_LIBRARY . '*');
