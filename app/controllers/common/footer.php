@@ -4,6 +4,7 @@ class ControllerCommonFooter extends Controller
 {
     public function index()
     {
-        return $this->load->view('common/footer');
+        $data['action_order'] = $this->url->link('mail/order');
+        return $this->load->view('common/footer', $data);
     }
 }

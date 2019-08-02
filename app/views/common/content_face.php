@@ -1,4 +1,4 @@
-<section class="face">
+<div class="face">
     <div class="component-logo">
         <video class="component-logo__video" poster="/assets/video/sea/poster.jpg" autoplay loop preload="auto"
                muted>
@@ -19,7 +19,7 @@
         <p class="face__subtitle">
             <?= $face_subtitle ?>
         </p>
-        <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_btn ?></button>
+        <button class="button md-trigger" data-modal="order-dialog"><?= $button_hire_us ?></button>
     </div>
 
     <p class="face__count">
@@ -40,9 +40,8 @@
             <span class="lang-toggle__text">En</span>
         <?php } ?>
 
-        <a href="<?= $lang_link ?>">
-            <div class="toggle toggle_narrow">
-                <input class="native-checkbox hide" id="checkbox" type="checkbox" name="checkbox" <?= $lang_checked ?>>
+        <a href="<?= $lang_link ?>" aria-label="Переключить язык">
+            <div class="toggle toggle_narrow <?= $lang_checked ?>">
                 <div class="toggle__back"></div>
                 <div class="toggle__toggle"></div>
             </div>
@@ -52,4 +51,4 @@
 
     <div class="face__hint"></div>
 
-</section>
+</div>

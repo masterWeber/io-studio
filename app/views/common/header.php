@@ -28,7 +28,7 @@
         </picture>
     </a>
     <div class="toolbar">
-        <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_btn ?></button>
+        <button class="button md-trigger" data-modal="order-dialog"><?= $button_hire_us ?></button>
         <div class="header__social social">
             <a class="social__item" href="https://facebook.com/" title="Мы в Facebook" target="_blank"
                rel="noreferrer">
@@ -43,7 +43,7 @@
                 ig
             </a>
         </div>
-        <button class="bubble-button md-trigger" data-modal="navigation-dialog" title="Меню">
+        <button class="bubble-button md-trigger" data-modal="navigation-dialog" title="Меню" aria-label="Меню">
             <span class="bubble-button__element bubble-button__element_first"></span>
             <span class="bubble-button__element bubble-button__element_second"></span>
             <span class="bubble-button__element bubble-button__element_third"></span>

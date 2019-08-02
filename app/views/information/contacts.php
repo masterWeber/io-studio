@@ -1,7 +1,7 @@
 <?= $header ?>
 
 <main class="page__content">
-    <div class="main-block contacts">
+    <div class="slide-block contacts">
         <div class="container">
             <section class="column">
                 <h1 class="title title_large title_high">Контакты</h1>

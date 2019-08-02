@@ -30,9 +30,8 @@ class Loader
     {
         $path = DIR_VIEW . "$route.php";
 
-        $lang = $this->registry->get('language')->getCurrentLang();
+        $lang = $this->registry->get('language')->getCurrent();
         $genericData = $this->language($lang);
-
         $currentData = $this->language($route);
 
         $data = array_merge($genericData, $currentData, $data);
@@ -68,7 +67,7 @@ class Loader
     public function language(string $route)
     {
         $language = $this->registry->get('language');
-        $lang = $language->getCurrentLang();
+        $lang = $language->getCurrent();
 
         $path = DIR_LANGUAGE . "$lang/$route.php";
 
@@ -76,7 +75,7 @@ class Loader
         $_ = [];
 
         if (file_exists($path)) {
-            require_once($path);
+            require($path);
         }
 
         return $_;

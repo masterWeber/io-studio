@@ -9,8 +9,10 @@
             <img class="card__background-img" src="/images/service/ice-cream.png" alt="background">
         </picture>
         <footer class="card__footer">
-            <button class="button button_transparent">Заказать</button>
-            <a class="button button_transparent" href="/service/">Подробнее</a>
+            <button class="button button_transparent md-trigger" data-modal="order-dialog" aria-label="Заказать">
+                Заказать
+            </button>
+            <a class="button button_transparent" href="<?= $link_service ?>">Подробнее</a>
         </footer>
     </div>
     <div class="service__card card">
@@ -23,8 +25,10 @@
             <img class="card__background-img" src="/images/service/girl.png" alt="background">
         </picture>
         <footer class="card__footer">
-            <button class="button button_transparent">Заказать</button>
-            <a class="button button_transparent" href="/service/">Подробнее</a>
+            <button class="button button_transparent md-trigger" data-modal="order-dialog" aria-label="Заказать">
+                Заказать
+            </button>
+            <a class="button button_transparent" href="<?= $link_service ?>">Подробнее</a>
         </footer>
     </div>
     <div class="service__card card">
@@ -37,8 +41,10 @@
             <img class="card__background-img" src="/images/service/phone.png" alt="background">
         </picture>
         <footer class="card__footer">
-            <button class="button button_transparent">Заказать</button>
-            <a class="button button_transparent" href="/service/">Подробнее</a>
+            <button class="button button_transparent md-trigger" data-modal="order-dialog" aria-label="Заказать">
+                Заказать
+            </button>
+            <a class="button button_transparent" href="<?= $link_service ?>">Подробнее</a>
         </footer>
     </div>
     <div class="service__card card">
@@ -51,8 +57,10 @@
             <img class="card__background-img" src="/images/service/3d.png" alt="background">
         </picture>
         <footer class="card__footer">
-            <button class="button button_transparent">Заказать</button>
-            <a class="button button_transparent" href="/service/">Подробнее</a>
+            <button class="button button_transparent md-trigger" data-modal="order-dialog" aria-label="Заказать">
+                Заказать
+            </button>
+            <a class="button button_transparent" href="<?= $link_service ?>">Подробнее</a>
         </footer>
     </div>
 </section>

@@ -12,7 +12,7 @@ class Language
         $this->registry = $registry;
     }
 
-    public function getCurrentLang()
+    public function getCurrent()
     {
         $uri = $this->registry->get('uri');
 

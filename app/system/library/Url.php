@@ -19,7 +19,7 @@ class Url
     public function link(string $route)
     {
 
-        $lang = $this->registry->get('language')->getCurrentLang();
+        $lang = $this->registry->get('language')->getCurrent();
         if ($route !== '/') {
             $url = $this->url . "/{$lang}/{$route}/";
         } else {

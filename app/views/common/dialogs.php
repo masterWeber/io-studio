@@ -5,7 +5,7 @@
         <span class="bubble-button__element bubble-button__element_third"></span>
         <span class="bubble-button__text"><?= $button_close ?></span>
     </button>
-    <form action="" class="form">
+    <form action="<?= $action_order ?>" class="form">
 
         <header class="form__header">
             <p class="form__title">Готовы к сотрудничеству? Отлично, мы тоже</p>
@@ -26,38 +26,38 @@
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-landing" type="checkbox" name="checkbox">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox">Landing page</label>
+                <label class="label label_light" for="checkbox-landing">Landing page</label>
             </div>
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-market" type="checkbox" name="checkbox">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox">Интернет магазин</label>
+                <label class="label label_light" for="checkbox-market">Интернет магазин</label>
             </div>
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-company" type="checkbox" name="checkbox">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox">Корпоративный</label>
+                <label class="label label_light" for="checkbox-company">Корпоративный</label>
             </div>
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-video" type="checkbox" name="checkbox">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox">Видео монтаж и 3D</label>
+                <label class="label label_light" for="checkbox-video">Видео монтаж и 3D</label>
             </div>
 
         </div>

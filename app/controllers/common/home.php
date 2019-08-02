@@ -4,7 +4,7 @@ class ControllerCommonHome extends Controller
 {
     public function index()
     {
-        $lang = $this->language->getCurrentLang();
+        $lang = $this->language->getCurrent();
 
         if ($lang === 'ru') {
             $data['lang_link'] = '/en/';
@@ -13,6 +13,8 @@ class ControllerCommonHome extends Controller
             $data['lang_link'] = '/ru/';
             $data['lang_checked'] = 'checked';
         }
+
+        $data['link_service'] = $this->url->link('service');
 
         $data['header'] = $this->load->controller('common/header');
         $data['feedback'] = $this->load->controller('common/feedback');

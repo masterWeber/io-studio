@@ -1,4 +1,4 @@
-<section class="feedback">
+<div class="feedback">
 
     <p class="feedback__title">
         Напишите нам сейчас — мы здесь,
@@ -6,7 +6,7 @@
         уникальный проект для вашего бизнеса
     </p>
 
-    <form class="form form__full" action="">
+    <form class="form form__full" action="<?= $action_feedback ?>">
 
         <div class="form__group">
             <div class="input-field">
@@ -29,4 +29,4 @@
                    value="Отправить">
         </footer>
     </form>
-</section>
+</div>
