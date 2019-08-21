@@ -21,9 +21,9 @@ class Router extends Controller
         if (!$this->uri->getLang()) {
 
             if (empty($route)) {
-                $route = $this->language->getCurrentLang();
+                $route = $this->language->getCurrent();
             } else {
-                $route = $this->language->getCurrentLang() . '/' . $route;
+                $route = $this->language->getCurrent() . '/' . $route;
             }
 
             $this->response->redirect($route);

@@ -1,0 +1,17 @@
+.project-preview-swiper__slide {
+  width: 31.97vw;
+}
+
+@media (max-width: 1000px) {
+  .project-preview-swiper__slide {
+    width: 65.10vw;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-preview-swiper__slide {
+    width: 80vw;
+    max-width: initial;
+  }
+}

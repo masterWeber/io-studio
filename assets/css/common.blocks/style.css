@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import 'fonts.css';
+/*@import 'fonts.css';*/
 @import 'variables.css';
 /** link **/
 @import 'link.css';
@@ -77,13 +77,39 @@
 @import 'footer/support.css';
 /** modal dialogs **/
 @import 'md.css';
+/** Technologies **/
+@import 'technologies/technologies.css';
+@import 'technologies/technologies__item.css';
+@import 'technologies/technologies__image.css';
 /** Contacts **/
 @import 'contacts/contacts.css';
+/** Project preview swiper **/
+@import 'project-preview-swiper/project-preview-swiper.css';
+@import 'project-preview-swiper/project-preview-swiper__wrapper.css';
+@import 'project-preview-swiper/project-preview-swiper__slide.css';
+@import 'project-preview-swiper/swiper-pagination-bullet.css';
+/** Project preview **/
+@import 'project-preview/project-preview.css';
+@import 'project-preview/project-preview__img.css';
+/** Project info swiper **/
+@import 'project-info-swiper/project-info-swiper.css';
+@import 'project-info-swiper/project-info-swiper__wrapper.css';
+@import 'project-info-swiper/project-info-swiper__slide.css';
+/** Project info **/
+@import 'project-info/project-info.css';
+@import 'project-info/project-info__title.css';
+@import 'project-info/project-info__count.css';
+@import 'project-info/project-info__description.css';
+@import 'project-info/project-info__button.css';
 
 * {
   cursor: url('/images/icons/cursors/cursor.png') 6 6, auto;
   cursor: url('/images/icons/cursors/cursor.svg') 6 6, auto;
   cursor: -webkit-image-set(url('/images/icons/cursors/cursor.png') 1x, url('/images/icons/cursors/cursor@2x.png') 2x) 6 6, auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -109,13 +135,40 @@ input[type="submit"] {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: calc(100vh - var(--header-height));
-  max-width: 1736px;
+  /*max-width: 1736px;*/
+  height: 100vh;
   margin: 0 auto;
+}
+
+.slide-block:first-of-type {
+  height: calc(100vh - var(--header-height));
 }
 
 @media (max-height: 700px) {
   .slide-block {
     height: auto;
+  }
+}
+
+@media (max-width: 1260px) {
+  .slide-block.slide-block_service {
+    height: auto;
+  }
+}
+
+.slide-block.slide-block_auto {
+  height: auto;
+}
+
+@media (max-width: 1260px) {
+  .container_service {
+    padding: 0;
+    margin: 0 40px 40px;
+    max-width: calc(100% - 80px);
+    flex-direction: row;
+  }
+
+  .container_service:first-of-type {
+    margin-top: 50px;
   }
 }

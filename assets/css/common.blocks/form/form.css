@@ -25,6 +25,7 @@
 @media (max-width: 1300px) {
   .feedback .form {
     max-width: initial;
+    width: 100%;
     margin-right: 0;
   }
 }

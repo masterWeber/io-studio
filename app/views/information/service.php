@@ -2,8 +2,8 @@
 
 <main class="page__content">
 
-    <div class="slide-block" id="slide-1">
-        <div class="container">
+    <div class="slide-block slide-block_service" id="slide-1">
+        <div class="container container_service">
             <section class="column">
                 <h2 class="title title_large title_high">Дизайн</h2>
                 <ul class="list">
@@ -45,7 +45,7 @@
                 </ul>
             </section>
         </div>
-        <div class="container">
+        <div class="container container_service">
             <p class="text text_wide">
                 В наш состав входят талантливые специалисты, занимающиеся
                 разработкой сайтов. Мы используем новейшие технологии и принципы, опираясь на свой опыт, и
@@ -55,8 +55,8 @@
         </div>
     </div>
 
-    <div class="slide-block" id="slide-2">
-        <div class="container">
+    <div class="slide-block slide-block_service" id="slide-2">
+        <div class="container container_service">
             <section class="column">
                 <h2 class="title title_large title_high">ВЕБ</h2>
                 <ul class="list">
@@ -87,6 +87,7 @@
                 </ul>
             </section>
             <div class="column">
+                <p class="title title_large title_high hide">Веб</p>
                 <p class="text text_wide">
                     Мы создаём и разрабатываем уникальные решения для вашего бизнеса. Особенно горячо мы открыты к
                     сотрудничеству с компаниями, которые в первую очередь уважают наше мнение, как специалистов и готовы
@@ -96,11 +97,84 @@
         </div>
     </div>
 
-    <div class="slide-block" id="slide-3">
-        <div class="container">
-            <section class="column">
-                <h2 class="title title_large title_high">Технологии</h2>
-            </section>
+    <div class="slide-block slide-block_service slide-block_auto" id="slide-3">
+        <div class="container container_service">
+
+            <h2 class="title title_large title_high">Технологии</h2>
+            <div class="technologies">
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/figma-logo.png" title="Figma" alt="Figma">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/wordpress-logo.png" title="Wordpress" alt="Wordpress">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/html5-logo.png" title="Html5" alt="Html5">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/ps-logo.png" title="Photoshop" alt="Photoshop">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/css3-logo.png" title="Css3" alt="Css3">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/php-logo.png" title="Php" alt="Php">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/js-logo.png" title="Js" alt="Js">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/bootstrap-logo.png" title="Bootstrap" alt="Bootstrap">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/jquery-logo.png" title="Jquery" alt="Jquery">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/saas-logo.png" title="Saas" alt="Saas">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/cinema4d-logo.png" title="Cinema4d" alt="Cinema4d">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/react-logo.png" title="React" alt="React">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/ai-logo.png" title="Illustrator" alt="Illustrator">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/less-logo.png" title="Less" alt="Less">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/ae-logo.png" title="After Effect" alt="After Effect">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/gulp-logo.png" title="Gulp" alt="Gulp">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/axure-logo.png" title="Axure" alt="Axure">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/webgl-logo.png" title="WebGl" alt="WebGl">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/opencart-logo.png" title="OpenCart" alt="OpenCart">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/magento-logo.png" title="Magento" alt="Magento">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/sketch-logo.png" title="Sketch" alt="Sketch">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/joomla!-logo.png" title="Joomla" alt="Joomla!">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/netcat-logo.png" title="Netcat" alt="Netcat">
+                </picture>
+                <picture class="technologies__item">
+                    <img class="technologies__image" src="/images/logos_technologies/ajax-logo.png" title="Ajax" alt="Ajax">
+                </picture>
+            </div>
         </div>
     </div>
 

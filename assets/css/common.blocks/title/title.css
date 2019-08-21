@@ -8,6 +8,10 @@
   color: var(--main-text-color);
 }
 
+.title.hide {
+  opacity: 0;
+}
+
 @media (max-width: 1000px) {
   .title {
     margin: 0 0 40px 0;

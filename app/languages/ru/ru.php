@@ -2,3 +2,5 @@
 
 $_['button_hire_us'] = 'Нанять нас';
 $_['button_close'] = 'закрыть';
+
+$_['button_view'] = 'Смотреть';

@@ -1,0 +1,19 @@
+.project-info__count {
+  position: absolute;
+  top: -17vw;
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20.8vw;
+  line-height: 25.4vw;
+  color: #ffffff;
+  transform: translateX(-50%) translateY(80px);
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .project-info__count {
+    font-size: 39.6vw;
+    line-height: 47.6vw;
+  }
+}

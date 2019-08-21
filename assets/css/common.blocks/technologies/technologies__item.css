@@ -1,0 +1,31 @@
+.technologies__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 135px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .technologies__item {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .technologies__item {
+    height: 65px;
+    width: 65px;
+    min-width: 65px;
+    margin-right: 32px;
+  }
+
+  .technologies__item:last-child {
+    margin-right: 0;
+  }
+}

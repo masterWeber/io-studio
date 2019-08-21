@@ -1,0 +1,9 @@
+.project-info__title {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .project-info__title {
+    margin-bottom: 20px;
+  }
+}

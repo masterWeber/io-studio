@@ -22,3 +22,10 @@
     transform: translateY(0);
   }
 }
+
+@media (max-height: 700px) and (max-width: 1000px) and (orientation: landscape) {
+  .component-logo {
+    --componet-logo-width: calc(var(--window-width) - 62vw);
+    transform: translateY(-20px);
+  }
+}

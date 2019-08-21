@@ -10,6 +10,7 @@
   width: 100vw;
   padding: 40px 50px;
   background-color: #292929;
+  opacity: 0;
   transition: top 500ms, left 0ms 500ms;
   box-sizing: border-box;
 }
@@ -29,5 +30,6 @@
 .md.open {
   top: 0;
   left: 0;
+  opacity: 1;
   transition: top 500ms;
 }

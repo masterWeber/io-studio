@@ -1,0 +1,10 @@
+.technologies__image {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(1);
+  transition: all 200ms;
+}
+
+.technologies__image:hover {
+  filter: grayscale(0);
+}

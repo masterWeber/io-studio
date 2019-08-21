@@ -1,0 +1,26 @@
+.project-info-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 31.97vw;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+@media (max-width: 1000px) {
+  .project-info-swiper__slide {
+    width: 65.10vw;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-info-swiper__slide {
+    width: 80vw;
+    max-width: initial;
+  }
+}
+
+.project-info-swiper__slide.swiper-slide-active {
+  opacity: 1;
+}
