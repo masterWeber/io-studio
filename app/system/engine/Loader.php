@@ -9,7 +9,7 @@ class Loader
         $this->registry = $registry;
     }
 
-    public function model(string $route, string $action = 'index', array $data = [])
+    public function model(string $route)
     {
         $path = DIR_MODEL . "$route.php";
 
@@ -23,7 +23,7 @@ class Loader
 
         $model = new $class($this->registry);
 
-        return $model->$action($data);
+        return $model;
     }
 
     public function view(string $route, array $data = [])
