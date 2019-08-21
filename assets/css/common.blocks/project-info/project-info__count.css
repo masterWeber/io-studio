@@ -14,6 +14,11 @@
 @media (max-width: 1000px) {
   .project-info__count {
     font-size: 39.6vw;
-    line-height: 47.6vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-info__count {
+    font-size: 62.5vw;
   }
 }

@@ -1,12 +1,15 @@
 .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  height: 12px;
-  width: 12px;
-  margin: 0 8px;
+  height: 8px;
+  width: 8px;
+  margin: 2px 8px;
   background-color: #b8b8b8;
   transform: scale(1);
   opacity: 1;
 }
 
 .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  height: 12px;
+  width: 12px;
+  margin: 0 8px;
   background-color: #292929;
 }

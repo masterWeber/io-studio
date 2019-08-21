@@ -7,7 +7,6 @@ var swiperPreview = new Swiper('.project-preview-swiper', {
   centeredSlides: true,
   slidesPerView: 'auto',
   slideToClickedSlide: true,
-  slidesOffsetBefore: 8,
   keyboard: {
     enabled: true,
   },
@@ -38,7 +37,6 @@ var swiperInfo = new Swiper('.project-info-swiper', {
   initialSlide: 2,
   slidesPerView: 'auto',
   spaceBetween: 20,
-  slidesOffsetBefore: 8,
   centeredSlides: true,
   breakpoints: {
     1000: {
