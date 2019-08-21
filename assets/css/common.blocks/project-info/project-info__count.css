@@ -1,13 +1,13 @@
 .project-info__count {
   position: absolute;
-  top: -17vw;
+  top: -0.4em;
   left: 50%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 20.8vw;
-  line-height: 25.4vw;
+  line-height: 1;
   color: #ffffff;
-  transform: translateX(-50%) translateY(80px);
+  transform: translateX(-50%);
   z-index: -1;
 }
 

@@ -29,7 +29,7 @@
                 ?>
                 <li class="project-info-swiper__slide swiper-slide">
                     <div class="project-info">
-                        <div class="project-info__count"><?= $count ?></div>
+                        <span class="project-info__count"><?= $count ?></span>
                         <p class="project-info__title title"><?= $project['title'] ?></p>
                         <p class="project-info__description text"><?= $project['service'] ?></p>
                         <a class="project-info__button button button_transparent"
