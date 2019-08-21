@@ -7,3 +7,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 700px) {
+  .project-info__title {
+    margin-bottom: 10px;
+  }
+}

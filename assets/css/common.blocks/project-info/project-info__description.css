@@ -1,3 +1,9 @@
 .project-info__description {
   margin-bottom: 70px;
 }
+
+@media (max-width: 700px) {
+  .project-info__description {
+    margin-bottom: 30px;
+  }
+}
