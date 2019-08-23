@@ -4,40 +4,34 @@ class Router extends Controller
 {
 
     private $controller;
-    const ROUTES_MAP = [
-      'index' => 'common/home',
-      'service' => 'information/service',
-      'contacts' => 'information/contacts',
-      'portfolio' => 'information/portfolio',
-      '404' => 'error/404'
-    ];
 
     public function run()
     {
-        $uri = $this->uri->parse();
-        $route = implode("/", $uri['route']);
+        $urlParts = $this->url->parse();
 
-        //Проверяем uri на наличие языка
-        if (!$this->uri->getLang()) {
+        $uri = $_SERVER['REQUEST_URI'];
+        $lang = $urlParts['lang'];
+        $route = $urlParts['route'];
+        $param = $urlParts['param'];
 
+
+        if (empty($lang)) {
             if (empty($route)) {
-                $route = $this->language->getCurrent();
+                $uri = $this->language->getCurrent();
             } else {
-                $route = $this->language->getCurrent() . '/' . $route;
+                $uri = $this->language->getCurrent() . $uri;
             }
 
-            $this->response->redirect($route);
+            $this->response->redirect($uri);
         }
 
-        $path = DIR_CONTROLLER . self::ROUTES_MAP['index'];
-        $currentClass = preg_replace('/\//i', '', self::ROUTES_MAP['index']);
+        $path = DIR_CONTROLLER . ROUTES_MAP['index'];
+        $currentClass = preg_replace('/\//i', '', ROUTES_MAP['index']);
         $class = 'Controller' . $currentClass;
 
-        if (!empty($uri['route'])) {
-            $detailedRoute = $this->parseRoute($route);
-
-            $path = $detailedRoute['path'];
-            $class = $detailedRoute['controller_name'];
+        if ($route) {
+            $path = DIR_CONTROLLER . $route;
+            $class = 'Controller' . preg_replace('/\//i', '', $route);
         }
 
         try {
@@ -47,24 +41,6 @@ class Router extends Controller
         }
 
         $this->controller = new $class($this->registry);
-        $this->controller->index();
+        $this->controller->index($param);
     }
-
-    private function parseRoute(string $route)
-    {
-
-        if (!key_exists($route, self::ROUTES_MAP)) {
-            $this->response->redirect('404');
-        }
-
-        $path = DIR_CONTROLLER . self::ROUTES_MAP[$route];
-
-        $output = [
-          'path' => $path,
-          'controller_name' => 'Controller' . preg_replace('/\//i', '', self::ROUTES_MAP[$route])
-        ];
-
-        return $output;
-    }
-
 }

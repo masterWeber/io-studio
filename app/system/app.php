@@ -2,10 +2,7 @@
 
 $registry = new Registry();
 
-$uri = new URI($registry);
-$registry->set('uri', $uri);
-
-$url = new Url($registry);
+$url = new URL($registry);
 $registry->set('url', $url);
 
 $db = new DB(DB_ADAPTER, DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT);
