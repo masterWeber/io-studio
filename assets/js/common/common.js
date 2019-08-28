@@ -54,23 +54,22 @@ const numberWithSpaces = (x) => {
 //Dialogs
 {
 
+  const ESC = 27;
+
   const mdClose = event => {
-    const target = event.target;
+    const target = event.currentTarget;
     const modalDialog = getParent(target, 'md');
-    modalDialog.classList.remove('open');
+    modalDialog.classList.remove('md_open');
   };
 
   const mdOpen = event => {
-    let target = event.target;
-    if (!target.classList.contains('md-trigger')) {
-      target = getParent(target, 'md-trigger');
-    }
+    let target = event.currentTarget;
     const modalDialogId = target.getAttribute('data-modal');
     const modalDialog = document.querySelector('#' + modalDialogId);
-    modalDialog.classList.add('open');
+    modalDialog.classList.add('md_open');
   };
 
-  const closeButtons = document.querySelectorAll('.md-close');
+  const closeButtons = document.querySelectorAll('.md__close-btn');
   for (let i = 0; i < closeButtons.length; i++) {
     closeButtons[i].addEventListener('click', mdClose);
   }
@@ -81,10 +80,9 @@ const numberWithSpaces = (x) => {
   }
 
   window.addEventListener('keyup', function(event) {
-    const ESC = 27;
-    const openDialog = document.querySelector('.md.open');
+    const openDialog = document.querySelector('.md_open');
     if (event.keyCode === ESC && openDialog) {
-      openDialog.classList.remove('open');
+      openDialog.classList.remove('md_open');
     }
   });
 

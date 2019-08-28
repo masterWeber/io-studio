@@ -1,5 +1,5 @@
 <div class="md" id="order-dialog">
-    <button class="bubble-button bubble-button_horizontal md-close">
+    <button class="bubble-button bubble-button_horizontal md__close-btn">
         <span class="bubble-button__element bubble-button__element_first"></span>
         <span class="bubble-button__element bubble-button__element_second"></span>
         <span class="bubble-button__element bubble-button__element_third"></span>
