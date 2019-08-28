@@ -1,1 +1,51 @@
-<?php
+<?= $header ?>
+<main class="page__content">
+
+    <div class="project">
+        <div class="project__header">
+            <h1 class="project__title title title_large"><?= $title ?></h1>
+        </div>
+
+        <div class="project__content">
+
+            <div class="project__text-block project__text-block_service">
+                <h2 class="project__subtitle title">Услуга</h2>
+                <p class="text text_wide"><?= $service ?></p>
+            </div>
+
+            <div class="project__text-block project__text-block_timeline">
+                <h2 class="project__subtitle title">Сроки</h2>
+                <p class="text text_wide"><?= $timeline ?></p>
+            </div>
+
+            <div class="project__text-block project__text-block_description">
+                <h2 class="project__subtitle title">Описание</h2>
+                <p class="text text_wide"><?= $description ?></p>
+            </div>
+
+            <div class="project__text-block project__text-block_cost">
+                <h2 class="project__subtitle title">Стоимость</h2>
+                <p class="text text_medium text_wide number-with-spaces"><?= $cost ?></p>
+            </div>
+
+        </div>
+
+        <img class="project__image" src="<?= $image ?>" alt="<?= $title ?>">
+
+        <div class="project__footer">
+            <a class="project__button project__button_back button button_transparent"
+               href="<?= $link_back_project ?>">
+                Вернутся в галлерею
+            </a>
+            <a class="project__button project__button_next button button_transparent"
+               href="<?= $link_next_project ?>">
+                Следующий проэкт
+            </a>
+        </div>
+
+    </div>
+
+
+</main>
+
+<?= $footer ?>

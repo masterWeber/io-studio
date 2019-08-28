@@ -1,0 +1,20 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 85.45vw;
+  margin: 7.81vw auto;
+}
+
+@media (max-width: 1000px) {
+  .project {
+    width: 89.58vw;
+    margin: 6.6vw auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .project {
+    width: 81.25vw;
+    margin: 6.2vw auto;
+  }
+}

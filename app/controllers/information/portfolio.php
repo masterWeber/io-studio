@@ -2,8 +2,13 @@
 
 class ControllerInformationPortfolio extends Controller
 {
-    public function index()
+    public function index(string $param)
     {
+        if ($param) {
+            $this->getProject($param);
+            return;
+        }
+
         $portfolio = $this->load->model('information/portfolio');
         $data['projects'] = $portfolio->getAllProjects()->rows;
 
@@ -22,5 +27,24 @@ class ControllerInformationPortfolio extends Controller
     public function getProject(string $id)
     {
 
+        $portfolio = $this->load->model('information/portfolio');
+        $project = $portfolio->getProjectById((int)$id)->row;
+
+        if (empty($project)) {
+            $this->response->redirect('404');
+        }
+
+//        echo '<pre>';
+//        print_r($project);
+//        echo '</pre>';
+
+        $data['header'] = $this->load->controller('common/header');
+        $data['footer'] = $this->load->controller('common/footer');
+
+        $data = array_merge($data, $project);
+
+        $output = $this->load->view("information/project", $data);
+
+        $this->response->setOutput($output);
     }
 }
