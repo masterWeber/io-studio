@@ -1,6 +1,6 @@
 <?php
 //Режим разработки
-const DEV = false;
+const DEV = true;
 
 //Язык
 const LANGUAGES = ['ru', 'en'];

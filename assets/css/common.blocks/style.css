@@ -101,6 +101,16 @@
 @import 'project-info/project-info__count.css';
 @import 'project-info/project-info__description.css';
 @import 'project-info/project-info__button.css';
+/** Project **/
+@import 'project/project.css';
+@import 'project/project__subtitle.css';
+@import 'project/project__content.css';
+@import 'project/project__text-block.css';
+@import 'project/project__image.css';
+@import 'project/project__footer.css';
+@import 'project/project__button.css';
+/** Button scroll to **/
+@import 'button-scroll-to/button-scroll-to.css';
 
 * {
   cursor: url('/images/icons/cursors/cursor.png') 6 6, auto;

@@ -16,6 +16,10 @@ const getParent = (element, parentClassName) => {
   return parent;
 };
 
+const numberWithSpaces = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+};
+
 //Process width Scrollbar
 {
 
@@ -81,6 +85,60 @@ const getParent = (element, parentClassName) => {
     const openDialog = document.querySelector('.md.open');
     if (event.keyCode === ESC && openDialog) {
       openDialog.classList.remove('open');
+    }
+  });
+
+}
+
+//Separation of numbers into digits
+{
+
+  const costElementCollection = document.querySelectorAll('.number-with-spaces');
+
+  for (let i = 0; i < costElementCollection.length; i++) {
+    const element = costElementCollection[i];
+    const inner = element.innerText;
+    element.innerText = numberWithSpaces(inner);
+  }
+
+}
+
+/**
+ * Up button
+ */
+{
+
+  const upDownElem = document.querySelector('.button-scroll-to');
+  window.addEventListener('scroll', () => {
+    const pageY = window.pageYOffset || document.documentElement.scrollTop;
+    const innerHeight = document.documentElement.clientHeight;
+    switch (upDownElem.className) {
+      case 'button-scroll-to':
+        if (pageY > innerHeight) {
+          upDownElem.classList.add('up');
+        }
+        break;
+      case 'button-scroll-to up':
+        if (pageY < innerHeight) {
+          upDownElem.classList.remove('up');
+        }
+        break;
+    }
+  });
+
+  let pageYLabel = 0;
+
+  upDownElem.addEventListener('click', (event) => {
+    const target = event.currentTarget;
+    const pageY = window.pageYOffset || document.documentElement.scrollTop;
+    if (target.className === 'button-scroll-to up') {
+      target.classList.remove('up');
+      pageYLabel = pageY;
+      try {
+        $('html').animate({scrollTop: 0}, 1000);
+      } catch (e) {
+        window.scrollTo(0, 0);
+      }
     }
   });
 
