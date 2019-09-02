@@ -1,34 +1,18 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
-  margin: auto;
-  padding: 0 178px;
+  margin: 6.25vw auto;
   transition: all 200ms;
   box-sizing: border-box;
 }
 
-.container:first-of-type {
-  margin-top: 8.64%;
-}
-
-.container:last-of-type {
-  margin-bottom: 8.64%;
-}
-
-@media (max-width: 1260px) {
+@media (max-width: 1000px) {
   .container {
-    flex-direction: column;
-    align-items: center;
+    margin: 6.6vw auto;
   }
 }
 
 @media (max-width: 700px) {
   .container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 30px;
-    max-width: calc(100% - 60px);
+    margin: 6.2vw auto;
   }
 }

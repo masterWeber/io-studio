@@ -1,0 +1,188 @@
+@import 'common.blocks/normalize.css';
+@import 'common.blocks/fonts.css';
+@import 'common.blocks/variables.css';
+/** link **/
+@import 'common.blocks/link.css';
+/** List **/
+@import 'common.blocks/list/list.css';
+@import 'common.blocks/list/list__item.css';
+/** Title **/
+@import 'common.blocks/title/title.css';
+@import 'common.blocks/title/title_high.css';
+@import 'common.blocks/title/title_small.css';
+@import 'common.blocks/title/title_large.css';
+/** Text **/
+@import 'common.blocks/text/text.css';
+@import 'common.blocks/text/text_wide.css';
+@import 'common.blocks/text/text_small.css';
+@import 'common.blocks/text/text_medium.css';
+@import 'common.blocks/text/text_large.css';
+@import 'common.blocks/text/text_huge.css';
+/** Container **/
+@import 'common.blocks/container/container.css';
+/** column **/
+@import 'common.blocks/column/column.css';
+/** header **/
+@import 'common.blocks/header/header.css';
+@import 'common.blocks/header/logo/logo.css';
+@import 'common.blocks/header/logo/logo__img.css';
+@import 'common.blocks/header/toolbar.css';
+@import 'common.blocks/header/social/social.css';
+@import 'common.blocks/header/social/social__item.css';
+@import 'common.blocks/header/menu/menu.css';
+@import 'common.blocks/header/menu/menu__item.css';
+/** button **/
+@import 'common.blocks/button/button.css';
+@import 'common.blocks/button/_dark/button_dark.css';
+@import 'common.blocks/button/_large/button_large.css';
+@import 'common.blocks/button/_transparent/button_transparent.css';
+/** bubble button **/
+@import 'common.blocks/bubble-button/bubble-button.css';
+/** face **/
+@import 'current.blocks/face/face.css';
+@import 'current.blocks/face/face__content.css';
+@import 'current.blocks/face/face__title.css';
+@import 'current.blocks/face/face__subtitle.css';
+@import 'current.blocks/face/face__count.css';
+@import 'current.blocks/face/face__hint.css';
+@import 'current.blocks/face/face__lang.css';
+@import 'current.blocks/face/lang-toggle.css';
+@import 'current.blocks/face/version.css';
+@import 'current.blocks/face/face__version.css';
+/** component logo **/
+@import 'current.blocks/component-logo/component-logo.css';
+@import 'current.blocks/component-logo/component-logo__mask.css';
+@import 'current.blocks/component-logo/component-logo__video.css';
+/** card **/
+@import "current.blocks/card/card.css";
+/** service **/
+@import 'current.blocks/service/service.css';
+@import 'current.blocks/service/service__card.css';
+/** feedback **/
+@import 'common.blocks/feedback/feedback.css';
+@import 'common.blocks/feedback/feedback__title.css';
+/** form **/
+@import 'common.blocks/form/form.css';
+@import 'common.blocks/form/form__header.css';
+@import 'common.blocks/form/form__title.css';
+@import 'common.blocks/form/form__group.css';
+@import 'common.blocks/form/form__toggle-group.css';
+@import 'common.blocks/form/input-field.css';
+@import 'common.blocks/form/label.css';
+@import 'common.blocks/form/toggle.css';
+@import 'common.blocks/form/form__footer.css';
+/** footer **/
+@import 'common.blocks/footer/footer.css';
+@import 'common.blocks/footer/copyright.css';
+@import 'common.blocks/footer/support.css';
+/** modal dialogs **/
+@import 'common.blocks/md.css';
+/** Technologies **/
+@import 'current.blocks/technologies/technologies.css';
+@import 'current.blocks/technologies/technologies__item.css';
+@import 'current.blocks/technologies/technologies__image.css';
+/** Contacts **/
+@import 'current.blocks/contacts/contacts.css';
+/** Project preview swiper **/
+@import 'current.blocks/project-preview-swiper/project-preview-swiper.css';
+@import 'current.blocks/project-preview-swiper/project-preview-swiper__wrapper.css';
+@import 'current.blocks/project-preview-swiper/project-preview-swiper__slide.css';
+@import 'current.blocks/project-preview-swiper/swiper-pagination-bullet.css';
+/** Project preview **/
+@import 'current.blocks/project-preview/project-preview.css';
+@import 'current.blocks/project-preview/project-preview__img.css';
+/** Project info swiper **/
+@import 'current.blocks/project-info-swiper/project-info-swiper.css';
+@import 'current.blocks/project-info-swiper/project-info-swiper__wrapper.css';
+@import 'current.blocks/project-info-swiper/project-info-swiper__slide.css';
+/** Project info **/
+@import 'current.blocks/project-info/project-info.css';
+@import 'current.blocks/project-info/project-info__title.css';
+@import 'current.blocks/project-info/project-info__count.css';
+@import 'current.blocks/project-info/project-info__description.css';
+@import 'current.blocks/project-info/project-info__button.css';
+/** Project **/
+@import 'current.blocks/project/project.css';
+@import 'current.blocks/project/__subtitle/project__subtitle.css';
+@import 'current.blocks/project/__content/project__content.css';
+@import 'current.blocks/project/__text-block/project__text-block.css';
+@import 'current.blocks/project/__text-block/_timeline/project__text-block_timeline.css';
+@import 'current.blocks/project/__text-block/_description/project__text-block_description.css';
+@import 'current.blocks/project/__text-block/_cost/project__text-block_cost.css';
+@import 'current.blocks/project/__image/project__image.css';
+@import 'current.blocks/project/__footer/project__footer.css';
+@import 'current.blocks/project/__button/project__button.css';
+/** Button scroll to **/
+@import 'common.blocks/button-scroll-to/button-scroll-to.css';
+
+
+* {
+  cursor: url('/images/icons/cursors/cursor.png') 6 6, auto;
+  cursor: url('/images/icons/cursors/cursor.svg') 6 6, auto;
+  cursor: -webkit-image-set(url('/images/icons/cursors/cursor.png') 1x, url('/images/icons/cursors/cursor@2x.png') 2x) 6 6, auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+a,
+button,
+input[type="submit"] {
+  cursor: url('/images/icons/cursors/cursor_active.png') 10 10, pointer;
+  cursor: url('/images/icons/cursors/cursor_active.svg') 10 10, pointer;
+  cursor: -webkit-image-set(url('/images/icons/cursors/cursor_active.png') 1x, url('/images/icons/cursors/cursor_active@2x.png') 2x) 10 10, pointer;
+}
+
+.page {
+  margin: 0;
+  background-color: #f9f3f0;
+}
+
+.slide-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*max-width: 1736px;*/
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.slide-block:first-of-type {
+  height: calc(100vh - var(--header-height));
+}
+
+@media (max-height: 700px) {
+  .slide-block {
+    height: auto;
+  }
+}
+
+@media (max-width: 1260px) {
+  .slide-block.slide-block_service {
+    height: auto;
+  }
+}
+
+.slide-block.slide-block_auto {
+  height: auto;
+}
+
+@media (max-width: 1260px) {
+  .container_service {
+    padding: 0;
+    margin: 0 40px 40px;
+    max-width: calc(100% - 80px);
+    flex-direction: row;
+  }
+
+  .container_service:first-of-type {
+    margin-top: 50px;
+  }
+}

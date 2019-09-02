@@ -26,7 +26,7 @@ const cssProcess = [
 ];
 
 const css = () => {
-  return gulp.src('./assets/css/common.blocks/style.css').
+  return gulp.src('./assets/css/style.css').
       pipe(sourcemaps.init()).
       pipe(postcss(cssProcess)).
       pipe(rename({
@@ -55,7 +55,7 @@ gulp.task('default', series(css, javaScript));
 gulp.task('watch', function() {
   // При изменение файлов *.css в папке "assets/css" и подпапках запускаем
   // задачу css
-  gulp.watch('./assets/css/common.blocks/**/*.css', css);
+  gulp.watch(['./assets/css/**/*.css', '!./assets/css/style.min.css'], css);
   // При изменение файлов *.js папке "assets/js" и подпапках запускаем задачу
   // javaScript
   gulp.watch('./assets/js/common/**/*.js', javaScript);

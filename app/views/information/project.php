@@ -1,7 +1,7 @@
 <?= $header ?>
 <main class="page__content">
 
-    <div class="project">
+    <div class="project container">
         <div class="project__header">
             <h1 class="project__title title title_large"><?= $title ?></h1>
         </div>

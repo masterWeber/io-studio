@@ -34,12 +34,12 @@ class ControllerInformationPortfolio extends Controller
             $this->response->redirect('404');
         }
 
-//        echo '<pre>';
-//        print_r($project);
-//        echo '</pre>';
-
         $data['header'] = $this->load->controller('common/header');
         $data['footer'] = $this->load->controller('common/footer');
+
+        $data['link_back_project'] = $this->url->link('portfolio');
+        $nextId = (int) $id + 1;
+        $data['link_next_project'] = $this->url->link('portfolio/' . $nextId);
 
         $data = array_merge($data, $project);
 

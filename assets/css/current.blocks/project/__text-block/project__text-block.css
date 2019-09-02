@@ -1,0 +1,17 @@
+.project__text-block {
+  margin-bottom: 80px;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .project__text-block {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .project__text-block {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

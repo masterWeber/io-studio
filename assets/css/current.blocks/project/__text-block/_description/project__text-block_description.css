@@ -1,0 +1,5 @@
+@media (max-width: 1000px) {
+  .project__text-block_description {
+    width: 100%;
+  }
+}

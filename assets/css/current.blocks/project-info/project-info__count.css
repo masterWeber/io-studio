@@ -2,13 +2,14 @@
   position: absolute;
   top: -0.4em;
   left: 50%;
+  z-index: -1;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 20.8vw;
   line-height: 1;
-  color: #ffffff;
+  color: #fff;
   transform: translateX(-50%);
-  z-index: -1;
+  transition: all 200ms;
 }
 
 @media (max-width: 1000px) {
@@ -17,7 +18,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
   .project-info__count {
     font-size: 62.5vw;
   }

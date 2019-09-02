@@ -1,0 +1,11 @@
+.project__text-block_timeline {
+  width: 20%;
+  min-width: 240px;
+  margin-left: auto;
+}
+
+@media (max-width: 700px) {
+  .project__text-block_timeline {
+    width: 100%;
+  }
+}

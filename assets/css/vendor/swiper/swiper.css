@@ -380,22 +380,22 @@ button.swiper-pagination-bullet {
   top: 0;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #ffffff;
+  background: #fff;
 }
 .swiper-pagination-progressbar.swiper-pagination-white {
   background: rgba(255, 255, 255, 0.25);
 }
 .swiper-pagination-progressbar.swiper-pagination-white .swiper-pagination-progressbar-fill {
-  background: #ffffff;
+  background: #fff;
 }
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: #000000;
+  background: #000;
 }
 .swiper-pagination-progressbar.swiper-pagination-black {
   background: rgba(0, 0, 0, 0.25);
 }
 .swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill {
-  background: #000000;
+  background: #000;
 }
 .swiper-pagination-lock {
   display: none;

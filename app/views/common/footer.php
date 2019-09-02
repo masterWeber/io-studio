@@ -14,7 +14,7 @@
 
 
 <?php if (DEV) { ?>
-    <link rel="stylesheet" href="/assets/css/common.blocks/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/common/common.js" defer></script>
 <?php } else { ?>
     <link rel="stylesheet" href="/assets/css/style.min.css?v=1.0.0">
