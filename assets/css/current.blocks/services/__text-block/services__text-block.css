@@ -1,0 +1,17 @@
+.services__text-block {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+  .services__text-block {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .services__text-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

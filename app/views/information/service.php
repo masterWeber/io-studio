@@ -2,9 +2,9 @@
 
 <main class="page__content">
 
-    <div class="slide-block slide-block_service" id="slide-1">
-        <div class="container container_service">
-            <section class="column">
+    <div class="services container">
+        <div class="services__content">
+            <div class="services__text-block">
                 <h2 class="title title_large title_high">Дизайн</h2>
                 <ul class="list">
                     <li class="list__item">
@@ -23,8 +23,8 @@
                         <span class="text text_wide">3D моделирование</span>
                     </li>
                 </ul>
-            </section>
-            <section class="column">
+            </div>
+            <div class="services__text-block">
                 <h2 class="title title_large title_high">Разработка</h2>
                 <ul class="list">
                     <li class="list__item">
@@ -43,21 +43,26 @@
                         <span class="text text_wide">Серверная часть</span>
                     </li>
                 </ul>
-            </section>
-        </div>
-        <div class="container container_service">
-            <p class="text text_wide">
-                В наш состав входят талантливые специалисты, занимающиеся
-                разработкой сайтов. Мы используем новейшие технологии и принципы, опираясь на свой опыт, и
-                психологические
-                качества. Именно такой подход способен дать максимальные результаты, мы стараемся для вас.
-            </p>
+            </div>
         </div>
     </div>
 
-    <div class="slide-block slide-block_service" id="slide-2">
-        <div class="container container_service">
-            <section class="column">
+    <div class="services container">
+        <div class="services__content">
+            <div class="services__text-block services__text-block_fickle">
+                <p class="text text_wide">
+                    В наш состав входят талантливые специалисты, занимающиеся
+                    разработкой сайтов. Мы используем новейшие технологии и принципы, опираясь на свой опыт, и
+                    психологические
+                    качества. Именно такой подход способен дать максимальные результаты, мы стараемся для вас.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services container">
+        <div class="services__content">
+            <div class="services__text-block">
                 <h2 class="title title_large title_high">ВЕБ</h2>
                 <ul class="list">
                     <li class="list__item">
@@ -85,9 +90,9 @@
                         <span class="text text_wide">— Презентация продукта</span>
                     </li>
                 </ul>
-            </section>
-            <div class="column">
-                <p class="title title_large title_high hide">Веб</p>
+            </div>
+            <div class="services__text-block services__text-block_fickle">
+                <p class="title title_large title_high title_fake">Веб</p>
                 <p class="text text_wide">
                     Мы создаём и разрабатываем уникальные решения для вашего бизнеса. Особенно горячо мы открыты к
                     сотрудничеству с компаниями, которые в первую очередь уважают наше мнение, как специалистов и готовы
@@ -97,8 +102,8 @@
         </div>
     </div>
 
-    <div class="slide-block slide-block_service slide-block_auto" id="slide-3">
-        <div class="container container_service">
+    <div class="services container">
+        <div class="services__content">
 
             <h2 class="title title_large title_high">Технологии</h2>
             <div class="technologies">

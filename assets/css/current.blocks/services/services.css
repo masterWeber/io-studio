@@ -1,0 +1,17 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 85.45vw;
+}
+
+@media (max-width: 1000px) {
+  .services {
+    width: 89.58vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .services {
+    width: 81.25vw;
+  }
+}

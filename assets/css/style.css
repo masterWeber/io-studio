@@ -11,6 +11,7 @@
 @import 'common.blocks/title/title_high.css';
 @import 'common.blocks/title/title_small.css';
 @import 'common.blocks/title/title_large.css';
+@import 'common.blocks/title/title_fake.css';
 /** Text **/
 @import 'common.blocks/text/text.css';
 @import 'common.blocks/text/text_wide.css';
@@ -112,6 +113,11 @@
 @import 'current.blocks/project/__image/project__image.css';
 @import 'current.blocks/project/__footer/project__footer.css';
 @import 'current.blocks/project/__button/project__button.css';
+/** Services **/
+@import 'current.blocks/services/services.css';
+@import 'current.blocks/services/__content/services__content.css';
+@import 'current.blocks/services/__text-block/services__text-block.css';
+@import 'current.blocks/services/__text-block/_fickle/services__text-block_fickle.css';
 /** Button scroll to **/
 @import 'common.blocks/button-scroll-to/button-scroll-to.css';
 
@@ -142,47 +148,4 @@ input[type="submit"] {
 .page {
   margin: 0;
   background-color: #f9f3f0;
-}
-
-.slide-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /*max-width: 1736px;*/
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.slide-block:first-of-type {
-  height: calc(100vh - var(--header-height));
-}
-
-@media (max-height: 700px) {
-  .slide-block {
-    height: auto;
-  }
-}
-
-@media (max-width: 1260px) {
-  .slide-block.slide-block_service {
-    height: auto;
-  }
-}
-
-.slide-block.slide-block_auto {
-  height: auto;
-}
-
-@media (max-width: 1260px) {
-  .container_service {
-    padding: 0;
-    margin: 0 40px 40px;
-    max-width: calc(100% - 80px);
-    flex-direction: row;
-  }
-
-  .container_service:first-of-type {
-    margin-top: 50px;
-  }
 }

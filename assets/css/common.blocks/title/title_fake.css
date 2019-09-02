@@ -1,0 +1,9 @@
+.title_fake {
+  opacity: 0;
+}
+
+@media (max-width: 1000px) {
+  .title_fake {
+    display: none;
+  }
+}
