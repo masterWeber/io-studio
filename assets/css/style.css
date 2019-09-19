@@ -23,6 +23,7 @@
 @import 'common.blocks/container/container.css';
 /** column **/
 @import 'common.blocks/column/column.css';
+@import 'common.blocks/column/__title/column__title.css';
 /** header **/
 @import 'common.blocks/header/header.css';
 @import 'common.blocks/header/logo/logo.css';
@@ -84,6 +85,11 @@
 @import 'current.blocks/technologies/technologies__image.css';
 /** Contacts **/
 @import 'current.blocks/contacts/contacts.css';
+@import 'current.blocks/contacts/__link/contacts__link.css';
+@import 'current.blocks/contacts/__list/contacts__list.css';
+@import 'current.blocks/contacts/__list-item/contacts__list-item.css';
+@import 'current.blocks/contacts/__text-block/contacts__text-block.css';
+@import 'current.blocks/contacts/__text-block/_shifted/contacts__text-block_shifted.css';
 /** Project preview swiper **/
 @import 'current.blocks/project-preview-swiper/project-preview-swiper.css';
 @import 'current.blocks/project-preview-swiper/project-preview-swiper__wrapper.css';
@@ -120,6 +126,21 @@
 @import 'current.blocks/services/__text-block/_fickle/services__text-block_fickle.css';
 /** Button scroll to **/
 @import 'common.blocks/button-scroll-to/button-scroll-to.css';
+/** About **/
+@import 'current.blocks/about/about.css';
+@import 'current.blocks/about/__header/about__header.css';
+@import 'current.blocks/about/__title-container/about__title-container.css';
+@import 'current.blocks/about/__subtitle-container/about__subtitle-container.css';
+@import 'current.blocks/about/__content/about__content.css';
+@import 'current.blocks/about/__column-group/about__column-group.css';
+@import 'current.blocks/about/__item/about__item.css';
+@import 'current.blocks/about/__item/_reward/about__item_reward.css';
+/** active-background **/
+@import 'current.blocks/active-background/active-background.css';
+@import 'current.blocks/active-background/__wrapper/active-background__wrapper.css';
+@import 'current.blocks/active-background/__video/active-background__video.css';
+@import 'current.blocks/active-background/__mask/active-background__mask.css';
+
 
 
 * {

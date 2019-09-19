@@ -1,0 +1,9 @@
+.contacts__link {
+
+}
+
+@media (max-width: 1000px) {
+  .contacts__link {
+    margin-top: 10px;
+  }
+}

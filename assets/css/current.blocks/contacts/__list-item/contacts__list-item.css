@@ -1,0 +1,15 @@
+.contacts__list-item {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .contacts__list-item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts__list-item {
+    align-items: flex-start;
+  }
+}

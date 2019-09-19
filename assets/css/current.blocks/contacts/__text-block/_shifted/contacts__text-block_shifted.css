@@ -1,0 +1,9 @@
+.contacts__text-block_shifted {
+  margin-left: 8.75%;
+}
+
+@media (max-width: 1100px) {
+  .contacts__text-block_shifted {
+    margin-left: 0;
+  }
+}

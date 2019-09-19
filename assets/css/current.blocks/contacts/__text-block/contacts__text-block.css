@@ -1,0 +1,23 @@
+.contacts__text-block {
+  max-width: 50%;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+  .contacts__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts__text-block {
+    align-items: flex-start;
+    width: 81.25vw;
+  }
+}
+
