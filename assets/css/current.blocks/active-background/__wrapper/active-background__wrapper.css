@@ -1,0 +1,22 @@
+.active-background__wrapper {
+  position: relative;
+  width: 39.0625vw;
+  height: 26.0416vw;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .active-background__wrapper {
+    width: 61.9791vw;
+    height: 35.677vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .active-background__wrapper {
+    width: 58.4375vw;
+    height: 33.4375vw;
+  }
+}

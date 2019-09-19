@@ -1,0 +1,10 @@
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .about__content {
+    flex-direction: column;
+  }
+}

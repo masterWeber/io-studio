@@ -1,0 +1,23 @@
+.about__title-container {
+  width: 50%;
+}
+
+@media (max-width: 1500px) {
+  .about__title-container {
+    max-width: initial;
+    width: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about__title-container {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 7000px) {
+  .about__title-container {
+    margin-bottom: 30px;
+  }
+}
+

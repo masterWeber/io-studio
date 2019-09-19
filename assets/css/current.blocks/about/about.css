@@ -1,0 +1,19 @@
+.about {
+  position: relative;
+  width: 85.45vw;
+  margin: 9.9vw auto;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    width: 89.58vw;
+    margin: 9.11vw auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    margin: 9.3vw auto;
+    width: 81.25vw;
+  }
+}

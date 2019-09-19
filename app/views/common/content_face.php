@@ -8,7 +8,7 @@
         </video>
 
         <svg class="component-logo__mask" viewBox="0 0 910 645" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="/images/mask.svg#mask"></use>
+            <use xlink:href="/images/mask_io.svg#mask"></use>
         </svg>
     </div>
 
