@@ -44,3 +44,10 @@
 .card:nth-child(2n) {
   margin-left: 0;
 }
+
+.card .hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0ms, transform 0ms;
+  transition-delay: 0;
+}

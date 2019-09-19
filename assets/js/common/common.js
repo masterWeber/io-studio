@@ -16,7 +16,33 @@ const getParent = (element, parentClassName) => {
   return parent;
 };
 
-const numberWithSpaces = (x) => {
+const isVisible = target => {
+  'use strict';
+  const targetPosition = {
+    top: window.pageYOffset + target.getBoundingClientRect().top,
+    left: window.pageXOffset + target.getBoundingClientRect().left,
+    right: window.pageXOffset + target.getBoundingClientRect().right,
+    bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
+  };
+
+  const windowPosition = {
+    top: window.pageYOffset,
+    left: window.pageXOffset,
+    right: window.pageXOffset + document.documentElement.clientWidth,
+    bottom: window.pageYOffset + document.documentElement.clientHeight,
+  };
+
+  if (targetPosition.bottom > windowPosition.top &&
+      targetPosition.top < windowPosition.bottom &&
+      targetPosition.right > windowPosition.left &&
+      targetPosition.left < windowPosition.right) {
+    return true;
+  }
+
+  return false;
+};
+
+const numberWithSpaces = x => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 };
 
@@ -126,7 +152,7 @@ const numberWithSpaces = (x) => {
 
   let pageYLabel = 0;
 
-  upDownElem.addEventListener('click', (event) => {
+  upDownElem.addEventListener('click', event => {
     const target = event.currentTarget;
     const pageY = window.pageYOffset || document.documentElement.scrollTop;
     if (target.className === 'button-scroll-to up') {
@@ -134,10 +160,60 @@ const numberWithSpaces = (x) => {
       pageYLabel = pageY;
       try {
         $('html').animate({scrollTop: 0}, 1000);
-      } catch (e) {
+      }
+      catch (e) {
         window.scrollTo(0, 0);
       }
     }
   });
 
+}
+
+{
+
+  const hide = element => element.classList.add('hidden');
+  const show = element => element.classList.remove('hidden');
+
+  const isShow = element => !element.classList.contains('hidden');
+
+  const animateCard = cardElement => {
+    const header = cardElement.querySelector('.card__header');
+    show(header);
+    const background = cardElement.querySelector('.card__background');
+    show(background);
+    const footer = cardElement.querySelector('.card__footer');
+    show(footer);
+  };
+
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    const header = card.querySelector('.card__header');
+    hide(header);
+    const background = card.querySelector('.card__background');
+    hide(background);
+    const footer = card.querySelector('.card__footer');
+    hide(footer);
+  });
+
+  const scrollHandler = () => {
+    cards.forEach(card => {
+      if (isVisible(card)) {
+        setTimeout(()=> {
+          animateCard(card)
+        },500);
+      }
+    });
+
+    const lastCard = cards[cards.length - 1];
+    const lastCardFooter = lastCard.querySelector('.card__footer');
+
+    const firstCard = cards[0];
+    const firstCardFooter = firstCard.querySelector('.card__footer');
+
+    if (isShow(lastCardFooter) && isShow(firstCardFooter)) {
+      window.removeEventListener('scroll', scrollHandler);
+    }
+  };
+
+  window.addEventListener('scroll', scrollHandler);
 }
