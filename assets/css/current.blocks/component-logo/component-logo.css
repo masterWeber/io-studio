@@ -3,8 +3,9 @@
   --componet-logo-width: calc(var(--window-width) - 52.6042vw);
   width: var(--componet-logo-width);
   height: calc(var(--componet-logo-width) / 1.41);
-  transform: translateY(calc(var(--header-height) * -1));
-  transition: transform 200ms;
+  margin-top: calc(var(--header-height) * -1);
+  background-color: white;
+  transition: opacity 200ms;
   overflow: hidden;
 }
 

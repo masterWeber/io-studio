@@ -1,5 +1,5 @@
+'use strict';
 const getParent = (element, parentClassName) => {
-  'use strict';
   let parent = element.parentElement;
 
   while (!parent.classList.contains(parentClassName)) {
@@ -32,14 +32,10 @@ const isVisible = target => {
     bottom: window.pageYOffset + document.documentElement.clientHeight,
   };
 
-  if (targetPosition.bottom > windowPosition.top &&
+  return targetPosition.bottom > windowPosition.top &&
       targetPosition.top < windowPosition.bottom &&
       targetPosition.right > windowPosition.left &&
-      targetPosition.left < windowPosition.right) {
-    return true;
-  }
-
-  return false;
+      targetPosition.left < windowPosition.right;
 };
 
 const numberWithSpaces = x => {
@@ -48,7 +44,6 @@ const numberWithSpaces = x => {
 
 //Process width Scrollbar
 {
-
   const getScrollbarWidth = () => {
     const div = document.createElement('div');
 
@@ -79,7 +74,6 @@ const numberWithSpaces = x => {
 
 //Dialogs
 {
-
   const ESC = 27;
 
   const mdClose = event => {
@@ -169,6 +163,7 @@ const numberWithSpaces = x => {
 
 }
 
+// Cards
 {
 
   const hide = element => element.classList.add('hidden');
@@ -198,9 +193,9 @@ const numberWithSpaces = x => {
   const scrollHandler = () => {
     cards.forEach(card => {
       if (isVisible(card)) {
-        setTimeout(()=> {
-          animateCard(card)
-        },500);
+        setTimeout(() => {
+          animateCard(card);
+        }, 500);
       }
     });
 
@@ -216,4 +211,48 @@ const numberWithSpaces = x => {
   };
 
   window.addEventListener('scroll', scrollHandler);
+}
+
+//Active background
+{
+  let pageOffset;
+  let offsetVideo;
+
+  const activeBackgroundVideo = document.querySelector('.active-background__video');
+
+  const init = () => {
+    pageOffset = pageYOffset;
+    activeBackgroundVideo.style.transform = `translateY(0)`;
+    offsetVideo = -activeBackgroundVideo.getBoundingClientRect().top + window.innerHeight/4;
+    activeBackgroundVideo.style.transform = `translateY(${offsetVideo}px)`;
+  };
+
+  window.addEventListener('resize', init);
+
+  const scrollHandler = () => {
+    let offset = pageYOffset - pageOffset;
+    pageOffset = pageYOffset;
+
+    activeBackgroundVideo.style.transform = `translateY(${offsetVideo + offset}px)`;
+    offsetVideo += offset;
+  };
+
+  window.addEventListener('scroll', scrollHandler);
+  init();
+}
+
+//Component logo
+{
+  const logo = document.querySelector('.component-logo');
+  const logoVideo = document.querySelector('.component-logo__video');
+  window.addEventListener('scroll', () => {
+    logo.style.transform = `translateY(${pageYOffset}px)`;
+
+    logoVideo.style.transform = `scale(1.3) translateY(${-pageYOffset / 1.2}px)`;
+    if (pageYOffset >= window.innerHeight) {
+      logo.style.opacity = '0';
+    } else {
+      logo.style.opacity = '1';
+    }
+  });
 }
