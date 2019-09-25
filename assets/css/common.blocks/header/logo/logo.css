@@ -1,3 +1,18 @@
+.logo {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #292929;
+  transition: transform 200ms;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+}
+
 .logo:focus {
   outline: none;
 }
