@@ -48,7 +48,7 @@ class Loader
         return $output;
     }
 
-    public function controller(string $route, string $action = 'index', array $data = [])
+    public function controller(string $route, string $action = 'index', array $args = [])
     {
         $path = DIR_CONTROLLER . "$route.php";
 
@@ -61,7 +61,7 @@ class Loader
         $class = 'Controller' . preg_replace('/\//i', '', $route);
         $controller = new $class($this->registry);
 
-        return $controller->$action($data);
+        return $controller->$action($args);
     }
 
     public function language(string $route)

@@ -9,7 +9,9 @@ class ControllerInformationPortfolio extends Controller
             return;
         }
 
-        $portfolio = $this->load->model('information/portfolio');
+        $route = 'information/portfolio';
+
+        $portfolio = $this->load->model($route);
         $data['projects'] = $portfolio->getAllProjects()->rows;
 
         for ($i = 0; $i < count($data['projects']); $i++) {
@@ -17,15 +19,16 @@ class ControllerInformationPortfolio extends Controller
             $data['projects'][$i]['link'] = $link;
         }
 
-        $data['header'] = $this->load->controller('common/header');
+        $data['header'] = $this->load->controller('common/header', 'index', ['route' => $route]);
         $data['footer'] = $this->load->controller('common/footer');
 
-        $output = $this->load->view("information/portfolio", $data);
+        $output = $this->load->view($route, $data);
         $this->response->setOutput($output);
     }
 
     public function getProject(string $id)
     {
+        $route = 'information/project';
 
         $portfolio = $this->load->model('information/portfolio');
         $project = $portfolio->getProjectById((int)$id)->row;
@@ -34,7 +37,7 @@ class ControllerInformationPortfolio extends Controller
             $this->response->redirect('404');
         }
 
-        $data['header'] = $this->load->controller('common/header');
+        $data['header'] = $this->load->controller('common/header', 'index', ['route' => $route]);
         $data['footer'] = $this->load->controller('common/footer');
 
         $data['link_back_project'] = $this->url->link('portfolio');
@@ -43,7 +46,7 @@ class ControllerInformationPortfolio extends Controller
 
         $data = array_merge($data, $project);
 
-        $output = $this->load->view("information/project", $data);
+        $output = $this->load->view($route, $data);
 
         $this->response->setOutput($output);
     }

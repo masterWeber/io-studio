@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= $title ?></title>
     <meta name="description" content="<?= $description ?>">
+    <meta name="keywords" content="<?= $keywords ?>">
+    <meta property="og:locale" content="<?= $lang ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= $title ?>">
+    <meta property="og:description" content="<?= $description ?>">
+    <meta property="og:url" content="<?= $link_home ?>">
+    <meta property="og:site_name" content="io-studio">
+    <meta property="og:image" content="https://io-studio.io/images/Design+Development.jpg">
+    <meta property="og:image:secure_url" content="https://io-studio.io/images/Design+Development.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon/favicon-32x32.png">
@@ -21,29 +30,22 @@
 </head>
 <body class="page">
 <header class="header">
-    <a class="logo" href="<?= $link_home ?>" title="Главная">
-        <picture class="logo__img-container">
-            <source srcset="/images/logo/logo.svg" type="image/svg+xml">
-            <img class="logo__img" src="/images/logo/logo.png" alt="Логотип io-studio">
-        </picture>
-    </a>
+    <a class="logo" href="<?= $link_home ?>" title="<?= $logo_link_title ?>">io.</a>
     <div class="toolbar">
-        <button class="button md-trigger" data-modal="order-dialog"><?= $button_hire_us ?></button>
+        <button class="button md-trigger" data-modal="order-dialog"
+                title="<?= $button_hire_us ?>">
+            <?= $button_hire_us ?>
+        </button>
         <div class="header__social social">
-            <a class="social__item" href="https://facebook.com/" title="Мы в Facebook" target="_blank"
-               rel="noreferrer">
-                fb
-            </a>
-            <a class="social__item" href="https://behance.net/" title="Мы в Behance" target="_blank"
-               rel="noreferrer">
-                be
-            </a>
-            <a class="social__item" href="https://instagram.com/" title="Мы в Instagram" target="_blank"
-               rel="noreferrer">
-                ig
-            </a>
+            <a class="social__item" href="https://facebook.com/" title="<?= $facebook_link_title ?>" target="_blank"
+               rel="noreferrer">fb</a>
+            <a class="social__item" href="https://behance.net/" title="<?= $behance_link_title ?>" target="_blank"
+               rel="noreferrer">be</a>
+            <a class="social__item" href="https://instagram.com/" title="<?= $instagram_link_title ?>" target="_blank"
+               rel="noreferrer">ig</a>
         </div>
-        <button class="bubble-button md-trigger" data-modal="navigation-dialog" title="Меню" aria-label="Меню">
+        <button class="bubble-button md-trigger" data-modal="navigation-dialog"
+                title="<?= $menu_button_title ?>" aria-label="<?= $menu_button_title ?>">
             <span class="bubble-button__element bubble-button__element_first"></span>
             <span class="bubble-button__element bubble-button__element_second"></span>
             <span class="bubble-button__element bubble-button__element_third"></span>

@@ -4,6 +4,8 @@ class ControllerCommonHome extends Controller
 {
     public function index()
     {
+        $route = 'common/home';
+
         $lang = $this->language->getCurrent();
 
         if ($lang === 'ru') {
@@ -15,12 +17,11 @@ class ControllerCommonHome extends Controller
         }
 
         $data['link_service'] = $this->url->link('service');
-
-        $data['header'] = $this->load->controller('common/header');
+        $data['header'] = $this->load->controller('common/header', 'index', ['route' => $route]);
         $data['feedback'] = $this->load->controller('common/feedback');
         $data['footer'] = $this->load->controller('common/footer');
 
-        $output = $this->load->view('common/home', $data);
+        $output = $this->load->view($route, $data);
         $this->response->setOutput($output);
     }
 }
