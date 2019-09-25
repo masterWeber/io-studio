@@ -24,7 +24,7 @@
             </h2>
         </div>
         <div class="about__subtitle-container column">
-            <p class="text">
+            <p class="text text_wide">
                 Дизайн и разработка, как стиль жизни и путь к самопознанию
             </p>
         </div>

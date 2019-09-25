@@ -6,6 +6,7 @@
   padding-bottom: 32px;
   margin-bottom: 30px;
   width: 100%;
+  min-width: 20px;
   border-bottom: 1px solid #fff;
   transition: all 200ms;
   white-space: nowrap;
