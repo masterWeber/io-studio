@@ -18,39 +18,37 @@
     <div class="about__header">
         <div class="about__title-container column">
             <h2 class="column__title title title_large title_high">
-                Концепция —
-                <br>
-                Цель
+                <?= $concept_title ?>
             </h2>
         </div>
         <div class="about__subtitle-container column">
             <p class="text text_wide">
-                Дизайн и разработка, как стиль жизни и путь к самопознанию
+                <?= $concept_text ?>
             </p>
         </div>
     </div>
 
     <div class="about__content">
         <div class="column about__item about__item_reward">
-            <span class="column__title text text_medium text_wide">Награды</span>
+            <span class="column__title text text_medium text_wide"><?= $awards ?></span>
             <span class="text text_medium text_wide">2</span>
         </div>
         <div class="about__column-group">
             <div class="column about__item">
-                <span class="column__title text text_medium text_wide">Страна</span>
-                <span class="text">Россия</span>
+                <span class="column__title text text_medium text_wide"><?= $country ?></span>
+                <span class="text"><?= $country_text ?></span>
             </div>
             <div class="column about__item">
-                <span class="column__title text text_medium text_wide">Год</span>
+                <span class="column__title text text_medium text_wide"><?= $year ?></span>
                 <span class="text">2018</span>
             </div>
             <div class="column about__item">
-                <span class="column__title text text_medium text_wide">Профиль</span>
-                <span class="text">web-студия</span>
+                <span class="column__title text text_medium text_wide"><?= $profile ?></span>
+                <span class="text"><?= $profile_text ?></span>
             </div>
             <div class="column about__item">
-                <span class="column__title text text_medium text_wide">Направление</span>
-                <span class="text">трендовые сайты</span>
+                <span class="column__title text text_medium text_wide"><?= $business_line ?></span>
+                <span class="text"><?= $business_line_text ?></span>
             </div>
         </div>
     </div>

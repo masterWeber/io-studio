@@ -33,8 +33,8 @@
     <a class="logo" href="<?= $link_home ?>" title="<?= $logo_link_title ?>">io.</a>
     <div class="toolbar">
         <button class="button md-trigger" data-modal="order-dialog"
-                title="<?= $button_hire_us ?>">
-            <?= $button_hire_us ?>
+                title="<?= $hire_us_button ?>">
+            <?= $hire_us_button ?>
         </button>
         <div class="header__social social">
             <a class="social__item" href="https://facebook.com/" title="<?= $facebook_link_title ?>" target="_blank"

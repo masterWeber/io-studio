@@ -34,7 +34,7 @@
                             <p class="project-info__description text"><?= $project['service'] ?></p>
                             <a class="project-info__button button button_transparent"
                                href="<?= $project['link'] ?>">
-                                <?= $button_view ?>
+                                <?= $view_button ?>
                             </a>
                         </div>
                     </li>

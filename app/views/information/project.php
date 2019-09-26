@@ -9,22 +9,22 @@
         <div class="project__content">
 
             <div class="project__text-block project__text-block_service">
-                <h2 class="project__subtitle title">Услуга</h2>
+                <h2 class="project__subtitle title"><?= $title_service ?></h2>
                 <p class="text text_wide"><?= $service ?></p>
             </div>
 
             <div class="project__text-block project__text-block_timeline">
-                <h2 class="project__subtitle title">Сроки</h2>
+                <h2 class="project__subtitle title"><?= $title_timeline  ?></h2>
                 <p class="text text_wide"><?= $timeline ?></p>
             </div>
 
             <div class="project__text-block project__text-block_description">
-                <h2 class="project__subtitle title">Описание</h2>
+                <h2 class="project__subtitle title"><?= $title_description ?></h2>
                 <p class="text text_wide"><?= $description ?></p>
             </div>
 
             <div class="project__text-block project__text-block_cost">
-                <h2 class="project__subtitle title">Стоимость</h2>
+                <h2 class="project__subtitle title"><?= $title_cost ?> </h2>
                 <p class="text text_medium text_wide number-with-spaces"><?= $cost ?></p>
             </div>
 
@@ -35,11 +35,11 @@
         <div class="project__footer">
             <a class="project__button project__button_back button button_transparent"
                href="<?= $link_back_project ?>">
-                Вернутся в галлерею
+                <?= $back_project_button ?>
             </a>
             <a class="project__button project__button_next button button_transparent"
                href="<?= $link_next_project ?>">
-                Следующий проэкт
+                <?= $next_project_button ?>
             </a>
         </div>
 

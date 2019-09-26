@@ -5,7 +5,7 @@
     <div class="services container">
         <div class="services__content">
             <div class="services__text-block">
-                <h2 class="title title_large title_high">Дизайн</h2>
+                <h2 class="title title_large title_high"><?= $design_title ?></h2>
                 <ul class="list">
                     <li class="list__item">
                         <span class="text text_wide">Ui / Ux решения</span>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
             <div class="services__text-block">
-                <h2 class="title title_large title_high">Разработка</h2>
+                <h2 class="title title_large title_high"><?= $development_title ?></h2>
                 <ul class="list">
                     <li class="list__item">
                         <span class="text text_wide">CMS</span>
@@ -50,12 +50,7 @@
     <div class="services container">
         <div class="services__content">
             <div class="services__text-block services__text-block_fickle">
-                <p class="text text_wide">
-                    В наш состав входят талантливые специалисты, занимающиеся
-                    разработкой сайтов. Мы используем новейшие технологии и принципы, опираясь на свой опыт, и
-                    психологические
-                    качества. Именно такой подход способен дать максимальные результаты, мы стараемся для вас.
-                </p>
+                <p class="text text_wide"><?= $about_us_text ?></p>
             </div>
         </div>
     </div>
@@ -63,7 +58,7 @@
     <div class="services container">
         <div class="services__content">
             <div class="services__text-block">
-                <h2 class="title title_large title_high">ВЕБ</h2>
+                <h2 class="title title_large title_high"><?= $web_title?></h2>
                 <ul class="list">
                     <li class="list__item">
                         <span class="text text_wide">— Landing page</span>
@@ -92,12 +87,8 @@
                 </ul>
             </div>
             <div class="services__text-block services__text-block_fickle">
-                <p class="title title_large title_high title_fake">Веб</p>
-                <p class="text text_wide">
-                    Мы создаём и разрабатываем уникальные решения для вашего бизнеса. Особенно горячо мы открыты к
-                    сотрудничеству с компаниями, которые в первую очередь уважают наше мнение, как специалистов и готовы
-                    доверять нам без каких либо сомнений.
-                </p>
+                <p class="title title_large title_high title_fake"><?= $web_title?></p>
+                <p class="text text_wide"><?= $web_text?></p>
             </div>
         </div>
     </div>
@@ -105,7 +96,7 @@
     <div class="services container">
         <div class="services__content">
 
-            <h2 class="title title_large title_high">Технологии</h2>
+            <h2 class="title title_large title_high"><?= $technology_title?></h2>
             <div class="technologies">
                 <picture class="technologies__item">
                     <img class="technologies__image" src="/images/logos_technologies/figma-logo.png" title="Figma" alt="Figma">

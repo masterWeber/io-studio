@@ -3,22 +3,22 @@
         <span class="bubble-button__element bubble-button__element_first"></span>
         <span class="bubble-button__element bubble-button__element_second"></span>
         <span class="bubble-button__element bubble-button__element_third"></span>
-        <span class="bubble-button__text"><?= $button_close ?></span>
+        <span class="bubble-button__text"><?= $close_button ?></span>
     </button>
     <form action="<?= $action_order ?>" class="form">
 
         <header class="form__header">
-            <p class="form__title">Готовы к сотрудничеству? Отлично, мы тоже</p>
+            <p class="form__title"><?= $here_us_form_title ?></p>
         </header>
 
         <div class="form__group">
             <div class="input-field">
                 <input class="input" id="order-dialog-name" name="name" type="text">
-                <label class="label label_light label_placeholder" for="order-dialog-name">Имя</label>
+                <label class="label label_light label_placeholder" for="order-dialog-name"><?= $label_name?></label>
             </div>
             <div class="input-field">
                 <input class="input" id="order-dialog-email" name="email" type="email">
-                <label class="label label_light label_placeholder" for="order-dialog-email">E-mail</label>
+                <label class="label label_light label_placeholder" for="order-dialog-email"><?= $label_email?></label>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
         </div>
         <footer class="form__footer">
             <input class="button button_large button_dark md-trigger" data-modal="order-dialog" type="submit"
-                   value="Отправить">
+                   value="<?= $send_button ?>">
         </footer>
     </form>
 </div>

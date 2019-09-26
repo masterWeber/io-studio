@@ -62,7 +62,7 @@
 @import 'current.blocks/service/service__card.css';
 /** feedback **/
 @import 'common.blocks/feedback/feedback.css';
-@import 'common.blocks/feedback/feedback__title.css';
+@import 'common.blocks/feedback/feedback__text.css';
 /** form **/
 @import 'common.blocks/form/form.css';
 @import 'common.blocks/form/form__header.css';

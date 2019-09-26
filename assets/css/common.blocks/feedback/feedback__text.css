@@ -1,4 +1,4 @@
-.feedback__title {
+.feedback__text {
   max-width: 395px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
@@ -9,21 +9,21 @@
 }
 
 @media (max-width: 1300px) {
-  .feedback__title {
+  .feedback__text {
     margin: 0 0 46px 0;
     max-width: 90%;
   }
 }
 
 @media (max-width: 1000px) {
-  .feedback__title {
+  .feedback__text {
     font-size: 14px;
     line-height: 22px;
   }
 }
 
 @media (max-width: 700px) {
-  .feedback__title {
+  .feedback__text {
     max-width: initial;
     margin-bottom: 30px;
     font-size: 12px;

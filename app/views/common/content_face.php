@@ -19,11 +19,11 @@
         <p class="face__subtitle">
             <?= $face_subtitle ?>
         </p>
-        <button class="button md-trigger" data-modal="order-dialog"><?= $button_hire_us ?></button>
+        <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_button ?></button>
     </div>
 
     <p class="face__count">
-        63+<br>Проекта
+        <?= $projects_count ?>
     </p>
 
     <p class="face__version version">
