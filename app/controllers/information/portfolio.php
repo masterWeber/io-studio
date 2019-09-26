@@ -15,7 +15,7 @@ class ControllerInformationPortfolio extends Controller
         $data['projects'] = $portfolio->getAllProjects()->rows;
 
         for ($i = 0; $i < count($data['projects']); $i++) {
-            $link = $this->url->link('portfolio/' . $data['projects'][$i]['id']);
+            $link = $this->url->link('portfolio/' . $data['projects'][$i]['name']);
             $data['projects'][$i]['link'] = $link;
         }
 
@@ -26,12 +26,13 @@ class ControllerInformationPortfolio extends Controller
         $this->response->setOutput($output);
     }
 
-    public function getProject(string $id)
+    public function getProject(string $name)
     {
         $route = 'information/project';
 
         $portfolio = $this->load->model('information/portfolio');
-        $project = $portfolio->getProjectById((int)$id)->row;
+        $project = $portfolio->getProjectByName($name)->row;
+        $projectId = (int)$project['id'];
 
         if (empty($project)) {
             $this->response->redirect('404');
@@ -41,8 +42,15 @@ class ControllerInformationPortfolio extends Controller
         $data['footer'] = $this->load->controller('common/footer');
 
         $data['link_back_project'] = $this->url->link('portfolio');
-        $nextId = (int) $id + 1;
-        $data['link_next_project'] = $this->url->link('portfolio/' . $nextId);
+
+        $nextProjectId = ++$projectId;
+        $nextProject = $portfolio->getProjectById($nextProjectId)->row;
+
+        if (!empty($nextProject)) {
+            $data['link_next_project'] = $this->url->link('portfolio/' . $nextProject['name']);
+        } else {
+            $data['link_next_project'] = false;
+        }
 
         $data = array_merge($data, $project);
 
