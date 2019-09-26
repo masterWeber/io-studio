@@ -21,9 +21,9 @@ class URL
 
         $lang = $this->registry->get('language')->getCurrent();
         if ($route !== '/') {
-            $url = $this->url . "/{$lang}/{$route}/";
+            $url = $this->url . "/{$lang}/{$route}";
         } else {
-            $url = $this->url . "/{$lang}/";
+            $url = $this->url . "/{$lang}";
         }
 
 
@@ -42,10 +42,10 @@ class URL
         });
         $parts = array_values($parts);
 
-        return $this->analyze($parts);
+        return $parts;
     }
 
-    public function analyze(array $urlParts)
+    public function analyze(array $partsUrl)
     {
 
         $result = [
@@ -54,13 +54,13 @@ class URL
           'param' => ''
         ];
 
-        if (count($urlParts) === 0) {
+        if (count($partsUrl) === 0) {
             $result['route'] = ROUTES_MAP['index'];
             return $result;
         }
 
-        for ($i = 0; $i < count($urlParts); $i++) {
-            $part = $urlParts[$i];
+        for ($i = 0; $i < count($partsUrl); $i++) {
+            $part = $partsUrl[$i];
 
             switch (true) {
                 case $this->isLang($part):

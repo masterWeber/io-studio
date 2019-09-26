@@ -13,9 +13,10 @@ class Language
     {
         $url = $this->registry->get('url');
 
-        $urlParts = $url->parse();
+        $partsUrl = $url->parse();
+        $analyzedPartsUrl = $url->analyze($partsUrl);
 
-        $lang = $urlParts['lang'];
+        $lang = $analyzedPartsUrl['lang'];
 
         if (empty($lang)) {
             $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);

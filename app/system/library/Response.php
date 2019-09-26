@@ -13,7 +13,7 @@ class Response
 
     public function redirect(string $url, int $status = 301)
     {
-        $header = preg_replace('/\/\//i', '/', "Location: /{$url}/");
+        $header = preg_replace('/\/\//i', '/', "Location: /{$url}");
         header($header, true, $status);
         exit();
     }

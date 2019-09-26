@@ -7,12 +7,20 @@ class Router extends Controller
 
     public function run()
     {
-        $urlParts = $this->url->parse();
+        $partsUrl = $this->url->parse();
+        $analyzedPartsUrl = $this->url->analyze($partsUrl);
 
         $uri = $_SERVER['REQUEST_URI'];
-        $lang = $urlParts['lang'];
-        $route = $urlParts['route'];
-        $param = $urlParts['param'];
+        if ($uri === '/') {
+            $uri = '';
+        }
+
+        if (key_exists(1, $partsUrl) && empty($analyzedPartsUrl['route'])) {
+            $analyzedPartsUrl['route'] = 'error/404';
+        }
+        $lang = $analyzedPartsUrl['lang'];
+        $route = $analyzedPartsUrl['route'];
+        $param = $analyzedPartsUrl['param'];
 
 
         if (empty($lang)) {

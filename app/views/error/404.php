@@ -1,2 +1,4 @@
 <h1>404</h1>
 <p><?= $error_message ?></p>
+
+<a href="<?= $homepage_link ?>">Home</a>
