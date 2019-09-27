@@ -12,7 +12,7 @@ const ROUTES_MAP = [
   'service' => 'information/service',
   'contacts' => 'information/contacts',
   'portfolio' => 'information/portfolio',
-  '404' => 'error/404'
+  '404' => 'error/not_found'
 ];
 
 //База данных

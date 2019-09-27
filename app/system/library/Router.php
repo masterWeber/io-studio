@@ -16,7 +16,7 @@ class Router extends Controller
         }
 
         if (key_exists(1, $partsUrl) && empty($analyzedPartsUrl['route'])) {
-            $analyzedPartsUrl['route'] = 'error/404';
+            $analyzedPartsUrl['route'] = 'error/not_found';
         }
         $lang = $analyzedPartsUrl['lang'];
         $route = $analyzedPartsUrl['route'];
@@ -34,12 +34,12 @@ class Router extends Controller
         }
 
         $path = DIR_CONTROLLER . ROUTES_MAP['index'];
-        $currentClass = preg_replace('/\//i', '', ROUTES_MAP['index']);
+        $currentClass = preg_replace('/(\/)|(_)/i', '', ROUTES_MAP['index']);
         $class = 'Controller' . $currentClass;
 
         if ($route) {
             $path = DIR_CONTROLLER . $route;
-            $class = 'Controller' . preg_replace('/\//i', '', $route);
+            $class = 'Controller' . preg_replace('/(\/)|(_)/i', '', $route);
         }
 
         try {

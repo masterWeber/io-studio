@@ -1,10 +1,10 @@
 <?php
 
-class ControllerError404 extends Controller
+class ControllerErrorNotFound extends Controller
 {
     public function index()
     {
-        $route = 'error/404';
+        $route = 'error/not_found';
 
         $data = $this->load->language($route);
         $data['homepage_link'] = $this->url->link('/');
