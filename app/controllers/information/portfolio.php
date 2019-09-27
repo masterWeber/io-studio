@@ -32,11 +32,13 @@ class ControllerInformationPortfolio extends Controller
 
         $portfolio = $this->load->model('information/portfolio');
         $project = $portfolio->getProjectByName($name)->row;
-        $projectId = (int)$project['id'];
 
         if (empty($project)) {
-            $this->response->redirect('404');
+            $this->load->controller('error/not_found');
+            return;
         }
+
+        $projectId = (int)$project['id'];
 
         $data['header'] = $this->load->controller('common/header', 'index', ['route' => $route]);
         $data['footer'] = $this->load->controller('common/footer');

@@ -58,7 +58,7 @@ class Loader
             echo 'path is\'t defined';
         }
 
-        $class = 'Controller' . preg_replace('/\//i', '', $route);
+        $class = 'Controller' . preg_replace('/(\/)|(_)/i', '', $route);
         $controller = new $class($this->registry);
 
         return $controller->$action($args);

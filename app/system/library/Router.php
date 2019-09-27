@@ -15,22 +15,22 @@ class Router extends Controller
             $uri = '';
         }
 
-        if (key_exists(1, $partsUrl) && empty($analyzedPartsUrl['route'])) {
-            $analyzedPartsUrl['route'] = 'error/not_found';
-        }
         $lang = $analyzedPartsUrl['lang'];
         $route = $analyzedPartsUrl['route'];
         $param = $analyzedPartsUrl['param'];
 
-
         if (empty($lang)) {
             if (empty($route)) {
-                $uri = $this->language->getCurrent();
-            } else {
                 $uri = $this->language->getCurrent() . $uri;
+            } else {
+                $uri = $this->language->getCurrent();
             }
 
             $this->response->redirect($uri);
+        }
+
+        if (key_exists(1, $partsUrl) && empty($route)) {
+            $route = 'error/not_found';
         }
 
         $path = DIR_CONTROLLER . ROUTES_MAP['index'];
