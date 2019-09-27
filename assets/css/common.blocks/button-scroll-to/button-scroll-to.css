@@ -12,6 +12,10 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.button-scroll-to:focus {
+  outline: #f9f3f0 dotted 1px;
+}
+
 @media (max-width: 1000px) {
   .button-scroll-to {
     right: 0;

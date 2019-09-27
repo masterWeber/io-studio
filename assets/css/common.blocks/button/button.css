@@ -12,7 +12,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #f9f1ed;
   background-color: #292929;
   border: none;
   border-radius: 100px;
@@ -35,6 +35,6 @@
 }
 
 .button:focus {
-  outline: black solid thin;
+  outline: #292929 dotted 1px;
   outline-offset: 2px;
 }

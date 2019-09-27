@@ -14,6 +14,10 @@
   color: #f9f3f0;
 }
 
+.support__link:focus {
+  outline: #f9f3f0 dotted 1px;
+}
+
 .support__link:hover {
   text-decoration: underline;
 }

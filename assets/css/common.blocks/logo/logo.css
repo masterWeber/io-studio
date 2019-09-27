@@ -14,5 +14,5 @@
 }
 
 .logo:focus {
-  outline: none;
+  outline: #292929 dotted 1px;
 }

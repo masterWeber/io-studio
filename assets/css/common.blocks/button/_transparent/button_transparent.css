@@ -13,12 +13,15 @@
   background-color: transparent;
 }
 
-.button_transparent:active {
+.button_transparent:focus {
+  color: #F9F3F0;
+  background-color: #292929;
   border-color: #292929;
+  outline: none;
 }
 
-.button_transparent:focus {
-  outline: none;
+.button_transparent:active {
+  color: var(--main-text-color);
   border-color: #292929;
 }
 

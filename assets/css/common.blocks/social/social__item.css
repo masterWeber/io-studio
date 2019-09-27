@@ -7,6 +7,11 @@
   text-transform: uppercase;
   color: var(--main-text-color);
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+.social__item:focus {
+  outline: #292929 dotted 1px;
 }
 
 .social__item::after {

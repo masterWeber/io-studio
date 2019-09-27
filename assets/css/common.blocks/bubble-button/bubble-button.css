@@ -14,6 +14,10 @@
   cursor: -webkit-image-set(url('/images/icons/cursors/cursor.png') 1x, url('/images/icons/cursors/cursor@2x.png') 2x) 6 6, auto;
 }
 
+.bubble-button:focus {
+  outline: #292929 dotted 1px;
+}
+
 .bubble-button_horizontal {
   margin-right: 70px;
   transform: rotate(90deg);
@@ -25,6 +29,10 @@
   top: 26px;
   right: 36px;
   transition: top 200ms, right 200ms;
+}
+
+.md .bubble-button_horizontal:focus {
+  outline: #f9f3f0 dotted 1px;
 }
 
 @media (max-width: 1000px) {

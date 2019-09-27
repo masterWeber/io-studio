@@ -9,6 +9,10 @@
   transition: all 200ms;
 }
 
+.menu__item:focus {
+  outline: #f9f3f0 dotted 1px;
+}
+
 @media (max-width: 1000px) {
   .menu__item {
     font-size: 45px;

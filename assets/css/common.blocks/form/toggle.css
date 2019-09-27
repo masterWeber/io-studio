@@ -1,5 +1,6 @@
 .toggle-container {
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   width: 50%;
   margin-bottom: 36px;
@@ -49,6 +50,11 @@
     width: 45px;
     height: 22px;
   }
+}
+
+.native-checkbox:focus ~  .toggle__back {
+  outline: #f9f3f0 dotted 1px;
+  outline-offset: 2px;
 }
 
 .toggle_narrow .native-checkbox {
