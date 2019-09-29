@@ -36,8 +36,8 @@ const css = () => {
       pipe(gulp.dest('./assets/css/'));
 };
 
-const javaScript = () => {
-  return gulp.src('./assets/js/common/*.js').
+const javaScriptCommon = () => {
+  return gulp.src('./assets/js/common/common.js').
       pipe(sourcemaps.init()).
       pipe(babel({
         presets: ['@babel/preset-env'],
@@ -50,7 +50,21 @@ const javaScript = () => {
       pipe(gulp.dest('./assets/js/'));
 };
 
-gulp.task('default', series(css, javaScript));
+const javaScriptSwiper = () => {
+  return gulp.src('./assets/js/common/swiper-init.js').
+      pipe(sourcemaps.init()).
+      pipe(babel({
+        presets: ['@babel/preset-env'],
+      })).
+      pipe(uglify()).
+      pipe(rename({
+        suffix: '.min',
+      })).
+      pipe(sourcemaps.write('.')).
+      pipe(gulp.dest('./assets/js/'));
+};
+
+gulp.task('default', series(css, javaScriptCommon, javaScriptSwiper));
 
 gulp.task('watch', function() {
   // При изменение файлов *.css в папке "assets/css" и подпапках запускаем
