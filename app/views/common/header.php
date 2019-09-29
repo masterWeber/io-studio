@@ -12,8 +12,9 @@
     <meta property="og:description" content="<?= $description ?>">
     <meta property="og:url" content="<?= $link_home ?>">
     <meta property="og:site_name" content="io-studio">
-    <meta property="og:image" content="https://io-studio.io/images/Design+Development.jpg">
-    <meta property="og:image:secure_url" content="https://io-studio.io/images/Design+Development.jpg">
+    <meta property="og:image" content="https://io-studio.io/images/design+development.jpg">
+    <meta property="og:image:secure_url" content="https://io-studio.io/images/design+development.jpg">
+    <meta property="og:image:type" content="image/jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon/favicon-32x32.png">
@@ -22,6 +23,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="/images/icons/favicon/site.webmanifest">
     <link rel="mask-icon" href="/images/icons/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta name="apple-mobile-web-app-title" content="io-studio.io">
     <meta name="application-name" content="io-studio.io">
     <meta name="msapplication-TileColor" content="#ffffff">
