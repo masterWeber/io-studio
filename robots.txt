@@ -1,0 +1,41 @@
+User-agent: *
+Crawl-delay: 5
+Allow: /
+Disallow: /cgi-bin
+Disallow: /?
+Disallow: /index.php?rest_route=*
+Disallow: /index.php
+
+User-agent: GoogleBot
+Allow: /
+Disallow: /cgi-bin
+Disallow: /?
+Disallow: /index.php
+Disallow: /index.php?rest_route=*
+Allow: /*/*.js
+Allow: /*/*.css
+Allow: /*/*.png
+Allow: /*/*.jpg
+Allow: /*/*.jpeg
+Allow: /*/*.gif
+
+User-agent: Yandex
+Allow: /
+Disallow: /cgi-bin
+Disallow: /?
+Disallow: /index.php
+Disallow: /index.php?rest_route=*
+Allow: /*/*.js
+Allow: /*/*.css
+Allow: /*/*.png
+Allow: /*/*.jpg
+Allow: /*/*.jpeg
+Allow: /*/*.gif
+
+User-agent: Googlebot-Image
+Allow: /images/*.*
+
+User-agent: YandexImages
+Allow: /images/*.*
+
+Sitemap: https://io-studio.io/sitemap.xml
