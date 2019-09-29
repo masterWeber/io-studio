@@ -4,7 +4,7 @@ $_['hire_us_button'] = 'Hire us';
 $_['close_button'] = 'close';
 $_['view_button'] = 'View';
 $_['order_button'] = 'Order';
-$_['more_button'] = 'More';
+$_['details_button'] = 'Details';
 $_['send_button'] = 'Send';
 
 $_['label_name'] = 'Name';

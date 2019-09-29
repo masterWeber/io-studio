@@ -5,6 +5,6 @@
   width: var(--componet-logo-width);
   height: calc(var(--componet-logo-width) / 1.41);
   color: var(--main-color);
-  transform: scaleY(1.01);
+  transform: scale(1.01);
   object-fit: cover;
 }

@@ -5,7 +5,11 @@
             <p class="card__subtitle"><?= $service_subtitle_landing ?></p>
         </header>
         <picture class="card__background">
+            <source srcset="/images/service/ice-cream_small.webp" media="(max-width: 450px)" type="image/webp">
+            <source srcset="/images/service/ice-cream_medium.webp" media="(max-width: 700px)" type="image/webp">
             <source srcset="/images/service/ice-cream.webp" type="image/webp">
+            <source srcset="/images/service/ice-cream_small.png" media="(max-width: 450px)" type="image/png">
+            <source srcset="/images/service/ice-cream_medium.png" media="(max-width: 700px)" type="image/png">
             <img class="card__background-img" src="/images/service/ice-cream.png" alt="background">
         </picture>
         <footer class="card__footer">
@@ -14,7 +18,7 @@
                 <?= $order_button ?>
             </button>
             <a class="button button_transparent" href="<?= $link_service ?>">
-                <?= $more_button ?>
+                <?= $details_button ?>
             </a>
         </footer>
     </div>
@@ -24,7 +28,11 @@
             <p class="card__subtitle"><?= $service_subtitle_shop ?></p>
         </header>
         <picture class="card__background">
+            <source srcset="/images/service/girl_small.webp" media="(max-width: 450px)" type="image/webp">
+            <source srcset="/images/service/girl_medium.webp" media="(max-width: 700px)" type="image/webp">
             <source srcset="/images/service/girl.webp" type="image/webp">
+            <source srcset="/images/service/girl_small.png" media="(max-width: 450px)" type="image/png">
+            <source srcset="/images/service/girl_medium.png" media="(max-width: 700px)" type="image/png">
             <img class="card__background-img" src="/images/service/girl.png" alt="background">
         </picture>
         <footer class="card__footer">
@@ -33,7 +41,7 @@
                 <?= $order_button ?>
             </button>
             <a class="button button_transparent" href="<?= $link_service ?>">
-                <?= $more_button ?>
+                <?= $details_button ?>
             </a>
         </footer>
     </div>
@@ -52,7 +60,7 @@
                 <?= $order_button ?>
             </button>
             <a class="button button_transparent" href="<?= $link_service ?>">
-                <?= $more_button ?>
+                <?= $details_button ?>
             </a>
         </footer>
     </div>
@@ -62,7 +70,11 @@
             <p class="card__subtitle"><?= $service_subtitle_video ?></p>
         </header>
         <picture class="card__background">
+            <source srcset="/images/service/3d_small.webp" media="(max-width: 450px)" type="image/webp">
+            <source srcset="/images/service/3d_medium.webp" media="(max-width: 700px)" type="image/webp">
             <source srcset="/images/service/3d.webp" type="image/webp">
+            <source srcset="/images/service/3d_small.png" media="(max-width: 450px)" type="image/png">
+            <source srcset="/images/service/3d_medium.png" media="(max-width: 700px)" type="image/png">
             <img class="card__background-img" src="/images/service/3d.png" alt="background">
         </picture>
         <footer class="card__footer">
@@ -71,7 +83,7 @@
                 <?= $order_button ?>
             </button>
             <a class="button button_transparent" href="<?= $link_service ?>">
-                <?= $more_button ?>
+                <?= $details_button ?>
             </a>
         </footer>
     </div>

@@ -10,7 +10,7 @@
   overflow: hidden;
   transform: translateY(0);
   transition: opacity 500ms, transform 500ms;
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
 
 .card__background:after {

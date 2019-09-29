@@ -4,7 +4,7 @@ $_['hire_us_button'] = 'Нанять нас';
 $_['close_button'] = 'закрыть';
 $_['view_button'] = 'Смотреть';
 $_['order_button'] = 'Заказать';
-$_['more_button'] = 'Подробнее';
+$_['details_button'] = 'Подробнее';
 $_['send_button'] = 'Отправить';
 
 $_['label_name'] = 'Имя';
