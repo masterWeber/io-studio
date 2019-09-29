@@ -11,11 +11,11 @@
 .support__link {
   font-weight: bold;
   text-decoration: none;
-  color: #f9f3f0;
+  color: var(--main-color);
 }
 
 .support__link:focus {
-  outline: #f9f3f0 dotted 1px;
+  outline: var(--main-color) dotted 1px;
 }
 
 .support__link:hover {

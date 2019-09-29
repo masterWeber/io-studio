@@ -10,5 +10,5 @@
 
 .copyright__date {
   font-weight: bold;
-  color: #f9f3f0;
+  color: var(--main-color);
 }

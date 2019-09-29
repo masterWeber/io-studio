@@ -5,7 +5,7 @@
   display: block;
   height: 35px;
   width: 1px;
-  background-color: #292929;
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 1260px) {
@@ -28,7 +28,7 @@
   display: block;
   height: 7px;
   width: 7px;
-  background-color: #292929;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   animation: face-hint 2000ms;
   animation-delay: 3000ms;

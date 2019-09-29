@@ -5,7 +5,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
-  color: #292929;
+  color: var(--secondary-color);
   transition: transform 200ms;
 }
 
@@ -14,5 +14,5 @@
 }
 
 .logo:focus {
-  outline: #292929 dotted 1px;
+  outline: var(--secondary-color) dotted 1px;
 }

@@ -11,5 +11,5 @@
   height: 12px;
   width: 12px;
   margin: 0 8px;
-  background-color: #292929;
+  background-color: var(--secondary-color);
 }

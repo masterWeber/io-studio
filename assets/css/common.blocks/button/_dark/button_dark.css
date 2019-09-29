@@ -3,5 +3,5 @@
 }
 
 .button_dark:focus {
-  outline-color: #f9f3f0;
+  outline-color: var(--main-color);
 }

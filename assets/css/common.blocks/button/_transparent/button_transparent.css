@@ -3,7 +3,7 @@
   height: auto;
   padding: 6px 15px;
   font-weight: bold;
-  color: var(--main-text-color);
+  color: var(--secondary-color);
   border: 1px solid transparent;
   border-radius: 0;
   background-color: transparent;
@@ -14,15 +14,15 @@
 }
 
 .button_transparent:focus {
-  color: #F9F3F0;
-  background-color: #292929;
-  border-color: #292929;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
   outline: none;
 }
 
 .button_transparent:active {
-  color: var(--main-text-color);
-  border-color: #292929;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .button_transparent:before {
@@ -33,7 +33,7 @@
   display: block;
   height: 1px;
   width: calc(100% - 30px);
-  background-color: #292929;
+  background-color: var(--secondary-color);
 }
 
 .button_transparent:hover:before {

@@ -1,6 +1,8 @@
 @import 'common.blocks/normalize.css';
 @import 'common.blocks/fonts.css';
 @import 'common.blocks/variables.css';
+@import 'current.blocks/index.css';
+@import 'current.blocks/page/page.css';
 /** link **/
 @import 'common.blocks/link.css';
 /** List **/
@@ -139,31 +141,3 @@
 @import 'current.blocks/active-background/__wrapper/active-background__wrapper.css';
 @import 'current.blocks/active-background/__video/active-background__video.css';
 @import 'current.blocks/active-background/__mask/active-background__mask.css';
-
-* {
-  cursor: url('/images/icons/cursors/cursor.png') 6 6, auto;
-  cursor: url('/images/icons/cursors/cursor.svg') 6 6, auto;
-  cursor: -webkit-image-set(url('/images/icons/cursors/cursor.png') 1x, url('/images/icons/cursors/cursor@2x.png') 2x) 6 6, auto;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-::selection {
-  background: #000;
-  color: #fff;
-}
-
-a,
-button,
-input[type="submit"] {
-  cursor: url('/images/icons/cursors/cursor_active.png') 10 10, pointer;
-  cursor: url('/images/icons/cursors/cursor_active.svg') 10 10, pointer;
-  cursor: -webkit-image-set(url('/images/icons/cursors/cursor_active.png') 1x, url('/images/icons/cursors/cursor_active@2x.png') 2x) 10 10, pointer;
-}
-
-.page {
-  margin: 0;
-  background-color: #f9f3f0;
-}

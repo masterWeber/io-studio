@@ -5,7 +5,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 35px;
-  color: var(--main-text-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 1000px) {
@@ -24,7 +24,7 @@
 }
 
 .label_light {
-  color: #f9f3f0;
+  color: var(--main-color);
 }
 
 .label_placeholder {

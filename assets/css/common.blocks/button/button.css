@@ -13,7 +13,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #f9f1ed;
-  background-color: #292929;
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 100px;
   transition: background-color 200ms;
@@ -31,10 +31,10 @@
 }
 
 .button:active {
-  background-color: #292929;
+  background-color: var(--secondary-color);
 }
 
 .button:focus {
-  outline: #292929 dotted 1px;
+  outline: var(--secondary-color) dotted 1px;
   outline-offset: 2px;
 }

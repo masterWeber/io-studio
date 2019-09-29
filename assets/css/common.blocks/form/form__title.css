@@ -4,7 +4,7 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
-  color: #f9f3f0;
+  color: var(--main-color);
 }
 
 @media (max-width: 1000px) {

@@ -4,5 +4,6 @@
   left: 0;
   width: var(--componet-logo-width);
   height: calc(var(--componet-logo-width) / 1.41);
+  background-color: #ba8b4c;
   transform: scale(1.3);
 }

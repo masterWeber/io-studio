@@ -4,7 +4,7 @@
   left: 0;
   width: var(--componet-logo-width);
   height: calc(var(--componet-logo-width) / 1.41);
-  color: #f9f3f0;
+  color: var(--main-color);
   transform: scaleY(1.01);
   object-fit: cover;
 }

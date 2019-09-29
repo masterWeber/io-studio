@@ -2,5 +2,5 @@
   position: absolute;
   top: 0;
   left: 0;
-  fill: #f9f3f0;
+  fill: var(--main-color);
 }

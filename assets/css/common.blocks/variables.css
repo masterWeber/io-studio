@@ -2,5 +2,6 @@
   --scrollbar-width: 17px;
   --window-width: calc(100vw - var(--scrollbar-width));
   --header-height: 86px;
-  --main-text-color: #292929;
+  --main-color: #f9f3f0;
+  --secondary-color: #292929;
 }

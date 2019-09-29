@@ -4,13 +4,13 @@
   font-weight: bold;
   font-size: 70px;
   line-height: 85px;
-  color: #f9f3f0;
+  color: var(--main-color);
   text-decoration: none;
   transition: all 200ms;
 }
 
 .menu__item:focus {
-  outline: #f9f3f0 dotted 1px;
+  outline: var(--main-color) dotted 1px;
 }
 
 @media (max-width: 1000px) {
