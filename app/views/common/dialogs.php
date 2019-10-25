@@ -26,38 +26,38 @@
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-landing" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-landing" type="checkbox" name="landing">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox-landing">Landing page</label>
+                <label class="label label_light" for="checkbox-landing"><?= $text_landing ?></label>
             </div>
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-market" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-shop" type="checkbox" name="shop">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox-market">Интернет магазин</label>
+                <label class="label label_light" for="checkbox-shop"><?= $text_shop ?></label>
             </div>
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-company" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-company" type="checkbox" name="corporate">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox-company">Корпоративный</label>
+                <label class="label label_light" for="checkbox-company"><?= $text_corporate ?></label>
             </div>
 
             <div class="toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-video" type="checkbox" name="checkbox">
+                    <input class="native-checkbox" id="checkbox-video" type="checkbox" name="video">
                     <div class="toggle__back"></div>
                     <div class="toggle__toggle"></div>
                 </div>
-                <label class="label label_light" for="checkbox-video">Видео монтаж и 3D</label>
+                <label class="label label_light" for="checkbox-video"><?= $text_video ?></label>
             </div>
 
         </div>

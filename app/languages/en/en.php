@@ -11,6 +11,11 @@ $_['label_name'] = 'Name';
 $_['label_email'] = 'E-mail';
 $_['label_message'] = 'Message';
 
+$_['text_landing']   = 'Landing page';
+$_['text_corporate'] = 'Corporate';
+$_['text_shop']      = 'Online shop';
+$_['text_video']     = 'Video editing and 3D';
+
 $_['projects_count'] = '63+<br>Projects';
 $_['service_title_landing'] = 'Landing page';
 $_['service_subtitle_landing'] = 'from 10 working days';
