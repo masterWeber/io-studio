@@ -16,5 +16,3 @@ $_['web_title'] = 'Web';
 $_['web_text'] = 'We create and develop unique solutions for your business. We 
 are especially open to cooperation with companies that are primarily respect our 
 opinion as specialists and are ready to trust us without any doubts.';
-
-$_['technology_title'] = 'Technology';
