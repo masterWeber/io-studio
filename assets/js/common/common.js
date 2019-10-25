@@ -191,6 +191,9 @@ const numberWithSpaces = x => {
   });
 
   const scrollHandler = () => {
+    if (cards.length < 1) {
+      return false;
+    }
     cards.forEach(card => {
       if (isVisible(card)) {
         setTimeout(() => {
@@ -222,14 +225,20 @@ const numberWithSpaces = x => {
 
   const init = () => {
     pageOffset = pageYOffset;
+    if (!activeBackgroundVideo) {
+      return false;
+    }
     activeBackgroundVideo.style.transform = `translateY(0)`;
-    offsetVideo = -activeBackgroundVideo.getBoundingClientRect().top + window.innerHeight/4;
+    offsetVideo = -activeBackgroundVideo.getBoundingClientRect().top + window.innerHeight / 4;
     activeBackgroundVideo.style.transform = `translateY(${offsetVideo}px)`;
   };
 
   window.addEventListener('resize', init);
 
   const scrollHandler = () => {
+    if (!activeBackgroundVideo) {
+      return false;
+    }
     let offset = pageYOffset - pageOffset;
     pageOffset = pageYOffset;
 
@@ -246,6 +255,10 @@ const numberWithSpaces = x => {
   const logo = document.querySelector('.component-logo');
   const logoVideo = document.querySelector('.component-logo__video');
   window.addEventListener('scroll', () => {
+    if (!logo) {
+      return false;
+    }
+
     logo.style.transform = `translateY(${pageYOffset}px)`;
 
     logoVideo.style.transform = `scale(1.3) translateY(${-pageYOffset / 1.2}px)`;
