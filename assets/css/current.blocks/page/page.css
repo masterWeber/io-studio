@@ -5,3 +5,7 @@
   min-height: 100vh;
   background-color: var(--main-color);
 }
+
+.page__content {
+  margin-top: var(--header-height);
+}

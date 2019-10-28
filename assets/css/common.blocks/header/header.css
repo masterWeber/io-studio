@@ -1,5 +1,8 @@
 .header {
+  position: fixed;
+  z-index: 2;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
