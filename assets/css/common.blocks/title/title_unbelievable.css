@@ -1,0 +1,11 @@
+.title_unbelievable {
+  font-size: 400px;
+  line-height: 1;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 700px) {
+}
