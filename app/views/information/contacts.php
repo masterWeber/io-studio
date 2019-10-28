@@ -9,7 +9,7 @@
                 <li class="contacts__list-item list__item">
                     <span class="text text_wide"><?= $contacts_main ?></span>
                     <a class="contacts__link link text text_medium text_wide"
-                       href="mailto:iolive@io-studio.ru">iolive@io-studio.ru</a>
+                       href="mailto:info@io-studio.ru">info@io-studio.ru</a>
                 </li>
                 <li class="contacts__list-item list__item">
                     <span class="text text_wide"><?= $contacts_support ?></span>
