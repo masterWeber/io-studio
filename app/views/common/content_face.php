@@ -30,24 +30,6 @@
         <span class="version__number">1.0</span>
     </p>
 
-    <div class="face__lang lang-toggle">
-        <?php if ($lang_checked) { ?>
-            <span class="lang-toggle__text">Ru</span>
-            <span class="lang-toggle__text lang-toggle__text_active">En</span>
-        <?php } else { ?>
-            <span class="lang-toggle__text lang-toggle__text_active">Ru</span>
-            <span class="lang-toggle__text">En</span>
-        <?php } ?>
-
-        <a href="<?= $lang_link ?>" aria-label="Переключить язык">
-            <div class="toggle toggle_narrow <?= $lang_checked ?>">
-                <div class="toggle__back"></div>
-                <div class="toggle__toggle"></div>
-            </div>
-        </a>
-
-    </div>
-
     <div class="face__hint"></div>
 
 </div>
