@@ -9,9 +9,15 @@ class ModelInformationPortfolio extends Model
         return $this->db->query($sql);
     }
 
-    public function getProjectByName(string $name)
+    public function getProjectsByLang(string $lang)
     {
-        $sql = "SELECT * FROM `portfolio` WHERE `name` = '$name' LIMIT 1";
+        $sql = "SELECT * FROM `portfolio` WHERE `language` = '$lang' ORDER BY `id`";
+        return $this->db->query($sql);
+    }
+
+    public function getProjectByName(string $name, string $lang)
+    {
+        $sql = "SELECT * FROM `portfolio` WHERE `name` = '$name' AND `language` = '$lang' LIMIT 1";
         return $this->db->query($sql);
     }
 

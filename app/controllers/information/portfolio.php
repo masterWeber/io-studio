@@ -10,9 +10,10 @@ class ControllerInformationPortfolio extends Controller
         }
 
         $route = 'information/portfolio';
+        $lang = $this->language->getCurrent();
 
         $portfolio = $this->load->model($route);
-        $data['projects'] = $portfolio->getAllProjects()->rows;
+        $data['projects'] = $portfolio->getProjectsByLang($lang)->rows;
 
         for ($i = 0; $i < count($data['projects']); $i++) {
             $link = $this->url->link('portfolio/' . $data['projects'][$i]['name']);
@@ -29,9 +30,10 @@ class ControllerInformationPortfolio extends Controller
     public function getProject(string $name)
     {
         $route = 'information/project';
+        $lang = $this->language->getCurrent();
 
         $portfolio = $this->load->model('information/portfolio');
-        $project = $portfolio->getProjectByName($name)->row;
+        $project = $portfolio->getProjectByName($name, $lang)->row;
 
         if (empty($project)) {
             $this->load->controller('error/not_found');

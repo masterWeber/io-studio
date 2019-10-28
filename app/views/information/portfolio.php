@@ -9,7 +9,7 @@
                     <li class="project-preview-swiper__slide swiper-slide">
                         <picture class="project-preview">
                             <img class="project-preview__img"
-                                 src="<?= $project['preview'] ?>"
+                                 src="<?= $project['thumbnail'] ?>"
                                  alt="<?= $project['title'] ?>">
                         </picture>
                     </li>
@@ -31,7 +31,7 @@
                         <div class="project-info">
                             <span class="project-info__count"><?= $count ?></span>
                             <p class="project-info__title title"><?= $project['title'] ?></p>
-                            <p class="project-info__description text"><?= $project['service'] ?></p>
+                            <p class="project-info__description text"><?= $project['short_description'] ?></p>
                             <a class="project-info__button button button_transparent"
                                href="<?= $project['link'] ?>">
                                 <?= $view_button ?>

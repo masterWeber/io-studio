@@ -10,7 +10,7 @@
 
             <div class="project__text-block project__text-block_service">
                 <h2 class="project__subtitle title"><?= $title_service ?></h2>
-                <p class="text text_wide"><?= $service ?></p>
+                <p class="text text_wide"><?= $short_description ?></p>
             </div>
 
             <div class="project__text-block project__text-block_timeline">
@@ -25,7 +25,7 @@
 
             <div class="project__text-block project__text-block_cost">
                 <h2 class="project__subtitle title"><?= $title_cost ?> </h2>
-                <p class="text text_medium text_wide number-with-spaces"><?= $cost ?></p>
+                <p class="text text_medium text_wide number-with-spaces"><?= $price ?></p>
             </div>
 
         </div>
