@@ -11,6 +11,7 @@ const ROUTES_MAP = [
     'service' => 'information/service',
     'contacts' => 'information/contacts',
     'portfolio' => 'information/portfolio',
+    'order' => 'mail/order',
     '404' => 'error/not_found'
 ];
 
