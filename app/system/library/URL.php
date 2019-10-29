@@ -16,16 +16,20 @@ class URL
         }
     }
 
-    public function link(string $route)
+    public function link(string $route, string $lang = '')
     {
+        $router = $this->registry->get('router');
+        $route = $router->rewrite($route);
 
-        $lang = $this->registry->get('language')->getCurrent();
-        if ($route !== '/') {
+        if (empty($lang)) {
+            $lang = $this->registry->get('language')->getCurrent();
+        }
+
+        if ($route !== '/' && !empty($route)) {
             $url = $this->url . "/{$lang}/{$route}";
         } else {
             $url = $this->url . "/{$lang}";
         }
-
 
         return $url;
     }
@@ -49,9 +53,9 @@ class URL
     {
 
         $result = [
-          'lang' => '',
-          'route' => '',
-          'param' => ''
+            'lang' => '',
+            'route' => '',
+            'param' => ''
         ];
 
         if (count($partsUrl) === 0) {

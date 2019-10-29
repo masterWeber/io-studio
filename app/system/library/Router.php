@@ -4,6 +4,9 @@ class Router extends Controller
 {
 
     private $controller;
+    public $lang;
+    public $route;
+    public $param;
 
     public function run()
     {
@@ -15,12 +18,12 @@ class Router extends Controller
             $uri = '';
         }
 
-        $lang = $analyzedPartsUrl['lang'];
-        $route = $analyzedPartsUrl['route'];
-        $param = $analyzedPartsUrl['param'];
+        $this->lang = $analyzedPartsUrl['lang'];
+        $this->route = $analyzedPartsUrl['route'];
+        $this->param = $analyzedPartsUrl['param'];
 
-        if (empty($lang)) {
-            if (empty($route)) {
+        if (empty($this->lang)) {
+            if (empty($this->route)) {
                 $uri = $this->language->getCurrent() . $uri;
             } else {
                 $uri = $this->language->getCurrent();
@@ -29,17 +32,17 @@ class Router extends Controller
             $this->response->redirect($uri);
         }
 
-        if (key_exists(1, $partsUrl) && empty($route)) {
-            $route = 'error/not_found';
+        if (key_exists(1, $partsUrl) && empty($this->route)) {
+            $this->route = 'error/not_found';
         }
 
         $path = DIR_CONTROLLER . ROUTES_MAP['index'];
         $currentClass = preg_replace('/(\/)|(_)/i', '', ROUTES_MAP['index']);
         $class = 'Controller' . $currentClass;
 
-        if ($route) {
-            $path = DIR_CONTROLLER . $route;
-            $class = 'Controller' . preg_replace('/(\/)|(_)/i', '', $route);
+        if ($this->route) {
+            $path = DIR_CONTROLLER . $this->route;
+            $class = 'Controller' . preg_replace('/(\/)|(_)/i', '', $this->route);
         }
 
         try {
@@ -49,6 +52,16 @@ class Router extends Controller
         }
 
         $this->controller = new $class($this->registry);
-        $this->controller->index($param);
+        $this->controller->index($this->param);
+    }
+
+    public function rewrite(string $route)
+    {
+        foreach (ROUTES_MAP as $key => $value) {
+            if ($value === $route) {
+                return $key;
+            }
+        }
+        return $route;
     }
 }

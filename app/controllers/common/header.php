@@ -13,11 +13,13 @@ class ControllerCommonHeader extends Controller
 
         $lang = $this->language->getCurrent();
 
+        $route = $this->router->route;
+
         if ($lang === 'ru') {
-            $data['lang_link'] = '/en';
+            $data['lang_link'] = $this->url->link($route, 'en');
             $data['lang_checked'] = '';
         } else {
-            $data['lang_link'] = '/ru';
+            $data['lang_link'] = $this->url->link($route, 'ru');
             $data['lang_checked'] = 'checked';
         }
 
