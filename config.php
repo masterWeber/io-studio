@@ -4,15 +4,14 @@ const DEV = false;
 
 //Язык
 const LANGUAGES = ['ru', 'en'];
-const DEFAULT_LANGUAGE = 'ru';
 
 //Маршруты
 const ROUTES_MAP = [
-  'index' => 'common/home',
-  'service' => 'information/service',
-  'contacts' => 'information/contacts',
-  'portfolio' => 'information/portfolio',
-  '404' => 'error/not_found'
+    'index' => 'common/home',
+    'service' => 'information/service',
+    'contacts' => 'information/contacts',
+    'portfolio' => 'information/portfolio',
+    '404' => 'error/not_found'
 ];
 
 //База данных
