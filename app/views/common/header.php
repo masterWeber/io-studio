@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?= $title ?>">
     <meta property="og:description" content="<?= $description ?>">
-    <meta property="og:url" content="<?= $link_home ?>">
+    <meta property="og:url" content="<?= $base ?>">
     <meta property="og:site_name" content="io-studio">
     <meta property="og:image" content="https://io-studio.io/images/design+development.jpg">
     <meta property="og:image:secure_url" content="https://io-studio.io/images/design+development.jpg">
