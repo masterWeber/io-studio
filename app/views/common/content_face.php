@@ -15,9 +15,9 @@
         <p class="face__title">
             <?= $face_title ?>
         </p>
-        <p class="face__subtitle">
+        <h1 class="face__subtitle">
             <?= $face_subtitle ?>
-        </p>
+        </h1>
         <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_button ?></button>
     </div>
 

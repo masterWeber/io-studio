@@ -7,9 +7,9 @@
     </button>
     <form class="form" method="post" action="<?= $action_order ?>">
 
-        <header class="form__header">
+        <div class="form__header">
             <p class="form__title"><?= $here_us_form_title ?></p>
-        </header>
+        </div>
 
         <div class="form__group">
             <div class="input-field">
@@ -61,9 +61,9 @@
             </div>
 
         </div>
-        <footer class="form__footer">
+        <div class="form__footer">
             <input class="button button_large button_dark md-trigger" data-modal="order-dialog" type="submit"
                    value="<?= $send_button ?>">
-        </footer>
+        </div>
     </form>
 </div>
