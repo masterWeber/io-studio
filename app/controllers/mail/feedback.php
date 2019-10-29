@@ -1,16 +1,16 @@
 <?php
 
-class ControllerMailOrder extends Controller
+class ControllerMailFeedback extends Controller
 {
     public function index()
     {
-        $data = $this->load->language('mail/order');
+        $data = $this->load->language('mail/feedback');
         $json = [];
         $data['success'] = true;
 
         array_merge($data, $_POST);
 
-        $message = $this->load->view('mail/order', $data);
+        $message = $this->load->view('mail/feedback', $data);
 
         $mail = new Mail();
         $mail->setTo(EMAIL);

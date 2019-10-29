@@ -1,20 +1,4 @@
 'use strict';
-const getParent = (element, parentClassName) => {
-  let parent = element.parentElement;
-
-  while (!parent.classList.contains(parentClassName)) {
-    parent = parent.parentElement;
-    if (!parent) {
-      return false;
-    }
-  }
-
-  if (!parent.classList.contains(parentClassName)) {
-    return false;
-  }
-
-  return parent;
-};
 
 const isVisible = target => {
   'use strict';
@@ -78,7 +62,7 @@ const numberWithSpaces = x => {
 
   const mdClose = event => {
     const target = event.currentTarget;
-    const modalDialog = getParent(target, 'md');
+    const modalDialog = target.closest('.md');
     modalDialog.classList.remove('md_open');
   };
 

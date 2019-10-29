@@ -4,7 +4,7 @@
         <?= $feedback_text ?>
     </p>
 
-    <form class="form form__full" action="<?= $action_feedback ?>">
+    <form class="form form__full" action="<?= $action_feedback ?>" method="post">
 
         <div class="form__group">
             <div class="input-field">

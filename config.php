@@ -12,6 +12,7 @@ const ROUTES_MAP = [
     'contacts' => 'information/contacts',
     'portfolio' => 'information/portfolio',
     'order' => 'mail/order',
+    'feedback' => 'mail/feedback',
     '404' => 'error/not_found'
 ];
 
@@ -22,3 +23,6 @@ const DB_NAME = 'io';
 const DB_PORT = '3306';
 const DB_USER = 'root';
 const DB_PASSWORD = '000000';
+
+//Mail
+const EMAIL = 'info@io-studio.io';
