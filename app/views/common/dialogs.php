@@ -5,7 +5,7 @@
         <span class="bubble-button__element bubble-button__element_third"></span>
         <span class="bubble-button__text"><?= $close_button ?></span>
     </button>
-    <form action="<?= $action_order ?>" class="form">
+    <form class="form" method="post" action="<?= $action_order ?>">
 
         <header class="form__header">
             <p class="form__title"><?= $here_us_form_title ?></p>
