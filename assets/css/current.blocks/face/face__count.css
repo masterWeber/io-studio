@@ -7,7 +7,13 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
+  color: var(--secondary-color);
+  text-decoration: none;
   transition: all 200ms;
+}
+
+.face__count:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1260px) {

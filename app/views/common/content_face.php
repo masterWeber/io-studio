@@ -21,9 +21,9 @@
         <button class="button md-trigger" data-modal="order-dialog"><?= $hire_us_button ?></button>
     </div>
 
-    <p class="face__count">
+    <a class="face__count" href="<?= $link_portfolio ?>">
         <?= $projects_count ?>
-    </p>
+    </a>
 
     <p class="face__version version">
         <span class="version__text">Version</span>
