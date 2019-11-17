@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>https://io-studio.io/</loc>
+	<lastmod>2019-11-17T09:35:37+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en</loc>
+	<lastmod>2019-11-17T09:35:37+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru</loc>
+	<lastmod>2019-11-17T09:35:39+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/portfolio</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/service</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/contacts</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/portfolio</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/service</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/contacts</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/portfolio/giorgios_bakery</loc>
+	<lastmod>2019-11-17T09:35:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/portfolio/sun_fun</loc>
+	<lastmod>2019-11-17T09:35:43+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/portfolio/seeker_job_service</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/portfolio/h_i_o._e_group</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/en/portfolio/norebro_studio</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/portfolio/giorgios_bakery</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/portfolio/sun_fun</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/portfolio/seeker_job_service</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/portfolio/h_i_o._e_group</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://io-studio.io/ru/portfolio/norebro_studio</loc>
+	<lastmod>2019-11-17T09:35:41+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+</urlset>
