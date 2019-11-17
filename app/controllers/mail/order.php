@@ -6,10 +6,9 @@ class ControllerMailOrder extends Controller
     {
         $data = $this->load->language('mail/order');
         $json = [];
+        $data = array_merge($data, $_POST);
         $data['success'] = true;
-
-        array_merge($data, $_POST);
-
+        
         $message = $this->load->view('mail/order', $data);
 
         $mail = new Mail();
