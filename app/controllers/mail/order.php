@@ -8,7 +8,7 @@ class ControllerMailOrder extends Controller
         $json = [];
         $data = array_merge($data, $_POST);
         $data['success'] = true;
-        
+
         $message = $this->load->view('mail/order', $data);
 
         $mail = new Mail();

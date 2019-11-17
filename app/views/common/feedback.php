@@ -23,7 +23,7 @@
         </div>
 
         <footer class="form__footer">
-            <input class="button button_large button_dark md-trigger" data-modal="order-dialog" type="submit"
+            <input class="button button_large button_dark" type="submit"
                    value="<?= $send_button ?>">
         </footer>
     </form>
