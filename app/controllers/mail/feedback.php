@@ -6,10 +6,9 @@ class ControllerMailFeedback extends Controller
     {
         $data = $this->load->language('mail/feedback');
         $json = [];
+        $data = array_merge($data, $_POST);
         $data['success'] = true;
-
-        array_merge($data, $_POST);
-
+        
         $message = $this->load->view('mail/feedback', $data);
 
         $mail = new Mail();
