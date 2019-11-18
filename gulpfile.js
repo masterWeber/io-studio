@@ -72,6 +72,6 @@ gulp.task('watch', function() {
   gulp.watch(['./assets/css/**/*.css', '!./assets/css/style.min.css'], css);
   // При изменение файлов *.js папке "assets/js" и подпапках запускаем задачу
   // javaScript
-  gulp.watch('./assets/js/common/**/*.js', javaScript);
+  gulp.watch('./assets/js/common/**/*.js', javaScriptCommon);
 });
 

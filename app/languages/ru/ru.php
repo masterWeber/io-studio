@@ -16,7 +16,7 @@ $_['text_corporate'] = 'Корпоративный';
 $_['text_shop']      = 'Интернет магазин';
 $_['text_video']     = 'Видео монтаж и 3D';
 
-$_['projects_count']             = '63+<br>Проэкта';
+$_['projects_count']             = '63+<br>Проекта';
 $_['service_title_landing']      = 'Landing page';
 $_['service_subtitle_landing']   = 'от 10 рабочих дней';
 $_['service_title_shop']         = 'Интернет магазин';
