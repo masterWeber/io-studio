@@ -24,6 +24,7 @@
   .face__subtitle {
     position: initial;
     width: auto;
+    margin-bottom: 25px;
     text-align: initial;
     transform: translate(0);
   }

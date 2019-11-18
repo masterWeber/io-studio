@@ -17,6 +17,7 @@
 
 @media (max-width: 700px) {
   .face__title {
+    margin-bottom: 10px;
     font-size: 28px;
     line-height: 34px;
   }
