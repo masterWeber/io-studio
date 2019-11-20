@@ -1,0 +1,12 @@
+.form_feedback {
+    max-width: 64%;
+    margin-right: 80px;
+}
+
+@media (max-width: 1300px) {
+    .form_feedback  {
+        max-width: initial;
+        width: 100%;
+        margin-right: 0;
+    }
+}

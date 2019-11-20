@@ -1,0 +1,16 @@
+.checkbox {
+    position: relative;
+    height: 27px;
+    min-height: 27px;
+    width: 27px;
+    min-width: 27px;
+}
+
+@media (max-width: 700px) {
+    .checkbox {
+        height: 22px;
+        min-height: 22px;
+        width: 22px;
+        min-width: 22px;
+    }
+}

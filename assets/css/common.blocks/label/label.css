@@ -59,19 +59,37 @@
   color: #8d6e63;
 }
 
-.input:focus ~ .label_placeholder,
-.input:not(:placeholder-shown) ~ .label_placeholder {
+.input-field__input:focus ~ .label_placeholder,
+.input-field__input:not(:placeholder-shown) ~ .label_placeholder {
   top: -40%;
   font-size: 18px;
   line-height: 35px;
   color: #808080;
 }
 
-.input:not(:placeholder-shown):invalid ~ .label_placeholder,
-.input:not(:placeholder-shown):invalid {
+@media (max-width: 1000px) {
+  .input-field__input:focus ~ .label_placeholder,
+  .input-field__input:not(:placeholder-shown) ~ .label_placeholder {
+    top: -60%;
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .input-field__input:focus ~ .label_placeholder,
+  .input-field__input:not(:placeholder-shown) ~ .label_placeholder {
+    top: -70%;
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+
+.input-field__input:not(:placeholder-shown):invalid ~ .label_placeholder,
+.input-field__input:not(:placeholder-shown):invalid {
   color: #8d6e63;
 }
 
-.input:not(:placeholder-shown):invalid {
+.input-field__input:not(:placeholder-shown):invalid {
   border-bottom-color: #8d6e63;
 }

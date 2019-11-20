@@ -1,4 +1,3 @@
-
 .form {
   display: flex;
   flex-direction: column;
@@ -15,21 +14,4 @@
   .form {
     width: 260px;
   }
-}
-
-.feedback .form {
-  max-width: 64%;
-  margin-right: 80px;
-}
-
-@media (max-width: 1300px) {
-  .feedback .form {
-    max-width: initial;
-    width: 100%;
-    margin-right: 0;
-  }
-}
-
-.form__full {
-  width: 100%;
 }

@@ -67,20 +67,32 @@
 @import 'common.blocks/feedback/feedback__text.css';
 /** form **/
 @import 'common.blocks/form/form.css';
+@import 'common.blocks/form/_full/form_full.css';
+@import 'common.blocks/form/_feedback/form_feedback.css';
 @import 'common.blocks/form/__header/form__header.css';
 @import 'common.blocks/form/__title/form__title.css';
 @import 'common.blocks/form/__group/form__group.css';
 @import 'common.blocks/form/__toggle-group/form__toggle-group.css';
 @import 'common.blocks/form/__toggle-container/form__toggle-container.css';
+@import 'common.blocks/form/__checkbox-container/form__checkbox-container.css';
 @import 'common.blocks/form/__footer/form__footer.css';
-@import 'common.blocks/form/input-field.css';
-@import 'common.blocks/form/label.css';
+@import 'common.blocks/form/__button/form__button.css';
+/** Input field **/
+@import 'common.blocks/input-field/input-field.css';
+@import 'common.blocks/input-field/__input/input-field__input.css';
+/** Label **/
+@import 'common.blocks/label/label.css';
+@import 'common.blocks/label/_small/label_small.css';
 /** Toggle **/
 @import 'common.blocks/toggle/toggle.css';
 @import 'common.blocks/toggle/_narrow/toggle_narrow.css';
 @import 'common.blocks/toggle/__native-element/toggle__native-element.css';
 @import 'common.blocks/toggle/__background/toggle__background.css';
 @import 'common.blocks/toggle/__switch/toggle__switch.css';
+/** Checkbox **/
+@import 'common.blocks/checkbox/checkbox.css';
+@import 'common.blocks/checkbox/__native-element/checkbox__native-element.css';
+@import 'common.blocks/checkbox/__background/checkbox__background.css';
 /** footer **/
 @import 'common.blocks/footer/footer.css';
 @import 'common.blocks/footer/copyright.css';

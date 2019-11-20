@@ -1,0 +1,33 @@
+.input-field__input {
+    width: 100%;
+    min-width: 20px;
+    padding-bottom: 32px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 52px;
+    color: var(--main-color);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom-color 200ms;
+}
+
+@media (max-width: 1000px) {
+    .input-field__input {
+        padding-bottom: 10px;
+        font-size: 22px;
+        line-height: 33px;
+    }
+}
+
+@media (max-width: 700px) {
+    .input-field__input {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.input-field__input:focus {
+    outline: none;
+}

@@ -15,7 +15,6 @@
 
 @media (max-width: 1000px) {
   .input-field {
-    padding-bottom: 25px;
     margin-bottom: 45px;
   }
 
@@ -26,7 +25,6 @@
 
 @media (max-width: 700px) {
   .input-field {
-    padding-bottom: 10px;
     margin-bottom: 20px;
   }
 
@@ -57,41 +55,4 @@
   .feedback .form__group .input-field:last-child {
     margin-bottom: 20px;
   }
-}
-
-.input-field.invalid {
-  border-color: #8d6e63;
-}
-
-.input {
-  width: 100%;
-  min-width: 20px;
-  padding-bottom: 32px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  font-size: 35px;
-  line-height: 52px;
-  color: var(--main-color);
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #fff;
-  transition: border-bottom-color 200ms;
-}
-
-@media (max-width: 1000px) {
-  .input {
-    font-size: 22px;
-    line-height: 33px;
-  }
-}
-
-@media (max-width: 700px) {
-  .input {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-.input:focus {
-  outline: none;
 }
