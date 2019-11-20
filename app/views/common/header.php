@@ -45,8 +45,8 @@
 
             <a href="<?= $lang_link ?>" aria-label="Переключить язык">
                 <div class="toggle toggle_narrow <?= $lang_checked ?>">
-                    <div class="toggle__back"></div>
-                    <div class="toggle__toggle"></div>
+                    <div class="toggle__background"></div>
+                    <div class="toggle__switch"></div>
                 </div>
             </a>
 

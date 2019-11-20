@@ -13,49 +13,50 @@
 
         <div class="form__group">
             <div class="input-field">
-                <input class="input" id="order-dialog-name" name="name" type="text">
+                <input class="input" id="order-dialog-name" name="name" type="text" minlength="5"
+                       placeholder=" " required>
                 <label class="label label_light label_placeholder" for="order-dialog-name"><?= $label_name?></label>
             </div>
             <div class="input-field">
-                <input class="input" id="order-dialog-email" name="email" type="email">
+                <input class="input" id="order-dialog-email" name="email" type="email" placeholder=" " required>
                 <label class="label label_light label_placeholder" for="order-dialog-email"><?= $label_email?></label>
             </div>
         </div>
 
         <div class="form__toggle-group">
 
-            <div class="toggle-container">
+            <div class="form__toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-landing" type="checkbox" name="landing">
-                    <div class="toggle__back"></div>
-                    <div class="toggle__toggle"></div>
+                    <input class="toggle__native-element" id="checkbox-landing" type="checkbox" name="landing">
+                    <div class="toggle__background"></div>
+                    <div class="toggle__switch"></div>
                 </div>
                 <label class="label label_light" for="checkbox-landing"><?= $text_landing ?></label>
             </div>
 
-            <div class="toggle-container">
+            <div class="form__toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-shop" type="checkbox" name="shop">
-                    <div class="toggle__back"></div>
-                    <div class="toggle__toggle"></div>
+                    <input class="toggle__native-element" id="checkbox-shop" type="checkbox" name="shop">
+                    <div class="toggle__background"></div>
+                    <div class="toggle__switch"></div>
                 </div>
                 <label class="label label_light" for="checkbox-shop"><?= $text_shop ?></label>
             </div>
 
-            <div class="toggle-container">
+            <div class="form__toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-company" type="checkbox" name="corporate">
-                    <div class="toggle__back"></div>
-                    <div class="toggle__toggle"></div>
+                    <input class="toggle__native-element" id="checkbox-company" type="checkbox" name="corporate">
+                    <div class="toggle__background"></div>
+                    <div class="toggle__switch"></div>
                 </div>
                 <label class="label label_light" for="checkbox-company"><?= $text_corporate ?></label>
             </div>
 
-            <div class="toggle-container">
+            <div class="form__toggle-container">
                 <div class="toggle">
-                    <input class="native-checkbox" id="checkbox-video" type="checkbox" name="video">
-                    <div class="toggle__back"></div>
-                    <div class="toggle__toggle"></div>
+                    <input class="toggle__native-element" id="checkbox-video" type="checkbox" name="video">
+                    <div class="toggle__background"></div>
+                    <div class="toggle__switch"></div>
                 </div>
                 <label class="label label_light" for="checkbox-video"><?= $text_video ?></label>
             </div>

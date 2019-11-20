@@ -1,0 +1,13 @@
+.toggle {
+  position: relative;
+  width: 55px;
+  height: 27px;
+}
+
+@media (max-width: 1000px) {
+  .toggle {
+    width: 45px;
+    height: 22px;
+  }
+}
+

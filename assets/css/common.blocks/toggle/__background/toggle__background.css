@@ -1,0 +1,25 @@
+.toggle__background {
+    position: absolute;
+    top: 0;
+    width: 55px;
+    height: 27px;
+    background-color: #b8b8b8;
+    border-radius: 100px;
+}
+
+@media (max-width: 1000px) {
+    .toggle__background {
+        width: 45px;
+        height: 22px;
+    }
+}
+
+.toggle_narrow .toggle__background {
+    width: 40px;
+    height: 12px;
+}
+
+.toggle__native-element:focus ~ .toggle__background {
+    outline: var(--main-color) dotted 1px;
+    outline-offset: 2px;
+}

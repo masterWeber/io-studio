@@ -67,14 +67,20 @@
 @import 'common.blocks/feedback/feedback__text.css';
 /** form **/
 @import 'common.blocks/form/form.css';
-@import 'common.blocks/form/form__header.css';
-@import 'common.blocks/form/form__title.css';
-@import 'common.blocks/form/form__group.css';
-@import 'common.blocks/form/form__toggle-group.css';
+@import 'common.blocks/form/__header/form__header.css';
+@import 'common.blocks/form/__title/form__title.css';
+@import 'common.blocks/form/__group/form__group.css';
+@import 'common.blocks/form/__toggle-group/form__toggle-group.css';
+@import 'common.blocks/form/__toggle-container/form__toggle-container.css';
+@import 'common.blocks/form/__footer/form__footer.css';
 @import 'common.blocks/form/input-field.css';
 @import 'common.blocks/form/label.css';
-@import 'common.blocks/form/toggle.css';
-@import 'common.blocks/form/form__footer.css';
+/** Toggle **/
+@import 'common.blocks/toggle/toggle.css';
+@import 'common.blocks/toggle/_narrow/toggle_narrow.css';
+@import 'common.blocks/toggle/__native-element/toggle__native-element.css';
+@import 'common.blocks/toggle/__background/toggle__background.css';
+@import 'common.blocks/toggle/__switch/toggle__switch.css';
 /** footer **/
 @import 'common.blocks/footer/footer.css';
 @import 'common.blocks/footer/copyright.css';
