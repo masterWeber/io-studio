@@ -65,7 +65,7 @@
             <a class="social__item" href="https://instagram.com/" title="<?= $instagram_link_title ?>" target="_blank"
                rel="noreferrer">ig</a>
         </div>
-        <button class="bubble-button md-trigger" data-modal="navigation-dialog"
+        <button class="header__bubble-button bubble-button md-trigger" data-modal="navigation-dialog"
                 title="<?= $menu_button_title ?>" aria-label="<?= $menu_button_title ?>">
             <span class="bubble-button__element bubble-button__element_first"></span>
             <span class="bubble-button__element bubble-button__element_second"></span>

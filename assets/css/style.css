@@ -27,16 +27,6 @@
 /** column **/
 @import 'common.blocks/column/column.css';
 @import 'common.blocks/column/__title/column__title.css';
-/** header **/
-@import 'common.blocks/header/header.css';
-@import 'common.blocks/header/__group/header__group.css';
-@import 'common.blocks/logo/logo.css';
-@import 'common.blocks/header/lang-toggle.css';
-@import 'common.blocks/header/toolbar.css';
-@import 'common.blocks/social/social.css';
-@import 'common.blocks/social/social__item.css';
-@import 'common.blocks/menu/menu.css';
-@import 'common.blocks/menu/menu__item.css';
 /** button **/
 @import 'common.blocks/button/button.css';
 @import 'common.blocks/button/_dark/button_dark.css';
@@ -44,6 +34,17 @@
 @import 'common.blocks/button/_transparent/button_transparent.css';
 /** bubble button **/
 @import 'common.blocks/bubble-button/bubble-button.css';
+/** header **/
+@import 'common.blocks/header/header.css';
+@import 'common.blocks/header/__group/header__group.css';
+@import 'common.blocks/header/__bubble-button/header__bubble-button.css';
+@import 'common.blocks/logo/logo.css';
+@import 'common.blocks/header/lang-toggle.css';
+@import 'common.blocks/header/toolbar.css';
+@import 'common.blocks/social/social.css';
+@import 'common.blocks/social/social__item.css';
+@import 'common.blocks/menu/menu.css';
+@import 'common.blocks/menu/menu__item.css';
 /** face **/
 @import 'current.blocks/face/face.css';
 @import 'current.blocks/face/face__content.css';
