@@ -5,7 +5,7 @@
     </div>
     <div class="support">
         <span class="support__text"><?= $support_text ?></span>
-        <a class="support__link" href="https://wa.me/79234567890">WhatsApp</a>
+        <a class="support__link" href="https://wa.me/89161341131">WhatsApp</a>
     </div>
     <button class="button-scroll-to" title="Наверх"></button>
 </footer>
