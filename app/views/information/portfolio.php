@@ -7,11 +7,13 @@
                 <?php foreach ($projects as $project) { ?>
 
                     <li class="project-preview-swiper__slide swiper-slide">
-                        <picture class="project-preview">
-                            <img class="project-preview__img"
-                                 src="<?= $project['thumbnail'] ?>"
-                                 alt="<?= $project['title'] ?>">
-                        </picture>
+                        <a class="project-preview-swiper__link" href="<?= $project['link'] ?>">
+                            <picture class="project-preview">
+                                <img class="project-preview__img"
+                                     src="<?= $project['thumbnail'] ?>"
+                                     alt="<?= $project['title'] ?>">
+                            </picture>
+                        </a>
                     </li>
 
                 <?php } ?>
