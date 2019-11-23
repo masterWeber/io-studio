@@ -1,7 +1,7 @@
 <div class="about container">
     <div class="active-background">
         <div class="active-background__wrapper">
-            <video class="active-background__video" autoplay loop preload="auto" muted>
+            <video class="active-background__video" autoplay loop preload="auto" muted  playsinline>
                 <source src="/assets/video/bird/bird_vp8.webm" type="video/webm"/>
                 <source src="/assets/video/bird/bird_hevc.mp4" type="video/mp4"/>
                 <source src="/assets/video/bird/bird_avc.mp4" type="video/mp4"/>

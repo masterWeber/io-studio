@@ -1,6 +1,6 @@
 <div class="face">
     <div class="component-logo">
-        <video class="component-logo__video" autoplay loop preload="auto" muted>
+        <video class="component-logo__video" autoplay loop preload="auto" muted playsinline>
             <source src="/assets/video/sea/sea_vp8.webm" type="video/webm"/>
             <source src="/assets/video/sea/sea_hevc.mp4" type="video/mp4"/>
             <source src="/assets/video/sea/sea_avc.mp4" type="video/mp4"/>
