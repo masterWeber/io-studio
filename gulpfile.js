@@ -20,6 +20,8 @@ const copy = () => {
         './source/.*',
         './source/app/**/*',
         './source/images/**/*',
+        './source/assets/css/vendor/swiper/swiper.min.css',
+        './source/assets/js/vendor/swiper/swiper.min.js',
         './source/assets/video/**/*',
     ], {
             base: "./source"
