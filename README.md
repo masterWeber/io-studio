@@ -36,6 +36,12 @@ Frontend — статические ассеты (`source/assets/css`, `source/a
 npm install
 ```
 
+Секреты (пароль БД, почта и т.п.) не хранятся в репозитории — скопируй `source/.env.example` в `source/.env` и заполни своими значениями:
+
+```bash
+cp source/.env.example source/.env
+```
+
 Сборка проекта в `build/`:
 
 ```bash
