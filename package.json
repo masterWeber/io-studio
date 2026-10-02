@@ -3,25 +3,20 @@
   "version": "1.0.0",
   "description": "Сайт компании",
   "main": "index.js",
-  "dependencies": {
-    "@babel/core": "^8.0.6",
-    "@babel/preset-env": "^8.0.6",
-    "gulp": "^5.0.1",
-    "gulp-babel": "^8.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.5.28",
-    "postcss-import": "^17.0.0"
-  },
+  "type": "module",
   "devDependencies": {
     "autoprefixer": "^10.6.1",
     "cssnano": "^9.2.0",
-    "gulp-postcss": "^10.0.0",
-    "gulp-rename": "^2.1.0",
-    "gulp-uglify": "^3.0.2",
+    "laravel-vite-plugin": "^3.2.0",
+    "postcss": "^8.5.28",
+    "postcss-import": "^17.0.0",
     "postcss-preset-env": "^11.5.5",
-    "postcss-sort-media-queries": "^6.7.1"
+    "postcss-sort-media-queries": "^6.7.1",
+    "vite": "^8.3.2"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "masterWeber",

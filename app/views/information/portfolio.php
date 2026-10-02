@@ -47,5 +47,5 @@
 </main>
 <link rel="stylesheet" href="/assets/css/vendor/swiper/swiper.min.css">
 <script src="/assets/js/vendor/swiper/swiper.min.js" defer></script>
-<script src="/assets/js/swiper-init.min.js" defer></script>
+<?= vite(['resources/js/common/swiper-init.js']) ?>
 <?= $footer ?>

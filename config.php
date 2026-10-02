@@ -7,9 +7,6 @@ function env(string $key, $default = null)
     return $env[$key] ?? $default;
 }
 
-//Режим разработки
-const DEV = false;
-
 //Язык
 const LANGUAGES = ['ru', 'en'];
 

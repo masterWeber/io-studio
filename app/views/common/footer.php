@@ -13,12 +13,9 @@
 <?php require_once('dialogs.php') ?>
 
 
-<?php if (DEV) { ?>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/common/common.js" defer></script>
-<?php } else { ?>
-    <link rel="stylesheet" href="/assets/css/style.min.css?v=1.0.0">
-    <script src="/assets/js/common.min.js?v=1.0.0" defer></script>
-<?php } ?>
+<?= vite([
+    'resources/css/style.css',
+    'resources/js/common/common.js',
+]) ?>
 </body>
 </html>
