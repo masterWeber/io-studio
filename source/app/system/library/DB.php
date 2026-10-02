@@ -14,8 +14,8 @@ class DB {
         }
     }
 
-    public function query($sql) {
-        return $this->adapter->query($sql);
+    public function query($sql, $params = array()) {
+        return $this->adapter->query($sql, $params);
     }
 
     public function getLastId() {

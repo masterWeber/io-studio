@@ -11,8 +11,8 @@ class ModelInformationTechnologies extends Model
 
     public function getTechnology(string $id)
     {
-        $sql = "SELECT * FROM `technologies` where `id` = '{$id}' ORDER BY `id`";
-        return $this->db->query($sql)->row;
+        $sql = "SELECT * FROM `technologies` where `id` = ? ORDER BY `id`";
+        return $this->db->query($sql, [$id])->row;
     }
 
 
