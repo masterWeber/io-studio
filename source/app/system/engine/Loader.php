@@ -13,11 +13,11 @@ class Loader
     {
         $path = DIR_MODEL . "$route.php";
 
-        try {
-            require_once($path);
-        } catch (Exception $e) {
-            echo "Ошибка: {$e}";
+        if (!file_exists($path)) {
+            throw new Exception("Error: Could not load model {$route}!");
         }
+
+        require_once($path);
 
         $class = 'Model' . preg_replace('/\//i', '', $route);
 

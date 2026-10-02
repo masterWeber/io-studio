@@ -45,11 +45,11 @@ class Router extends Controller
             $class = 'Controller' . preg_replace('/(\/)|(_)/i', '', $this->route);
         }
 
-        try {
-            import($path);
-        } catch (Exception $e) {
+        if (!file_exists($path . '.php')) {
             $this->response->redirect('404');
         }
+
+        import($path);
 
         $this->controller = new $class($this->registry);
         $this->controller->index($this->param);
